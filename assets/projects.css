@@ -1,3 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.bg-section{
+    background-color: lightgray;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
+    
+}
+
 .card-list{
     display: grid;
     grid-template-columns:33% 33% 33%;
@@ -6,15 +23,17 @@
 
 .card{
     margin: 30px 10px;
-    box-shadow: 7px 13px 20px -3px #e6e5e5;
+    /* box-shadow: 7px 13px 20px -3px #e6e5e5; */
     border-radius: 5px;
+    border: 2px solid #000000;
     background-color: #ffffff;
 }
 
 .card-img{
     width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: 2px solid #000000;
     height: 250px;
     object-fit: cover;
 }
@@ -50,6 +69,10 @@
     }
     .card-img{
         height: 200px;
+    }
+
+    .card-link-item{
+        padding-left: 5px;
     }
 }
 
