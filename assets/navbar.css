@@ -4,7 +4,7 @@
     top: 50px;
     right: 50px;
 
-    z-index: 1;
+    z-index: 2;
 
     -webkit-user-select: none;
     user-select: none;
@@ -12,7 +12,7 @@
 
 #menuToggle a {
     text-decoration: none;
-    color: #333333;
+    color: #525252;
 
     transition: color 0.3s ease;
 }
@@ -110,6 +110,19 @@
     transform: translateX(-60%);
 }
 
+.social{
+    padding-left: 10px !important;
+}
+
+ul.social li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 30px !important;
+}
+
+.social-icon{
+    font-size: 25px;
+}
 
 @media screen and (max-width: 1150px) {
     #menuToggle {
@@ -130,4 +143,9 @@
         line-height: 60px;
         text-justify: right;
     }
+
+    ul.social li{
+        padding-right: 20px !important;
+    }
+    
 }

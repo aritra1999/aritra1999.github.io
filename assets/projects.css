@@ -7,7 +7,7 @@
 }
 
 .bg-section{
-    background-color: lightgray;
+    background-color: #d3d3d3;
     height: 400px;
     width: 100%;
     position: absolute;
@@ -17,42 +17,57 @@
 
 .card-list{
     display: grid;
-    grid-template-columns:33% 33% 33%;
+    grid-template-columns:25% 25% 25% 25% ;
     padding: 20px;
 }
 
 .card{
-    margin: 30px 10px;
-    /* box-shadow: 7px 13px 20px -3px #e6e5e5; */
-    border-radius: 5px;
-    border: 2px solid #000000;
+    margin: 30px 10px 0 10px;
+    /* box-shadow: 3px 9px 20px 15px #d3d3d3; */
+    border-radius: 7px;
+    /* border: 2px solid #000000; */
+    
     background-color: #ffffff;
 }
 
 .card-img{
     width: 100%;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom: 2px solid #000000;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    /* border-bottom: 2px solid #000000; */
     height: 250px;
     object-fit: cover;
 }
 
+.card-des{
+    font-size: 0.85rem;
+    padding: 5px 0;
+}
+
 .card-links{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
+ 
+}
+
+.card-footer{
+    background-color: #002c5c;    
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 15px 10px;
+    
 }
 
 .card-link-item{
     text-decoration: none;
     padding-left: 20px;
-    color: #000000;
+    color: #ffc59f !important;
     font-weight: 500;
 
 }
 
 .card-body{
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 
 @media screen and (max-width: 1150px) {
@@ -72,7 +87,7 @@
     }
 
     .card-link-item{
-        padding-left: 5px;
+        padding-left: 0;
     }
 }
 
