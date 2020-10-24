@@ -23,11 +23,9 @@
 
 .card{
     margin: 30px 10px 0 10px;
-    /* box-shadow: 3px 9px 20px 15px #d3d3d3; */
-    border-radius: 7px;
-    /* border: 2px solid #000000; */
-    
+    border-radius: 7px;    
     background-color: #ffffff;
+    display: block;
 }
 
 .card-img{
@@ -35,7 +33,7 @@
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     /* border-bottom: 2px solid #000000; */
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -46,7 +44,7 @@
 
 .card-links{
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
  
 }
 
@@ -60,17 +58,35 @@
 
 .card-link-item{
     text-decoration: none;
-    padding-left: 20px;
+    font-size: 0.9rem;
     color: #ffc59f !important;
     font-weight: 500;
+    text-align: center;
 
+}
+
+.right{ 
+    float: right;
 }
 
 .card-body{
+    height: 100px;
     padding: 15px 20px;
 }
 
-@media screen and (max-width: 1150px) {
+.card-body2{
+    height: 130px;
+    padding: 15px 20px;
+}
+
+@media screen and (max-width: 1600px) {
+    .card-list{
+        display: grid;
+        grid-template-columns:33% 33% 33%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
     .card-list{
         display: grid;
         grid-template-columns:50% 50%;
