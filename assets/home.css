@@ -25,6 +25,7 @@
 
 .intro-1{
     font-weight: 300;
+    z-index: 2;
     font-size: 19px;
 }
 
@@ -32,6 +33,7 @@
     font-size: 80px;
     font-weight: 700 !important;
     line-height: 100px;
+    z-index: 2;
     /* font-style: italic; */
 }
 
@@ -47,10 +49,12 @@
     background-color: rgba(76, 0, 255, 0.26) !important;
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
 }
 
-
+.social-icon{
+    color: inherit;
+}
 
 
 @media screen and (max-width: 1150px) {
@@ -69,7 +73,7 @@
 
     .intro-2{
         font-size: 40px;
-        font-weight: 600 !important;
+        font-weight: 700 !important;
         line-height: 50px;
         /* font-style: italic; */
     }
