@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fdd3b7;
     background-image: url('/assets/img/bg.svg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: 47%;
     background-position: right bottom;
 }
@@ -48,7 +48,6 @@ body {
 @media screen and (max-width: 1150px) {
     html, body{
         background-size: 200%;
-        background-position: 65% 100%;
     }
 
     .bg{
