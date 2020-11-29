@@ -131,6 +131,8 @@ ul.social li{
     }
 
     #menu {
+        padding: 120px;
+        padding-top: 100px;
         width: 100vw;
         transform: translate(30%, 0);
         padding-left: 200px;

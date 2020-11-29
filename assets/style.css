@@ -6,7 +6,6 @@ body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: #fdd3b7;
-    background-image: url('/assets/img/bg.svg');
     background-repeat: no-repeat !important;
     background-size: 47%;
     background-position: right bottom;
