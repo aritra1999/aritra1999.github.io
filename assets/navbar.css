@@ -131,8 +131,7 @@ ul.social li{
     }
 
     #menu {
-        padding: 120px;
-        padding-top: 100px;
+        padding: 180px 120px;
         width: 100vw;
         transform: translate(30%, 0);
         padding-left: 200px;
@@ -140,9 +139,9 @@ ul.social li{
 
     #menu li {
         padding: 10px 0;
-        font-size: 35px;
+        font-size: 29px;
         font-weight: 700 !important;
-        line-height: 60px;
+        line-height: 45px;
         text-justify: right;
     }
 

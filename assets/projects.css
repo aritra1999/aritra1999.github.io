@@ -38,9 +38,9 @@
 }
 
 .card-body{
-    margin-top: auto;
-    margin-bottom: auto;
+    
     padding: 10px 20px;
+    height: 200px;
 
 }
 
