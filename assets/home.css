@@ -40,6 +40,7 @@
 .my-img{
     max-height: 60vh;
     border-radius: 100px 100px 0 100px;
+    z-index: 1;
 }
 
 .dot {

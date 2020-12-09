@@ -1,0 +1,12 @@
+.head{
+    margin: 0;
+    color:#113c3d;
+    font-size: 15rem;   
+}
+
+
+@media screen and (max-width: 800px) {
+    .head{
+        font-size: 8rem;
+    }
+}

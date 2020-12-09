@@ -6,17 +6,15 @@ body {
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: #fdd3b7;
-    background-repeat: no-repeat !important;
-    background-size: 47%;
-    background-position: right bottom;
 }
-.bg{
+
+.wave-bg{
     position: fixed;
-    bottom: 0;
-    right: 100px;
+    bottom: -10px;
+    width: 100vw;
     z-index: 0;
-    width: 40vw;
 }
+
 .page-heading {
     font-size: 3rem;
     font-weight: 600;
@@ -24,6 +22,17 @@ body {
 
 .container {
     margin: 80px 200px;
+}
+
+.center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-container{
+    text-align: center;
 }
 
 .magical-underline {
@@ -45,17 +54,16 @@ body {
 
 
 @media screen and (max-width: 1150px) {
-    html, body{
-        background-size: 200%;
-    }
+    
 
-    .bg{
+    .wave-bg{
+        right: 0;
         position: fixed;
-        bottom: 0;
-        z-index: 1;
-        right: -100px;
-        width: 200%;
+        bottom: -10px;
+        width: 900px;
+        z-index: -1;
     }
+    
 
     .container {
         margin: 70px 20px;
