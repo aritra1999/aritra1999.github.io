@@ -9,10 +9,13 @@ body {
 }
 
 .wave-bg{
+
     position: fixed;
-    bottom: -10px;
-    width: 100vw;
-    z-index: 0;
+    left:0;
+    right:0;
+    bottom:-10px;
+    z-index: 1;
+
 }
 
 .page-heading {
@@ -54,16 +57,7 @@ body {
 }
 
 
-@media screen and (max-width: 1150px) {
-    
-
-    .wave-bg{
-        right: 0;
-        position: fixed;
-        bottom: -10px;
-        width: 900px;
-        z-index: -1;
-    }
+@media screen and (max-width: 1150px) { 
     
 
     .container {
