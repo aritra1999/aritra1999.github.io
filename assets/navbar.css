@@ -3,9 +3,7 @@
     position: fixed;
     top: 50px;
     right: 50px;
-
-    z-index: 2;
-
+    z-index: 10;
     -webkit-user-select: none;
     user-select: none;
 }
@@ -31,7 +29,7 @@
     left: -5px;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 11;
     -webkit-touch-callout: none;
 }
 
@@ -122,6 +120,7 @@ ul.social li{
 
 .social-icon{
     font-size: 25px;
+    z-index: 3;
 }
 
 @media screen and (max-width: 1150px) {
