@@ -1,97 +1,166 @@
-.bg-section{
+.bg-section {
     background-color: #d3d3d3;
     height: 400px;
     width: 100%;
     position: absolute;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw));
 }
 
-.card-list{
-    display: grid;
-    grid-template-columns:25% 25% 25% 25%;
-}
 
-.card{
-    margin: 30px 10px 0 10px;
-    border-radius: 7px;    
+.card {
+    border-radius: 8px;
+    /* border: 2px solid #000000; */
     background-color: #ffffff;
-    z-index: 1;
 }
 
-.card-img{
+
+.card-columns .card {
+    margin-bottom: .75rem
+}
+
+@media (min-width:576px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 4;
+        -webkit-column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+        column-gap: 1.25rem;
+        orphans: 1;
+        widows: 1
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width: 100%
+    }
+}
+
+.accordion>.card {
+    overflow: hidden
+}
+
+.accordion>.card:not(:last-of-type) {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0
+}
+
+.accordion>.card:not(:first-of-type) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
+}
+
+.accordion>.card>.card-header {
+    border-radius: 0;
+    margin-bottom: -1px
+}
+
+.card-placeholder {
+    background: rgba(0, 0, 21, .025);
+    border: 1px dashed #c4c9d0
+}
+
+.card-header-icon-bg {
+    width: 2.8125rem;
+    padding: .75rem 0;
+    margin: -.75rem 1.25rem -.75rem -1.25rem;
+    line-height: inherit;
+    color: #3c4b64;
+    text-align: center;
+    background: 0 0;
+    border-right: 1px solid;
+    border-right: #d8dbe0
+}
+
+.card-header-actions,
+.card-header-icon-bg {
+    display: inline-block
+}
+
+html:not([dir=rtl]) .card-header-actions {
+    float: right;
+    margin-right: -.25rem
+}
+
+[dir=rtl] .card-header-actions {
+    float: left;
+    margin-left: -.25rem
+}
+
+.card-header-action {
+    padding: 0 .25rem;
+    color: #8a93a2
+}
+
+.card-header-action:hover {
+    color: #3c4b64;
+    text-decoration: none
+}
+
+
+
+
+@media (min-width:576px) {
+    .card-columns.cols-2 {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2
+    }
+}
+
+.card-img {
     width: 100%;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     height: 200px;
     object-fit: cover;
+    /* border-bottom: 2px solid #000; */
 }
 
-.card-des{
+.card-des {
     font-size: 0.85rem;
+    font-weight: 500;
     padding: 5px 0;
 }
 
-.card-links{
+.card-links {
     display: grid;
     grid-template-columns: 40% 60%;
- 
 }
-
-.card-body{
+.card-links a{
+    font-weight: 600px;
+}
+.card-body {
+    padding: 15px 20px 20px 20px ;
     
-    padding: 10px 20px;
-    height: 200px;
-
 }
 
 
-.card-footer{
+.card-footer {
     background-color: #002c5c;    
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: 15px 10px;
 }
 
-.card-link-item{
+.card-link-item {
     text-decoration: none;
     font-size: 0.9rem;
-    color: #ffc59f !important;
+    color: #ffffff !important;
     font-weight: 500;
     text-align: center;
 }
 
-.right{ 
+.right {
     float: right;
 }
 
-
-
-
-@media screen and (max-width: 1600px) {
-    .card-list{
-        display: grid;
-        grid-template-columns:33% 33% 33%;
-    }
+.magical-underline {
+    background-image: linear-gradient(120deg, #84fab0 0%, #70cfff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 20px 85%;
+    transition: background-size 0.25s ease-in;
+    
 }
-
-@media screen and (max-width: 1350px) {
-    .card-list{
-        display: grid;
-        grid-template-columns:50% 50%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .card-list{
-        display: block;
-        padding: 20px 0;
-    }
-    .card-img{
-        height: 200px;
-    }
-
-    .card-link-item{
-        padding-left: 0;
-    }
-}
-
