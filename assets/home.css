@@ -1,8 +1,5 @@
 
-.main{
-    /* display: grid;
-    grid-template-columns: 50% 50%; */
-    
+.main{   
     display: flex;
     flex-direction: row;
 }
@@ -47,7 +44,7 @@
     transform: translate(-80px, -80px);
     height: 250px;
     width: 250px;
-    background-color: rgba(76, 0, 255, 0.26) !important;
+    background-color: #818df863;
     border-radius: 50%;
     position: absolute;
     z-index: 0;
@@ -80,7 +77,7 @@
     }
     .my-img{
         max-height: 40vh;
-        border-radius: 0 40px 40px 40px;
+        border-radius: 0 25px 25px 25px;
     }
     ul.social li{
         display: inline;
@@ -94,9 +91,6 @@
         transform: translate(-80px, -80px);
         height: 250px;
         width: 250px;
-        background-color: #4c00ff42;
-        border-radius: 50%;
-        position: absolute;
         z-index: 1;
     }
     

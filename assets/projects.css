@@ -9,13 +9,13 @@
 
 .card {
     border-radius: 8px;
-    /* border: 2px solid #000000; */
     background-color: #ffffff;
+    box-shadow: 1px 7px 15px #cecece;
 }
 
 
 .card-columns .card {
-    margin-bottom: .75rem
+    margin-bottom: 20px;
 }
 
 @media (min-width:576px) {
@@ -113,7 +113,7 @@ html:not([dir=rtl]) .card-header-actions {
     width: 100%;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    height: 200px;
+    height: 247px;
     object-fit: cover;
     /* border-bottom: 2px solid #000; */
 }
