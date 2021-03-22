@@ -1,0 +1,57 @@
+.magical-underline {
+    background-image: linear-gradient(120deg, #84fab0 0%, #70cfff 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.3em;
+    background-position: 20px 85%;
+    transition: background-size 0.25s ease-in;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about-card{
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 7px 15px #cecece37;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.logo{
+
+    
+}
+
+.about-logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    color: rgb(201, 201, 201);
+}
+
+.about-body{
+    padding: 0 20px 10px 20px;
+}
+
+@media screen and (max-width: 1150px) { 
+    .about-container{
+        display: block;
+    }
+
+    .about-card{
+        display: block;   
+    }
+
+    .logo{
+        margin: 10px auto;
+    }
+
+    .about-body{
+        padding: 10px 10px;
+    }
+}

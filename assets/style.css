@@ -37,6 +37,7 @@ body {
     color: #0000ff2e;
     bottom: -8%;
     left: -1%;
+    
 }
 
 .hr{
@@ -44,6 +45,9 @@ body {
     margin: 15px 0;
 }
 
+a{
+    text-decoration:none;
+}
 
 @media screen and (max-width: 1150px) { 
     .wave-bg{
