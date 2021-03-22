@@ -32,6 +32,13 @@ body {
     text-align: center;
 }
 
+.background-svg{
+    position: fixed;
+    color: #0000ff2e;
+    bottom: -8%;
+    left: -1%;
+}
+
 .hr{
     border-top: 1px solid #c9c9c986;
     margin: 15px 0;
@@ -47,9 +54,14 @@ body {
         margin: 70px 20px;
     }
     
-  
+    .background-svg{
+        top: -20%;
+        right: -50%;
+    }
+
     .page-heading {
         font-size: 3rem;
         font-weight: 600;
     }
 }
+

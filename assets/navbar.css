@@ -110,6 +110,7 @@
 
 .social{
     padding-left: 10px !important;
+    margin-top: 70px;
 }
 
 ul.social li{
@@ -138,7 +139,7 @@ ul.social li{
 
     #menu li {
         padding: 10px 0;
-        font-size: 29px;
+        font-size: 33px;
         font-weight: 700 !important;
         line-height: 45px;
         text-justify: right;

@@ -44,7 +44,7 @@
     transform: translate(-80px, -80px);
     height: 250px;
     width: 250px;
-    background-color: #818df863;
+    background-color: #001aff45;
     border-radius: 50%;
     position: absolute;
     z-index: 0;
@@ -53,6 +53,7 @@
 .social-icon{
     color: inherit;
 }
+
 
 
 @media screen and (max-width: 1150px) {
@@ -87,11 +88,11 @@
     .img{
         margin-left: 0;
     }
+    
     .dot {
         transform: translate(-80px, -80px);
         height: 250px;
         width: 250px;
         z-index: 1;
-    }
-    
+    }    
 }
