@@ -6,10 +6,16 @@
     transition: background-size 0.25s ease-in;
 }
 
+h2{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
 .about-container{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
 
 .about-card{
     background-color: #fff;
@@ -21,15 +27,9 @@
     grid-template-columns: 20% 80%;
 }
 
-.logo{
-
-    
-}
 
 .about-logo{
     height: 100px;
-    display: flex;
-    justify-content: center;
     max-width: 150px;
     color: rgb(201, 201, 201);
 }
@@ -37,6 +37,24 @@
 .about-body{
     padding: 0 20px 10px 20px;
 }
+
+
+.tags{
+    margin: 10px 0;
+}
+
+.tag{
+    display: inline-block;
+    padding: 2px 7px 3px 7px;   
+    font-size: 12px;
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-weight: 500;
+    background-color: #D1FAE5;
+    color:#047857;
+}
+
 
 @media screen and (max-width: 1150px) { 
     .about-container{
