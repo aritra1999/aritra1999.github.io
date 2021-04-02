@@ -24,9 +24,13 @@ h2{
     border-radius: 8px;
     box-shadow: 1px 7px 15px #cecece37;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
 }
 
+.logo{
+    display: grid;
+    place-items: center;
+}
 
 .about-logo{
     height: 100px;
