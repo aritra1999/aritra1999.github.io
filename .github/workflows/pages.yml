@@ -31,6 +31,9 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ env.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ env.VITE_SUPABASE_ANON_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
