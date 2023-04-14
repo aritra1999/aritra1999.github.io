@@ -1,24 +1,24 @@
 <script lang="ts">
     import { metaStore } from "$lib/store/metaStore";
-
+    import supabase from "$lib/supabase/supa";
 
     let loading = false;
     let status = "";
     
-    // async function handelSubmit(e: any) {
-    //     loading = true; 
-    //     const formData = new FormData(e.target);
-    //     let newMessage: Record<string, string> = {};
-    //     for (let field of formData) {
-    //         const [key, value] = field;
-    //         newMessage[key] = value as string;
-    //     }
+    async function handelSubmit(e: any) {
+        loading = true; 
+        const formData = new FormData(e.target);
+        let newMessage: Record<string, string> = {};
+        for (let field of formData) {
+            const [key, value] = field;
+            newMessage[key] = value as string;
+        }
 
-    //     const { data, error } = await supabase.from("MySiteContact").insert([ newMessage ]);
-    //     status = (error == null ? "success" : "error");
-    //     loading = false;
-    //     e.target.reset();
-    // }
+        const { data, error } = await supabase.from("MySiteContact").insert([ newMessage ]);
+        status = (error == null ? "success" : "error");
+        loading = false;
+        e.target.reset();
+    }
 
 </script>
 
@@ -31,8 +31,7 @@
             </svg>
         </button>
     </div>  
-    <!-- <form on:submit|preventDefault={handelSubmit}> -->
-    <form>
+    <form on:submit|preventDefault={handelSubmit}>
         <div class="p-4 rounded-b-lg">
             
             {#if status === "success" || status === "error"}
