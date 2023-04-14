@@ -1,9 +1,8 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  
-<style lang="postcss">
-:global(html) {
-    background-color: theme(colors.gray.100);
-}
-</style>
+<div class="mt-20 flex w-full justify-center items-center">
+    <div>
+        No conversations selected. 
+        <div class="mt-20 text-slate-400 flex justify-center">
+            Have a good day 😃. 
+        </div>
+    </div>
+</div>

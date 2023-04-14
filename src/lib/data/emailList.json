@@ -1,0 +1,78 @@
+[
+	{
+		"title": "Home",
+		"link": "/home",
+		"subject": "This is the home page.",
+		"content": "Hi, my name is Aritra Mondal. Developer, Designer, Gamer ...",
+		"attachments": []
+	},
+	{
+		"title": "Projects",
+		"link": "/projects",
+		"subject": "This is the projects page.",
+		"content": "A list of all my ongoing and finished projects",
+		"attachments": [
+			{
+				"name": "project1.in",
+				"type": "code"
+			},
+			{
+				"name": "+11",
+				"type": "code"
+			}
+		]
+	},
+	{
+		"title": "Blogs & Research papers",
+		"link": "/papers",
+		"subject": "This is the blogs and the research papers page.",
+		"content": "A list of all my blogs and research papers",
+		"attachments": [
+			{
+				"name": "blog.com",
+				"type": "doc"
+			},
+			{
+				"name": "paper1.pdf",
+				"type": "pdf"
+			},
+			{
+				"name": "+3",
+				"type": "pdf"
+			}
+		]
+	},
+	{
+		"title": "Experience",
+		"link": "/experience",
+		"subject": "This is the experience me page.",
+		"attachments": [],
+		"content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far."
+	},
+	{
+		"title": "Skills & Achievements",
+		"link": "/skills-achievements",
+		"subject": "This is the Skill and achievements page.",
+		"content": "A list of all my skills and achievements",
+		"attachments": []
+	},
+	{
+		"title": "Education",
+		"link": "/education",
+		"subject": "This is the education page.",
+		"content": "A list of all my educational qualifications",
+		"attachments": []
+	},
+	{
+		"title": "Resume",
+		"link": "/resume",
+		"subject": "This is the resume page.",
+		"content": "This is a link to my resume.",
+		"attachments": [
+			{
+				"name": "resume.pdf",
+				"type": "pdf"
+			}
+		]
+	}
+]
