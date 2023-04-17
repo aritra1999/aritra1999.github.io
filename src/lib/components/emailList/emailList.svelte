@@ -27,7 +27,7 @@
             <div class="text-slate-400 text-sm">{item.content}</div>
             <div class="flex items-center font-medium">
                 {#each item.attachments as attachment}    
-                    <div class="border-2 border-slate-300 flex px-4 py-2 items-center justify-center rounded-full mt-2 mr-2 hover:bg-blue-50 text-xs text-slate-500">
+                    <div class="border-2 border-slate-200 flex px-4 py-2 items-center justify-center rounded-full mt-2 mr-2 hover:bg-blue-50 text-xs text-slate-500">
                         {#if attachment.type === 'code'}
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="mr-2 h-5 w-5 fill-current text-blue-400" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-width="2" d="M13 3L19 9V21H5V3H13" class="il-md-length-70 il-md-duration-4 il-md-delay-0"></path><path d="M12.5 3V8.5H19" class="il-md-length-15 il-md-duration-2 il-md-delay-4"></path><path stroke-width="2" d="M10 13L8 15L10 17" class="il-md-length-15 il-md-duration-2 il-md-delay-6"></path><path stroke-width="2" d="M14 13L16 15L14 17" class="il-md-length-15 il-md-duration-2 il-md-delay-8"></path></g></svg>
                         {:else if attachment.type === 'pdf'}
