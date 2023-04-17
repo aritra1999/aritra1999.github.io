@@ -1,18 +1,32 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+    import { onMount } from "svelte";
     import type { PLItem } from "$lib/types/types";
+
+    import Loading from "$lib/components/loading/Loading.svelte";
     
-    export let item: PLItem;    
+    export let item: PLItem;
+    
+    let loading = false;     
     let thumbnail: any;
+
     onMount(async () => {
+        loading = true;
         thumbnail = (await import(`../../images/${item.thumbnail}.png`)).default;
+        loading = false; 
     });
 
 </script>
 
 <div class="card">
     <div class="w-full h-48">
-        <img class="rounded-t-2xl object-cover w-full h-48" alt="{item.title}" src={thumbnail}>
+        {#if loading}
+            <div class="flex items-center justify-center w-full h-48 text-slate-600">
+                <Loading />
+            </div>
+        {:else}
+            <!-- svelte-ignore a11y-missing-attribute -->
+            <img class="rounded-t-2xl object-cover w-full h-48" src={thumbnail}>
+        {/if}
     </div>
     <div class="pt-6 px-6 pb-4">
         <div class="mb-2 flex items-center">
@@ -25,7 +39,7 @@
                 <span class="px-2 py-0.5 ml-2 bg-green-100 text-green-600 rounded-full text-xs font-medium">Finised</span> 
             {/if}
         </div>
-        <p class="text-sm font-medium text-slate-800 mb-2">{item.description}</p>
+        <p class="text-sm font-normal text-slate-600 mb-2">{item.description}</p>
         <div>
             {#each item.tags as tag}
                 <div class="tag">{tag}</div>

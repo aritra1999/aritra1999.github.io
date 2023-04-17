@@ -25,9 +25,9 @@
                     {#if role.role}{role.role}{/if}
                     {#if role.latest}<span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded ml-3">Latest</span>{/if}
                 </h3>
-                <time class="text-sm font-normal leading-none text-zinc-600">{@html role.duration}</time>
+                <time class="text-sm font-normal leading-none text-slate-500">{@html role.duration}</time>
                 {#if role.description}
-                    <div class="mt-2 text-sm font-normal text-gray-700">
+                    <div class="mt-2 text-sm font-normal text-slate-600">
                         {#each role.description as des}
                             <ul class="pl-6 list-disc list-outside">
                                 <li>{des}</li>
