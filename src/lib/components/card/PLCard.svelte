@@ -39,7 +39,7 @@
                 <span class="px-2 py-0.5 ml-2 bg-green-100 text-green-600 rounded-full text-xs font-medium">Finised</span> 
             {/if}
         </div>
-        <p class="text-sm font-medium text-slate-800 mb-2">{item.description}</p>
+        <p class="text-sm font-normal text-slate-600 mb-2">{item.description}</p>
         <div>
             {#each item.tags as tag}
                 <div class="tag">{tag}</div>
