@@ -24,7 +24,6 @@
                     <span>{today}</span>
                 </div>
             </div>
-            <div class="text-sm font-medium">{item.subject}</div>
             <div class="text-slate-400 text-sm">{item.content}</div>
             <div class="flex items-center font-medium">
                 {#each item.attachments as attachment}    
