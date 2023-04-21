@@ -14,7 +14,7 @@
     </svg>
 </button>
 
-<div class="h-[calc(100vh-5rem)]  bg-white md:bg-transparent px-2 pb-3 w-72 absolute ease-in-out transition-all duration-300 z-30 left-0 top-[5rem] {$metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full'} border-r-4 border-blue-50">
+<div class="h-[calc(100vh-5rem)]  bg-white md:bg-transparent px-2 pb-3 w-72 absolute ease-in-out transition-all duration-300 z-30 left-0 top-[5rem] {$metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full'}  border-r-4 md:border-r-0 border-blue-50">
     <div class="bg-white h-full px-2 rounded-xl">
         <div class="py-4">
             <Contact />
