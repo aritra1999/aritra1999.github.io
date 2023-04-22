@@ -95,7 +95,7 @@
         "description": "A collaborative portal for sharing projects and ideas and getting feedback.",
         "links": [
             {
-                "type": "Live Site",
+                "type": "Live",
             "link": "https://devstack.onrender.com"
             }
         ],
@@ -108,7 +108,7 @@
         "description": "A free and collaborative portal for coding assignments help students and teachers to assess coding skills efficiently.",
         "links": [
             {
-                "type": "Live Site",
+                "type": "Live",
                 "link": "https://codevox.onrender.com"
             }, {
                 "type": "Trailer",

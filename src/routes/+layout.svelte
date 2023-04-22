@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import "../app.css";
     import { page } from "$app/stores";
     
@@ -17,7 +17,7 @@
 <svelte:window bind:innerWidth />
 
 <div class="page-container">
-    <div class="w-screen relative"><Navbar /></div>
+    <Navbar />
     <div class="fixed w-full pr-2 pb-3 ease-in-out transition-all duration-300 {($metaStore.showSidebar && $metaStore.screen === 'desktop') ? 'pl-72' : 'pl-2'} h-[calc(100vh-5rem)]">
         <div class="bg-white rounded-xl h-full">
             {#if $metaStore.screen == 'desktop' }
