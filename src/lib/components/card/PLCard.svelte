@@ -16,7 +16,6 @@
     });
 
 </script>
-
 <div class="card">
     <div class="w-full h-48">
         {#if loading}
@@ -24,8 +23,7 @@
                 <Loading />
             </div>
         {:else}
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <img class="rounded-t-2xl object-cover w-full h-48" src={thumbnail}>
+            <img class="rounded-t-2xl object-cover w-full h-48" src={thumbnail} alt="loading" />
         {/if}
     </div>
     <div class="pt-6 px-6 pb-4">
