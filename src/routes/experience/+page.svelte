@@ -10,7 +10,7 @@
         <span class="magical-underline text-3xl font-semibold mb-4">
             Experience
         </span>
-        <div class="md:columns-2 columns-1 gap-4">
+        <div class="columns-lg gap-4">
             {#each experiences as experience}
                 <AboutCard  item={experience}/>
             {/each}

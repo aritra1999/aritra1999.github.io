@@ -10,7 +10,7 @@
         <span class="magical-underline text-3xl font-bold">
             Education
         </span>
-        <div class="p-4 xl:columns-2 columns-1 gap-6">
+        <div class="columns-lg gap-4">
             {#each educationList as education}
                 <AboutCard item={education} />
             {/each}
