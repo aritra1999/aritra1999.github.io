@@ -2,61 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body, html, .page-container {
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Rubik', sans-serif;
+body,
+html,
+.page-container {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
-    @apply bg-sky-50;
+  @apply bg-sky-50;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 
-.tag {  
-    @apply px-2 pt-1 pb-0.5 mb-1 mr-2 inline-block rounded-full text-xs font-medium bg-blue-100 text-blue-600;
+.tag {
+  @apply px-2 pt-1 pb-0.5 mb-1 mr-2 inline-block rounded-full text-xs font-medium bg-blue-100 text-blue-600;
 }
 
 .card {
-    @apply inline-block w-full mb-4 rounded-2xl bg-white shadow-2xl shadow-slate-200 hover:shadow-lg hover:shadow-slate-300 transition ease-in duration-300;
+  @apply inline-block w-full mb-4 rounded-2xl bg-white shadow-2xl shadow-slate-200 hover:shadow-lg hover:shadow-slate-300 transition ease-in duration-300;
 }
 
 .card-link-container {
-    @apply flex justify-between px-2 mt-4 pt-4 space-x-8 mr-4;
+  @apply flex justify-between px-2 mt-4 pt-4 space-x-8 mr-4;
 }
 
 .card-link {
-    @apply flex items-center text-blue-600 font-medium text-sm space-x-1;
+  @apply flex items-center text-blue-600 font-medium text-sm space-x-1;
 }
 
-
 .magical-underline {
-    background-image: linear-gradient(120deg, #84fab0 0%, #70cfff 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.3em;
-    background-position: 20px 85%;
-    transition: background-size 0.25s ease-in;
+  background-image: linear-gradient(120deg, #84fab0 0%, #70cfff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.3em;
+  background-position: 20px 85%;
+  transition: background-size 0.25s ease-in;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    border-radius: 10px;
+  width: 5px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
+  background: transparent;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #88888899;
-    border-radius: 10px;
+  background: #88888899;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #888888b3;
+  background: #888888b3;
 }

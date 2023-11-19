@@ -1,245 +1,267 @@
 [
-    {
-        "title": "vQueue",
-        "thumbnail": "vqueue",
-        "description": "Processing queues for video streaming services",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/vqueue"
-            }
-        ],
-        "tags": ["Go", "System Design", "Architecture"],
-        "ongoing": true
-    },
-    {
-        "title": "rand0m",
-        "thumbnail": "random",
-        "description": "A collection of random apps, games and links",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/random"
-            },
-            {
-                "type": "Visit site",
-                "link": "https://rand0m.vercel.app/"
-            }
-        ],
-        "tags": ["JS", "Svelte", "Vercel"],
-        "ongoing": false
-    },
-    {
-        "title": "GitBub",
-        "thumbnail": "gitbub",
-        "description": "Fancy github profile page",
-        "links": [
-            {
-                "type": "Github",
-            "link": "https://github.com/aritra1999/gitbub"
-            },
-            {
-                "type": "Visit site",
-                "link": "https://gitbub.vercel.app/aritra1999"
-            }
-        ],
-        "tags": ["JS", "Angular", "Github API", "Vercel"],
-        "ongoing": false
-    },
-    {
-        "title": "Self Driving Car",
-        "thumbnail": "sdc",
-        "description": "Sef driving car using basic neural networks and no libraries.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/SDC"
-            },
-            {
-                "type": "Visit Site",
-                "link": "https://aritra1999.github.io/SDC/"
-            }
-        ],
-        "tags": ["JS", "Neural Networks", "Github Pages"],
-        "ongoing": false
-    },
-    {
-        "title": "Better Class",
-        "thumbnail": "betterclass",
-        "description": "A classroom space with realtime white-board and chat system to discuss and collaborate on ideas using web sockets.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/Major-Project/"
-            }
-        ],
-        "tags": ["Django", "Websocket", "Redis", "Tailwind", "SQL"],
-        "ongoing": false
-    },
-    {
-        "title": "GoAuth",
-        "thumbnail": "goauth",
-        "description": "Simple authentication system for Go",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/go_auth"
-            }
-        ],
-        "tags": ["Go", "Learning", "Authentication", "Token Auth", "Redis", "JWT"],
-        "ongoing": true
-    },
-    {
-        "title": "DevStack",
-        "thumbnail": "devstack",
-        "description": "A collaborative portal for sharing projects and ideas and getting feedback.",
-        "links": [
-            {
-                "type": "Live",
-            "link": "https://devstack.onrender.com"
-            }
-        ],
-        "tags": ["Python", "Django", "AWS RDS", "Heroku", "Github Authentication", "Multiple Theme"],
-        "ongoing": true
-    },
-    {
-        "title": "Codevox",
-        "thumbnail": "codevox",
-        "description": "A free and collaborative portal for coding assignments help students and teachers to assess coding skills efficiently.",
-        "links": [
-            {
-                "type": "Live",
-                "link": "https://codevox.onrender.com"
-            }, {
-                "type": "Trailer",
-                "link": "https://www.youtube.com/watch?v=UvBxxdOy1fI"
-            }
-        ],
-        "tags": ["Python", "Django", "Lambda Functions", "AWS", "EC2"],
-        "ongoing": false
-    },
-    {
-        "title": "CP-IDE",
-        "thumbnail": "cpide",
-        "description": "A lightweight, cross-platform code editor built with electron for competitive programmers.",
-        "links": [
-            {
-                "type": "Bitbucket",
-                "link": "https://bitbucket.org/aritra1999/cpide/src/master/"
-            },
-            {
-                "type": "Product Page",
-                "link": "https://cp-ide.herokuapp.com/"
-            }
-        ],
-        "tags": ["NodeJS", "Electron JS", "IDE", "ACE" , "Heroku", "Competitive Programming"],
-        "ongoing": false
-    },
-    {
-        "title": "eComm.",
-        "thumbnail": "ecomm",
-        "description": "eComm is an scommerce platform for small scale sellers who produce handmade items.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/eCommerce"
-            },
-            {
-                "type": "Live",
-                "link": "https://ecommdemo.herokuapp.com/"
-            }
-        ],
-        "tags": ["Django", "Python", "B2B Service", "Heroku", "AWS"],
-        "ongoing": false
-    },
-    {
-        "title": "Auto Clip",
-        "thumbnail": "autoclip",
-        "description": "Simple python project to clip long raw videos to the desired duration.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/AutoClip"
-            }
-        ],
-        "tags": ["Automation", "Python", "MoviePy", "Video Clipper"],
-        "ongoing": false
-    },
-    {
-        "title": "JustRun",
-        "thumbnail": "justrun",
-        "description": "JustRun is an online IDE. Built with django. Simple and easy platform to test your code.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/JustRun/"
-            },
-            {
-                "type": "Live (Rebuilding)",
-                "link": "#"
-            }
-        ],
-        "tags": ["Django", "Python", "Online IDE", "Lambda Functions", "AWS", "ACE"],
-        "ongoing": true
-    },
-    {
-        "title": "Newtab",
-        "thumbnail": "newtab",
-        "description": "NewTab extension for Chrome.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/NewTab/"
-            },
-            {
-                "type": "Download",
-                "link": "https://github.com/aritra1999/NewTab/raw/master/downalod/NewTab.zip"
-            }
-        ],
-        "tags": ["Chome New Tab", "JS", "HTML", "CSS"],
-        "ongoing": false
-    },
-    {
-        "title": "Email OTP Auth.",
-        "thumbnail": "emailauth",
-        "description": "Email-OTP-Auth is a email authentication module for django.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/EmailAuth"
-            }
-        ],
-        "tags": ["Django", "Python", "OTP Authentication Module", "Heroku"],
-        "ongoing": false
-    },
-    {
-        "title": "Ano.",
-        "thumbnail": "ano",
-        "description": "Ano is platform to send message anonymously to your desired person. Built just for fun.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/Ano"
-            },
-            {
-                "type": "Live",
-                "link": "https://anomessage.herokuapp.com/"
-            }
-        ],
-        "tags": ["Anonymous messaging", "Python", "Django", "Heroku"],
-        "ongoing": false
-    },
-    {
-        "title": "Portfolio Site archives",
-        "thumbnail": "mysite-archives",
-        "description": "An archive of all my previous portfolio sites built with different technologies that I've learnt over the years.",
-        "links": [
-            {
-                "type": "Github",
-                "link": "https://github.com/aritra1999/aritra1999.github.io.archive"
-            }
-        ],
-        "tags": ["React", "NextJS", "Angular", "Django", "Svelte", "Vercel"],
-        "ongoing": false
-    }
+  {
+    "title": "vQueue",
+    "thumbnail": "vqueue",
+    "description": "Processing queues for video streaming services",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/vqueue"
+      }
+    ],
+    "tags": ["Go", "System Design", "Architecture"],
+    "ongoing": true
+  },
+  {
+    "title": "rand0m",
+    "thumbnail": "random",
+    "description": "A collection of random apps, games and links",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/random"
+      },
+      {
+        "type": "Visit site",
+        "link": "https://rand0m.vercel.app/"
+      }
+    ],
+    "tags": ["JS", "Svelte", "Vercel"],
+    "ongoing": false
+  },
+  {
+    "title": "GitBub",
+    "thumbnail": "gitbub",
+    "description": "Fancy github profile page",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/gitbub"
+      },
+      {
+        "type": "Visit site",
+        "link": "https://gitbub.vercel.app/aritra1999"
+      }
+    ],
+    "tags": ["JS", "Angular", "Github API", "Vercel"],
+    "ongoing": false
+  },
+  {
+    "title": "Self Driving Car",
+    "thumbnail": "sdc",
+    "description": "Sef driving car using basic neural networks and no libraries.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/SDC"
+      },
+      {
+        "type": "Visit Site",
+        "link": "https://aritra1999.github.io/SDC/"
+      }
+    ],
+    "tags": ["JS", "Neural Networks", "Github Pages"],
+    "ongoing": false
+  },
+  {
+    "title": "Better Class",
+    "thumbnail": "betterclass",
+    "description": "A classroom space with realtime white-board and chat system to discuss and collaborate on ideas using web sockets.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/Major-Project/"
+      }
+    ],
+    "tags": ["Django", "Websocket", "Redis", "Tailwind", "SQL"],
+    "ongoing": false
+  },
+  {
+    "title": "GoAuth",
+    "thumbnail": "goauth",
+    "description": "Simple authentication system for Go",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/go_auth"
+      }
+    ],
+    "tags": ["Go", "Learning", "Authentication", "Token Auth", "Redis", "JWT"],
+    "ongoing": true
+  },
+  {
+    "title": "DevStack",
+    "thumbnail": "devstack",
+    "description": "A collaborative portal for sharing projects and ideas and getting feedback.",
+    "links": [
+      {
+        "type": "Live",
+        "link": "https://devstack.onrender.com"
+      }
+    ],
+    "tags": [
+      "Python",
+      "Django",
+      "AWS RDS",
+      "Heroku",
+      "Github Authentication",
+      "Multiple Theme"
+    ],
+    "ongoing": true
+  },
+  {
+    "title": "Codevox",
+    "thumbnail": "codevox",
+    "description": "A free and collaborative portal for coding assignments help students and teachers to assess coding skills efficiently.",
+    "links": [
+      {
+        "type": "Live",
+        "link": "https://codevox.onrender.com"
+      },
+      {
+        "type": "Trailer",
+        "link": "https://www.youtube.com/watch?v=UvBxxdOy1fI"
+      }
+    ],
+    "tags": ["Python", "Django", "Lambda Functions", "AWS", "EC2"],
+    "ongoing": false
+  },
+  {
+    "title": "CP-IDE",
+    "thumbnail": "cpide",
+    "description": "A lightweight, cross-platform code editor built with electron for competitive programmers.",
+    "links": [
+      {
+        "type": "Bitbucket",
+        "link": "https://bitbucket.org/aritra1999/cpide/src/master/"
+      },
+      {
+        "type": "Product Page",
+        "link": "https://cp-ide.herokuapp.com/"
+      }
+    ],
+    "tags": [
+      "NodeJS",
+      "Electron JS",
+      "IDE",
+      "ACE",
+      "Heroku",
+      "Competitive Programming"
+    ],
+    "ongoing": false
+  },
+  {
+    "title": "eComm.",
+    "thumbnail": "ecomm",
+    "description": "eComm is an scommerce platform for small scale sellers who produce handmade items.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/eCommerce"
+      },
+      {
+        "type": "Live",
+        "link": "https://ecommdemo.herokuapp.com/"
+      }
+    ],
+    "tags": ["Django", "Python", "B2B Service", "Heroku", "AWS"],
+    "ongoing": false
+  },
+  {
+    "title": "Auto Clip",
+    "thumbnail": "autoclip",
+    "description": "Simple python project to clip long raw videos to the desired duration.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/AutoClip"
+      }
+    ],
+    "tags": ["Automation", "Python", "MoviePy", "Video Clipper"],
+    "ongoing": false
+  },
+  {
+    "title": "JustRun",
+    "thumbnail": "justrun",
+    "description": "JustRun is an online IDE. Built with django. Simple and easy platform to test your code.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/JustRun/"
+      },
+      {
+        "type": "Live (Rebuilding)",
+        "link": "#"
+      }
+    ],
+    "tags": [
+      "Django",
+      "Python",
+      "Online IDE",
+      "Lambda Functions",
+      "AWS",
+      "ACE"
+    ],
+    "ongoing": true
+  },
+  {
+    "title": "Newtab",
+    "thumbnail": "newtab",
+    "description": "NewTab extension for Chrome.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/NewTab/"
+      },
+      {
+        "type": "Download",
+        "link": "https://github.com/aritra1999/NewTab/raw/master/downalod/NewTab.zip"
+      }
+    ],
+    "tags": ["Chome New Tab", "JS", "HTML", "CSS"],
+    "ongoing": false
+  },
+  {
+    "title": "Email OTP Auth.",
+    "thumbnail": "emailauth",
+    "description": "Email-OTP-Auth is a email authentication module for django.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/EmailAuth"
+      }
+    ],
+    "tags": ["Django", "Python", "OTP Authentication Module", "Heroku"],
+    "ongoing": false
+  },
+  {
+    "title": "Ano.",
+    "thumbnail": "ano",
+    "description": "Ano is platform to send message anonymously to your desired person. Built just for fun.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/Ano"
+      },
+      {
+        "type": "Live",
+        "link": "https://anomessage.herokuapp.com/"
+      }
+    ],
+    "tags": ["Anonymous messaging", "Python", "Django", "Heroku"],
+    "ongoing": false
+  },
+  {
+    "title": "Portfolio Site archives",
+    "thumbnail": "mysite-archives",
+    "description": "An archive of all my previous portfolio sites built with different technologies that I've learnt over the years.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/aritra1999.github.io.archive"
+      }
+    ],
+    "tags": ["React", "NextJS", "Angular", "Django", "Svelte", "Vercel"],
+    "ongoing": false
+  }
 ]

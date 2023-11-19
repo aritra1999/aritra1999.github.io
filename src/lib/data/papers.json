@@ -1,54 +1,54 @@
 [
-    {
-        "title": "Designing a Video Streaming Platform 📹",
-        "thumbnail": "blog1",
-        "description": "",
-        "links": [
-            {
-                "type": "Read on Dev.to",
-                "link": "https://dev.to/aritra1999/designing-a-video-streaming-platform-a6e"
-            }
-        ],
-        "tags": ["Video streaming", "System Design", "architecture"],
-        "ongoing": false
-    },
-    {
-        "title": "Effects of different filters on text extractions from videos using TESSERACT",
-        "thumbnail": "paper1",
-        "description": "",
-        "links": [
-            {
-                "type": "Read on Research Gate",
-                "link": "https://www.researchgate.net/publication/355152865_EFFECTS_OF_DIFFERENT_FILTERS_ON_TEXT_EXTRACTIONS_FROM_VIDEOS_USING_TESSERACT"
-            }
-        ],
-        "tags": ["Tesseract", "OCR", "Filters", "Deep learning"],
-        "ongoing": false
-    },
-    {
-        "title": "Cross-platform Desktop Apps, using Electron.",
-        "thumbnail": "article1",
-        "description": "Electron(formerly known as Atom Shell) is an open-source software framework developed and maintained by GitHub.",
-        "links": [
-            {
-                "type": "Read on Medium",
-                "link": "https://medium.com/@1806290/cross-platform-desktop-apps-using-electron-ec59d2c93bfb"
-            }
-        ],
-        "tags": ["Electron", "Getting Started", "Application", "Cross Platform"],
-        "ongoing": false
-    },
-    {
-        "title": "Deploying Django Apps on Heroku",
-        "thumbnail": "article2",
-        "description": "Deploying Django apps on Heroku, Heroku is a PaaS that enables developers to build, run, and operate applications.",
-        "links": [
-            {
-                "type": "Read on Medium",
-                "link": "https://medium.com/@1806290/deploying-django-apps-on-heroku-99af9da7565e"
-            }
-        ],
-        "tags": ["Deployment", "Django", "Heroku", "ACE" , "Git", "Develpment"],
-        "ongoing": false
-    }
+  {
+    "title": "Designing a Video Streaming Platform 📹",
+    "thumbnail": "blog1",
+    "description": "",
+    "links": [
+      {
+        "type": "Read on Dev.to",
+        "link": "https://dev.to/aritra1999/designing-a-video-streaming-platform-a6e"
+      }
+    ],
+    "tags": ["Video streaming", "System Design", "architecture"],
+    "ongoing": false
+  },
+  {
+    "title": "Effects of different filters on text extractions from videos using TESSERACT",
+    "thumbnail": "paper1",
+    "description": "",
+    "links": [
+      {
+        "type": "Read on Research Gate",
+        "link": "https://www.researchgate.net/publication/355152865_EFFECTS_OF_DIFFERENT_FILTERS_ON_TEXT_EXTRACTIONS_FROM_VIDEOS_USING_TESSERACT"
+      }
+    ],
+    "tags": ["Tesseract", "OCR", "Filters", "Deep learning"],
+    "ongoing": false
+  },
+  {
+    "title": "Cross-platform Desktop Apps, using Electron.",
+    "thumbnail": "article1",
+    "description": "Electron(formerly known as Atom Shell) is an open-source software framework developed and maintained by GitHub.",
+    "links": [
+      {
+        "type": "Read on Medium",
+        "link": "https://medium.com/@1806290/cross-platform-desktop-apps-using-electron-ec59d2c93bfb"
+      }
+    ],
+    "tags": ["Electron", "Getting Started", "Application", "Cross Platform"],
+    "ongoing": false
+  },
+  {
+    "title": "Deploying Django Apps on Heroku",
+    "thumbnail": "article2",
+    "description": "Deploying Django apps on Heroku, Heroku is a PaaS that enables developers to build, run, and operate applications.",
+    "links": [
+      {
+        "type": "Read on Medium",
+        "link": "https://medium.com/@1806290/deploying-django-apps-on-heroku-99af9da7565e"
+      }
+    ],
+    "tags": ["Deployment", "Django", "Heroku", "ACE", "Git", "Develpment"],
+    "ongoing": false
+  }
 ]

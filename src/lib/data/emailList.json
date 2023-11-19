@@ -1,71 +1,71 @@
 [
-	{
-		"title": "Home",
-		"link": "/home",
-		"content": "Hi, my name is Aritra Mondal. Developer, Designer, Gamer ...",
-		"attachments": []
-	},
-	{
-		"title": "Projects",
-		"link": "/projects",
-		"content": "A list of all my ongoing and finished projects",
-		"attachments": [
-			{
-				"name": "project1.in",
-				"type": "code"
-			},
-			{
-				"name": "+11",
-				"type": "code"
-			}
-		]
-	},
-	{
-		"title": "Blogs & Research papers",
-		"link": "/papers",
-		"content": "A list of all my blogs and research papers",
-		"attachments": [
-			{
-				"name": "blog.com",
-				"type": "doc"
-			},
-			{
-				"name": "paper1.pdf",
-				"type": "pdf"
-			},
-			{
-				"name": "+3",
-				"type": "pdf"
-			}
-		]
-	},
-	{
-		"title": "Experience",
-		"link": "/experience",
-		"attachments": [],
-		"content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far."
-	},
-	{
-		"title": "Skills & Achievements",
-		"link": "/skills-achievements",
-		"content": "A list of all my skills and achievements",
-		"attachments": []
-	},
-	{
-		"title": "Education",
-		"link": "/education",
-		"content": "A list of all my educational qualifications",
-		"attachments": []
-	},
-	{
-		"title": "Resume",
-		"link": "/resume",
-		"content": "This is a link to my resume.",
-		"attachments": [
-			{
-				"name": "resume.pdf",
-				"type": "pdf"
-			}
-		]
-	}
+  {
+    "title": "Home",
+    "link": "/home",
+    "content": "Hi, my name is Aritra Mondal. Developer, Designer, Gamer ...",
+    "attachments": []
+  },
+  {
+    "title": "Projects",
+    "link": "/projects",
+    "content": "A list of all my ongoing and finished projects",
+    "attachments": [
+      {
+        "name": "project1.in",
+        "type": "code"
+      },
+      {
+        "name": "+11",
+        "type": "code"
+      }
+    ]
+  },
+  {
+    "title": "Blogs & Research papers",
+    "link": "/papers",
+    "content": "A list of all my blogs and research papers",
+    "attachments": [
+      {
+        "name": "blog.com",
+        "type": "doc"
+      },
+      {
+        "name": "paper1.pdf",
+        "type": "pdf"
+      },
+      {
+        "name": "+3",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "title": "Experience",
+    "link": "/experience",
+    "attachments": [],
+    "content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far."
+  },
+  {
+    "title": "Skills & Achievements",
+    "link": "/skills-achievements",
+    "content": "A list of all my skills and achievements",
+    "attachments": []
+  },
+  {
+    "title": "Education",
+    "link": "/education",
+    "content": "A list of all my educational qualifications",
+    "attachments": []
+  },
+  {
+    "title": "Resume",
+    "link": "/resume",
+    "content": "This is a link to my resume.",
+    "attachments": [
+      {
+        "name": "resume.pdf",
+        "type": "pdf"
+      }
+    ]
+  }
 ]
