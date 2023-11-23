@@ -42,7 +42,7 @@
 <div>
   <Navbar />
   <div class={cn(classes.outerContainer, reactiveClasses.outerContainerPl)}>
-    <div class="bg-white rounded-xl h-full">
+    <div class="bg-background rounded-xl h-full">
       <Topbar />
       <div class={cn(classes.innerContainer)}>
         <div class={cn(reactiveClasses.emailListW, "overflow-y-auto")}>

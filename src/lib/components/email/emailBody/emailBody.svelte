@@ -9,7 +9,7 @@
   <div
     class="{$metaStore.screen !== 'desktop'
       ? 'absolute left-0 w-screen h-[calc(100vh-5rem)]'
-      : 'w-full'} p-2 bg-white z-50 overflow-y-auto"
+      : 'w-full'} p-2 bg-background z-50 overflow-y-auto"
   >
     <EmailTop />
     <slot />
