@@ -1,5 +1,18 @@
 [
   {
+    "title": "Improve testing time in CI pipelines",
+    "thumbnail": "lenaix1",
+    "description": "",
+    "links": [
+      {
+        "type": "Read on engineering.leanix.net",
+        "link": "https://dev.to/aritra1999/designing-a-video-streaming-platform-a6e"
+      }
+    ],
+    "tags": ["NodeJs", "CI", "CD", "Dev Ops"],
+    "ongoing": true
+  },
+  {
     "title": "Designing a Video Streaming Platform 📹",
     "thumbnail": "blog1",
     "description": "",
