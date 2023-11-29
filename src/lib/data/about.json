@@ -1,14 +1,38 @@
 {
   "experience": [
     {
+      "name": "SAP",
+      "logo": "sap",
+      "url": "https://leanix.net/",
+      "roles": [
+        {
+          "role": "Software Development Engineer",
+          "latest": true,
+          "duration": "<b>Bonn, Germany</b>, January 2024 - Present",
+          "description": ["Under NDA."]
+        }
+      ],
+      "technologies": [
+        "Angular",
+        "FastAPI(Python)",
+        "Typescript",
+        "Python",
+        "Java",
+        "Express(Typescript)",
+        "Azure",
+        "Kubernetes",
+        "Dropwizard(Java)",
+        "Elasticsearch"
+      ]
+    },
+    {
       "name": "LeanIX",
       "logo": "leanix",
       "url": "https://leanix.net/",
       "roles": [
         {
           "role": "Software Development Engineer",
-          "latest": true,
-          "duration": "<b>Bonn, Germany</b>, May 2023 - Present",
+          "duration": "<b>Bonn, Germany</b>, May 2023 - December 2023",
           "description": ["Under NDA."]
         },
         {
