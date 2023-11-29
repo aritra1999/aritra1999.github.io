@@ -1,5 +1,35 @@
 [
   {
+    "title": "Synergy",
+    "thumbnail": "synergy",
+    "description": "Why? As devs we use technologies like databases, search engines, storages, etc. But most of these technologies are black boxes to us. To fill up these gaps, I'm building these components from scratch using Golang.",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/synergy"
+      }
+    ],
+    "tags": ["Go", "System Design", "Architecture"],
+    "ongoing": true
+  },
+  {
+    "title": "Daymn",
+    "thumbnail": "daymn",
+    "description": "Personal portfolio builder. Build your personal page and showcase your skills, projects",
+    "links": [
+      {
+        "type": "Github",
+        "link": "https://github.com/aritra1999/ppg"
+      },
+      {
+        "type": "Visit Site",
+        "link": "https://daymn.vercel.app"
+      }
+    ],
+    "tags": ["Portfolio", "SaaS"],
+    "ongoing": true
+  },
+  {
     "title": "vQueue",
     "thumbnail": "vqueue",
     "description": "Processing queues for video streaming services",
@@ -75,19 +105,6 @@
     ],
     "tags": ["Django", "Websocket", "Redis", "Tailwind", "SQL"],
     "ongoing": false
-  },
-  {
-    "title": "GoAuth",
-    "thumbnail": "goauth",
-    "description": "Simple authentication system for Go",
-    "links": [
-      {
-        "type": "Github",
-        "link": "https://github.com/aritra1999/go_auth"
-      }
-    ],
-    "tags": ["Go", "Learning", "Authentication", "Token Auth", "Redis", "JWT"],
-    "ongoing": true
   },
   {
     "title": "DevStack",
@@ -249,19 +266,6 @@
       }
     ],
     "tags": ["Anonymous messaging", "Python", "Django", "Heroku"],
-    "ongoing": false
-  },
-  {
-    "title": "Portfolio Site archives",
-    "thumbnail": "mysite-archives",
-    "description": "An archive of all my previous portfolio sites built with different technologies that I've learnt over the years.",
-    "links": [
-      {
-        "type": "Github",
-        "link": "https://github.com/aritra1999/aritra1999.github.io.archive"
-      }
-    ],
-    "tags": ["React", "NextJS", "Angular", "Django", "Svelte", "Vercel"],
     "ongoing": false
   }
 ]
