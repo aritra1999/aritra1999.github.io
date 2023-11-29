@@ -37,8 +37,6 @@
 </script>
 
 <svelte:window bind:innerWidth />
-
-<ContactForm />
 <div>
   <Navbar />
   <div class={cn(classes.outerContainer, reactiveClasses.outerContainerPl)}>
@@ -55,3 +53,4 @@
     </div>
   </div>
 </div>
+<ContactForm />
