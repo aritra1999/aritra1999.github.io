@@ -1,6 +1,7 @@
 <script>
   import topbarItems from "$lib/data/topbar.json";
   import { metaStore } from "$lib/store/metaStore";
+  import { twMerge } from "tailwind-merge";
 </script>
 
 {#if $metaStore.screen == "desktop"}
@@ -35,7 +36,10 @@
     </div>
     {#each topbarItems as item}
       <div
-        class="w-40 flex space-x-4 items-center justify-center py-3 px-4 text-sm font-medium text-gray-500 border-b-4 border-transparent {item.color}"
+        class={twMerge(
+          "w-40 flex space-x-4 items-center justify-center py-3 px-4 text-sm font-medium text-gray-500 border-b-4 border-transparent",
+          item.color
+        )}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

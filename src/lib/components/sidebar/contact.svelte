@@ -5,7 +5,7 @@
 <button
   on:click={() => {
     $metaStore.showContactForm = true;
-    $metaStore.showSidebar = false;
+    if ($metaStore.screen !== "desktop") $metaStore.showSidebar = false;
   }}
   class="bg-cyan-100 text-blue-900 hover:shadow-md py-4 pr-6 pl-4 rounded-xl flex items-center font-medium"
 >
