@@ -1,16 +1,16 @@
 [
   {
-    "title": "Improve testing time in CI pipelines",
-    "thumbnail": "lenaix1",
-    "description": "",
+    "title": "Optimizing CI/CD pipelines for NodeJS projects",
+    "thumbnail": "leanix-blog1",
+    "description": "Reorganizing the GitHub workflows by separating concerns, reusing Docker test containers, and sharding tests for parallel execution reduces waiting time for CI pipelines. It enhances feedback cycles, leading to increased developer experience.",
     "links": [
       {
         "type": "Read on engineering.leanix.net",
-        "link": "https://dev.to/aritra1999/designing-a-video-streaming-platform-a6e"
+        "link": "https://engineering.leanix.net/blog/reduce-build-time/"
       }
     ],
-    "tags": ["NodeJs", "CI", "CD", "Dev Ops"],
-    "ongoing": true
+    "tags": ["NodeJs", "CI", "CD", "Dev Ops", "Jest"],
+    "ongoing": false
   },
   {
     "title": "Designing a Video Streaming Platform 📹",
