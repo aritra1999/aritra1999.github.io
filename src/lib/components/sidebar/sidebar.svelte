@@ -17,11 +17,11 @@
 </button>
 
 <div
-  class="h-[calc(100vh-5rem)] bg-background md:bg-transparent px-2 pb-2 w-72 absolute ease-in-out transition-all duration-300 z-30 left-0 top-[5rem] {$metaStore.showSidebar
+  class="h-[calc(100vh-5rem)] md:bg-transparent px-2 pb-2 w-72 absolute ease-in-out transition-all duration-300 z-30 left-0 top-[5rem] {$metaStore.showSidebar
     ? 'translate-x-0'
-    : '-translate-x-full'}  border-r-4 md:border-r-0 border-blue-50"
+    : '-translate-x-full'}"
 >
-  <div class="bg-background border h-full px-2 rounded-xl">
+  <div class="bg-background border h-full px-2 rounded-lg">
     <div class="py-4 pl-2">
       <Contact />
     </div>

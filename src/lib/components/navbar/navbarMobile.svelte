@@ -17,7 +17,7 @@
       type="search"
       name="name"
       placeholder="Search all conversations"
-      class="bg-transparent w-[calc(100vw-350px)] p-1 mx-2"
+      class="bg-transparent w-[calc(50vw)] p-1 mx-2"
     />
     <Profile />
   </div>

@@ -19,14 +19,16 @@
     emailListW:
       $metaStore.screen === "desktop" ? "border-r w-[40rem]" : "w-full",
     outerContainerPl:
-      $metaStore.showSidebar && $metaStore.screen === "desktop" ? "ml-72" : "",
+      $metaStore.showSidebar && $metaStore.screen === "desktop"
+        ? "pl-72"
+        : "pl-2",
   };
 
   const classes = {
     outerContainer:
-      "fixed h-[calc(100vh-5rem)] w-full ease-in-out transition-all duration-300",
+      "fixed h-[calc(100vh-5rem)] w-full ease-in-out transition-all duration-300 pb-2 pr-3",
     innerContainer:
-      "flex h-full w-full  bg-background border overflow-y-auto overflow-x-hidden rounded-lg",
+      "flex h-full w-full bg-background border overflow-y-auto overflow-x-hidden rounded-lg",
   };
 </script>
 
