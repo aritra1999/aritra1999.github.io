@@ -1,6 +1,5 @@
 <script lang="ts">
   import "../app.postcss";
-  import { page } from "$app/stores";
 
   import EmailList from "$lib/components/email/emailList/emailList.svelte";
   import Navbar from "$lib/components/navbar/navbarContainer.svelte";
@@ -20,16 +19,14 @@
     emailListW:
       $metaStore.screen === "desktop" ? "border-r w-[40rem]" : "w-full",
     outerContainerPl:
-      $metaStore.showSidebar && $metaStore.screen === "desktop"
-        ? "pl-72"
-        : "pl-2",
+      $metaStore.showSidebar && $metaStore.screen === "desktop" ? "ml-72" : "",
   };
 
   const classes = {
     outerContainer:
-      "fixed w-full pr-2 pb-3 ease-in-out transition-all duration-300 h-[calc(100vh-5rem)]",
+      "fixed h-[calc(100vh-5rem)] w-full ease-in-out transition-all duration-300",
     innerContainer:
-      "flex sm:h-full h-[calc(100vh-6rem)] overflow-y-auto overflow-x-hidden w-full border-slate-200 rounded-lg",
+      "flex h-full w-full  bg-background border overflow-y-auto overflow-x-hidden rounded-lg",
   };
 </script>
 
@@ -37,15 +34,13 @@
 <div>
   <Navbar />
   <div class={cn(classes.outerContainer, reactiveClasses.outerContainerPl)}>
-    <div class="bg-background rounded-xl h-full border">
-      <div class={cn(classes.innerContainer)}>
-        <div class={cn(reactiveClasses.emailListW, "overflow-y-auto p-1")}>
-          <EmailList />
-        </div>
-        <EmailBody>
-          <slot />
-        </EmailBody>
+    <div class={cn(classes.innerContainer)}>
+      <div class={cn(reactiveClasses.emailListW, "overflow-y-auto p-1")}>
+        <EmailList />
       </div>
+      <EmailBody>
+        <slot />
+      </EmailBody>
     </div>
   </div>
 </div>
