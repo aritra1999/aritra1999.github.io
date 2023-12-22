@@ -17,7 +17,7 @@
   });
 </script>
 
-<div class="card">
+<div class="card border">
   <div class="w-full h-48">
     {#if loading}
       <div class="flex items-center justify-center w-full h-48 text-slate-600">
@@ -25,7 +25,7 @@
       </div>
     {:else}
       <img
-        class="rounded-t-2xl object-cover w-full h-48"
+        class="rounded-t-2xl object-cover w-full h-48 border-b"
         src={thumbnail}
         alt="loading"
       />

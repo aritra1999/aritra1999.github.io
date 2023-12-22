@@ -8,8 +8,8 @@
 {#if $metaStore.screen === "desktop" || $page.url.pathname !== "/"}
   <div
     class="{$metaStore.screen !== 'desktop'
-      ? 'absolute left-0 w-screen h-[calc(100vh-5rem)]'
-      : 'w-full'} p-2 bg-background z-50 overflow-y-auto"
+      ? 'absolute left-0'
+      : ''} h-[calc(100vh-5.5rem)] sm:h-[calc(100vh-6rem)] border-l border-b w-[calc(100vw-1rem)] sm:w-full sm:border-0 rounded-lg mx-2 sm:mx-0 p-2 z-50 overflow-y-auto bg-background"
   >
     <EmailTop />
     <slot />

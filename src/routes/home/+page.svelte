@@ -2,7 +2,7 @@
   export let data;
 </script>
 
-<div class="flex xl:flex-row flex-col-reverse h-[calc(100vh-350px)] -mt-6">
+<div class="flex xl:flex-row flex-col-reverse h-[65vh] sm:h-[80vh] -mt-6">
   <div class="flex items-center justify-center sm:h-full h-1/2 lg:w-1/2 w-full">
     <div class="px-10">
       <div class="mb-2">Hi, I'm Aritra Mondal.</div>

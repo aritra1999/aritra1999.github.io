@@ -18,11 +18,11 @@
 
 {#if $page.url.pathname !== "/"}
   <div
-    class="flex justify-between sm:justify-end p-4 space-x-4 border-t border-zinc-200 font-medium"
+    class="flex justify-between sm:justify-end p-4 space-x-4 border-t font-medium"
   >
     {#each options as option}
       <button
-        class="flex items-center px-3 py-2 sm:px-4 sm:py-2 text-sm rounded-lg border border-zinc-300 text-zinc-500 hover:bg-blue-500 hover:border-blue-500 hover:text-white"
+        class="flex items-center px-3 py-2 sm:px-4 sm:py-2 text-sm bg-gray-200 rounded-lg border hover:bg-blue-500 hover:border-blue-500 hover:text-white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

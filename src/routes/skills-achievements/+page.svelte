@@ -1,8 +1,8 @@
 <script>
 </script>
 
-<div class="px-3 lg:px-6 py-10">
-  <h2 class="magical-underline text-3xl font-semibold w-fit">Achievements</h2>
+<div class="px-3 lg:px-6 py-5">
+  <h2 class=" text-2xl font-semibold w-fit">Achievements</h2>
   <ul class="px-6 py-4 list-disc list-outside">
     <li>
       4th place at <a class="underline" href="https://icpc.global/">ICPC 2018</a
@@ -40,8 +40,8 @@
     </li>
   </ul>
 </div>
-<div class="px-3 lg:px-6 py-10">
-  <h2 class="magical-underline text-3xl font-semibold w-fit">Skills</h2>
+<div class="px-3 lg:px-6 py-5">
+  <h2 class=" text-2xl font-semibold w-fit">Skills</h2>
   <ul class="px-6 py-4 list-disc list-outside">
     <li>
       <span class="font-medium">Languages: </span> C, C++, Python, Java, JavaScript,

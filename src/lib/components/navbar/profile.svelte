@@ -28,7 +28,7 @@
 </button>
 {#if showProfileDropDown}
   <div
-    class="z-50 fixed top-[70px] right-8 w-80 rounded-xl border border-slate-200 p-2 shadow-sm bg-white"
+    class="z-50 fixed top-[70px] right-8 w-80 rounded-xl border p-2 shadow-sm bg-white"
   >
     <div class="flex flex-col items-center mb-4">
       <img
@@ -47,7 +47,7 @@
     <div class="space-y-2">
       {#each emailList as email}
         <div
-          class="flex items-center w-full py-2 px-4 rounded-xl bg-slate-50 hover:bg-blue-50 hover:text-blue-700"
+          class="flex items-center w-full py-2 px-4 rounded-xl bg-slate-50 hover:bg-blue-50 hover:text-blue-700 border"
         >
           <img
             src={email.displayPicture}

@@ -7,7 +7,7 @@
     $metaStore.showContactForm = true;
     if ($metaStore.screen !== "desktop") $metaStore.showSidebar = false;
   }}
-  class="bg-cyan-100 text-blue-900 hover:shadow-md py-4 pr-6 pl-4 rounded-xl flex items-center font-medium"
+  class="bg-cyan-100 text-blue-900 hover:shadow-md py-4 pr-6 pl-4 rounded-xl flex items-center font-medium border"
 >
   <svg
     stroke="currentColor"
