@@ -20,7 +20,10 @@
     <div class="py-4 px-10">
       <div class="flex justify-between items-center">
         <div class="flex items-center">
-          <h3 class="text-lg">Welcome to the {pageName} page.</h3>
+          <h2 class="magical-underline text-3xl font-semibold w-fit">
+            {pageName}
+          </h2>
+          <!-- <h3 class="text-lg">Welcome to the  page.</h3> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"

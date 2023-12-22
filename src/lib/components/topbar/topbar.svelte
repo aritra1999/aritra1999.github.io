@@ -36,7 +36,7 @@
     </div>
     {#each topbarItems as item}
       <div
-        class={twMerge(
+        class={cn(
           "w-40 flex space-x-4 items-center justify-center py-3 px-4 text-sm font-medium text-gray-500 border-b-4 border-transparent",
           item.color
         )}
