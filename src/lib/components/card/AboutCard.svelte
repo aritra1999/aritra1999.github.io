@@ -8,7 +8,7 @@
   });
 </script>
 
-<div class="card p-8">
+<div class="card border p-8">
   <div class="text-lg font-bold flex items-center mb-6">
     <img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
     <h3 class="pl-4 ml-4 border-l-2 border-slate-300 text-xl font-bold">
