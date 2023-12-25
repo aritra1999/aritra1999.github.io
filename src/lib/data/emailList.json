@@ -56,16 +56,5 @@
     "link": "/education",
     "content": "A list of all my educational qualifications",
     "attachments": []
-  },
-  {
-    "title": "Resume",
-    "link": "/resume",
-    "content": "This is a link to my resume.",
-    "attachments": [
-      {
-        "name": "resume.pdf",
-        "type": "pdf"
-      }
-    ]
   }
 ]
