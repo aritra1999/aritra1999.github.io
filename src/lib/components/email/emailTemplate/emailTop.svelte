@@ -7,7 +7,6 @@
   function getPageName(url: string): string {
     url = url.replaceAll("/", "");
     const pageName = emails[url as keyof typeof emails]?.title ?? "";
-    console.log("page switch", { url, pageName });
     return pageName;
   }
 
