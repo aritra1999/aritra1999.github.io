@@ -1,13 +1,11 @@
-[
-  {
+{
+  "home": {
     "title": "Home",
-    "link": "/home",
     "content": "Hi, my name is Aritra Mondal. Developer, Designer, Gamer ...",
     "attachments": []
   },
-  {
+  "projects": {
     "title": "Projects",
-    "link": "/projects",
     "content": "A list of all my ongoing and finished projects",
     "attachments": [
       {
@@ -20,9 +18,8 @@
       }
     ]
   },
-  {
+  "papers": {
     "title": "Blogs & Research papers",
-    "link": "/papers",
     "content": "A list of all my blogs and research papers",
     "attachments": [
       {
@@ -39,22 +36,19 @@
       }
     ]
   },
-  {
+  "experience": {
     "title": "Experience",
-    "link": "/experience",
-    "attachments": [],
-    "content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far."
+    "content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far.",
+    "attachments": []
   },
-  {
+  "skills-achievements": {
     "title": "Skills & Achievements",
-    "link": "/skills-achievements",
     "content": "A list of all my skills and achievements",
     "attachments": []
   },
-  {
+  "education": {
     "title": "Education",
-    "link": "/education",
     "content": "A list of all my educational qualifications",
     "attachments": []
   }
-]
+}
