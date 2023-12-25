@@ -14,12 +14,12 @@
   }).format(date.getMonth())}`;
 </script>
 
-{#each items as item}
+{#each Object.entries(items) as [key, item]}
   <div
-    class="border-b border-zinc-300 px-5 py-4 text-slate-700 hover:bg-zinc-100 
-      {$page.url.pathname === item.link ? 'bg-stone-200' : ''}"
+    class="border-b border-zinc-300 px-5 py-4 text-slate-700 hover:bg-zinc-100
+      {$page.url.pathname === key ? 'bg-stone-200' : ''}"
   >
-    <a href={item.link}>
+    <a href={`/${key}`}>
       <div class="flex justify-between mb-2">
         <div class="flex items-center">
           <svg
