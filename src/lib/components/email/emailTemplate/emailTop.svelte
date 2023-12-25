@@ -2,14 +2,13 @@
   import { metaStore } from "$lib/store/metaStore";
   import { page } from "$app/stores";
   import EmailTopIcons from "./emailTopIcons.svelte";
-
   import emails from "$lib/data/emailList.json";
 
-  let pageName: string;
-
   function getPageName(url: string): string {
-    const page = emails.find((email) => email.link === url);
-    return page ? page.title : "Home";
+    url = url.replaceAll("/", "");
+    const pageName = emails[url as keyof typeof emails]?.title ?? "";
+    console.log("page switch", { url, pageName });
+    return pageName;
   }
 
   $: pageName = getPageName($page.url.pathname);
