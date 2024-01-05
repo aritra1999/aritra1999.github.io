@@ -16,7 +16,7 @@
   </div>
 
   <div
-    class="bg-white py-3 px-4 w-1/3 rounded-xl text-slate-800 text-sm flex justify-between items-center border"
+    class="bg-white py-3 px-4 w-1/3 rounded-lg text-slate-800 text-sm flex justify-between items-center border"
   >
     <input
       type="search"
@@ -29,7 +29,7 @@
 
   <div class="flex items-center space-x-4">
     <div
-      class="flex justify-center items-center px-5 py-2 rounded-full border text-slate-500 font-medium text-sm hover:bg-slate-300"
+      class="flex justify-center items-center px-5 py-2 rounded-full border text-slate-500 font-medium text-sm bg-background hover:bg-slate-200"
     >
       <div class="h-3 w-3 rounded-full bg-green-500 mr-3" />
       Active
