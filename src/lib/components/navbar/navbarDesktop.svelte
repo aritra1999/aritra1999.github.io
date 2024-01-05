@@ -29,7 +29,7 @@
 
   <div class="flex items-center space-x-4">
     <div
-      class="flex justify-center items-center px-5 py-2 rounded-full border text-slate-500 font-medium text-sm hover:bg-slate-300"
+      class="flex justify-center items-center px-5 py-2 rounded-full border text-slate-500 font-medium text-sm bg-background hover:bg-slate-200"
     >
       <div class="h-3 w-3 rounded-full bg-green-500 mr-3" />
       Active
