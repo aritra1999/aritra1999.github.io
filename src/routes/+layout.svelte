@@ -26,9 +26,9 @@
 
   const classes = {
     outerContainer:
-      "fixed h-[calc(100vh-5rem)] w-full ease-in-out transition-all duration-300 pb-2 pr-3",
+      "fixed h-[calc(100vh-5rem)] bg-transparent w-full ease-in-out transition-all duration-300 pb-2 pr-2",
     innerContainer:
-      "flex h-full w-full bg-background border overflow-y-auto overflow-x-hidden rounded-lg",
+      "flex h-full w-full bg-transparent border overflow-y-auto overflow-x-hidden rounded-lg",
   };
 </script>
 
@@ -37,7 +37,9 @@
   <Navbar />
   <div class={cn(classes.outerContainer, reactiveClasses.outerContainerPl)}>
     <div class={cn(classes.innerContainer)}>
-      <div class={cn(reactiveClasses.emailListW, "overflow-y-auto p-1")}>
+      <div
+        class={cn(reactiveClasses.emailListW, "overflow-y-auto bg-background")}
+      >
         <EmailList />
       </div>
       <EmailBody>
