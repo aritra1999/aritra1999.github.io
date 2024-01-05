@@ -1,33 +1,25 @@
 <script lang="ts">
-  export let data;
+	export let data;
 </script>
 
-<div class="flex xl:flex-row flex-col-reverse h-[65vh] sm:h-[80vh] -mt-6">
-  <div class="flex items-center justify-center sm:h-full h-1/2 lg:w-1/2 w-full">
-    <div class="px-10">
-      <div class="mb-2">Hi, I'm Aritra Mondal.</div>
-      <div
-        class="flex flex-col sm:text-7xl text-5xl text-gray-800 font-extrabold space-y-4"
-      >
-        <span class="magical-underline w-fit">Developer. </span>
-        <span class="magical-underline w-fit">Designer. </span>
-        <span class="magical-underline w-fit">Gamer. </span>
-      </div>
-    </div>
-  </div>
-  <div
-    class="xl:w-1/2 sm:p-0 sm:mt-auto sm:mb-auto mt-10 xl:px-16 md:px-10 px-6 w-full"
-  >
-    <!-- <img
+<div class="-mt-6 flex h-[65vh] flex-col-reverse sm:h-[80vh] xl:flex-row">
+	<div class="flex h-1/2 w-full items-center justify-center sm:h-full lg:w-1/2">
+		<div class="px-10">
+			<div class="mb-2">Hi, I'm Aritra Mondal.</div>
+			<div class="flex flex-col space-y-4 text-5xl font-extrabold text-gray-800 sm:text-7xl">
+				<span class="magical-underline w-fit">Developer. </span>
+				<span class="magical-underline w-fit">Designer. </span>
+				<span class="magical-underline w-fit">Gamer. </span>
+			</div>
+		</div>
+	</div>
+	<div class="mt-10 w-full px-6 sm:mb-auto sm:mt-auto sm:p-0 md:px-10 xl:w-1/2 xl:px-16">
+		<!-- <img
       src="https://cdn.dribbble.com/users/464600/screenshots/4907524/glasses.gif"
       class="w-full sm:w-2/3 md:w-2/3 lg:w-full mx-auto rounded-t-[50px] rounded-bl-[50px]"
       alt="me"
     /> -->
 
-    <img
-      class="rounded-t-[30px] rounded-bl-[30px] mx-auto max-h-[300px]"
-      src={data.gif}
-      alt="me"
-    />
-  </div>
+		<img class="mx-auto max-h-[300px] rounded-t-[30px] rounded-bl-[30px]" src={data.gif} alt="me" />
+	</div>
 </div>

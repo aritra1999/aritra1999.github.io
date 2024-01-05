@@ -1,15 +1,15 @@
 .navbar-container {
-  @apply h-[5rem] z-40 flex justify-between items-center fixed w-screen bg-transparent;
+	@apply fixed z-40 flex h-[5rem] w-screen items-center justify-between bg-transparent;
 }
 
 .profile-picture {
-  @apply h-10 w-10 object-cover rounded-full  hover:ring-4 hover:ring-slate-200;
+	@apply h-10 w-10 rounded-full object-cover  hover:ring-4 hover:ring-slate-200;
 }
 
 .icon-container {
-  @apply p-2 hover:bg-slate-200 rounded-full;
+	@apply rounded-full p-2 hover:bg-slate-200;
 }
 
 .icon-container > svg {
-  @apply h-6 w-6 text-slate-500;
+	@apply h-6 w-6 text-slate-500;
 }

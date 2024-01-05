@@ -1,168 +1,168 @@
 {
-  "experience": [
-    {
-      "name": "SAP",
-      "logo": "sap",
-      "url": "https://leanix.net/",
-      "roles": [
-        {
-          "role": "Software Development Engineer",
-          "latest": true,
-          "duration": "<b>Bonn, Germany</b>, January 2024 - Present",
-          "description": ["Under NDA."]
-        }
-      ],
-      "technologies": [
-        "Angular",
-        "FastAPI(Python)",
-        "Typescript",
-        "Python",
-        "Java",
-        "Express(Typescript)",
-        "Azure",
-        "Kubernetes",
-        "Dropwizard(Java)",
-        "Elasticsearch"
-      ]
-    },
-    {
-      "name": "LeanIX",
-      "logo": "leanix",
-      "url": "https://leanix.net/",
-      "roles": [
-        {
-          "role": "Software Development Engineer",
-          "duration": "<b>Bonn, Germany</b>, May 2023 - December 2023",
-          "description": ["Under NDA."]
-        },
-        {
-          "role": "Software Development Engineer",
-          "duration": "<b>Hyderabad, India</b>, June 2022 - April 2023",
-          "description": ["Under NDA."]
-        },
-        {
-          "role": "Software Engineering Intern",
-          "duration": "<b>Hyderabad, India</b>, December 2021 - April 2022",
-          "description": ["Under NDA."]
-        }
-      ],
-      "technologies": [
-        "Angular",
-        "FastAPI(Python)",
-        "Typescript",
-        "Python",
-        "Java",
-        "Express(Typescript)",
-        "Azure",
-        "Kubernetes",
-        "Dropwizard(Java)",
-        "Elasticsearch"
-      ]
-    },
-    {
-      "name": "Softway",
-      "logo": "softway",
-      "url": "https://www.softway.com/",
-      "roles": [
-        {
-          "role": "Full-Stack Engineering Intern",
-          "duration": "<b>Bangalore, India</b>, December 2020 - August 2021",
-          "description": [
-            "Pitched and implemented dynamic design system tool Masalabook which helps developers build interfaces easily and efficiently.",
-            "Implemented Mixpanel analytics on products to provide various metrics like user engagement, user commitment.",
-            "Implemented mobile push notifications using OneSignal for Android and IOS.",
-            "Fixed bugs and helped import code from JS to TS on Softway SSO(Softway Single Sign-on) portal."
-          ]
-        }
-      ],
-      "technologies": [
-        "Node",
-        "React",
-        "Typescript",
-        "AWS",
-        "Azure",
-        "OneSignal",
-        "Django",
-        "SendGrid"
-      ]
-    },
-    {
-      "name": "Testmandi",
-      "logo": "testmandi",
-      "url": "https://testmandi.com/",
-      "roles": [
-        {
-          "role": "Full-Stack Engineering Intern",
-          "duration": "<b>Chennai, India</b>, May 2020 - July 2020",
-          "description": [
-            "Designed back-end architecture, databases, developed online compiler, code checking module, practice module, assessment management module, user authentication, and etc.",
-            "Deployed and maintained the codebase on AWS."
-          ]
-        }
-      ],
-      "technologies": ["AWS", "Django", "SendGrid", "Heroku"]
-    },
-    {
-      "name": "Bharg",
-      "logo": "bharg",
-      "url": "https://www.bharg.com/",
-      "roles": [
-        {
-          "role": "Full Stack Developer Intern",
-          "duration": "<b>Bangalore, India</b>, Nov 2019 - May 2020",
-          "description": [
-            "Developed back-end systems, implemented and managed databases, and deployed Django apps."
-          ]
-        },
-        {
-          "role": "UI/UX Designer Intern",
-          "duration": "<b>Bangalore, India</b>, May 2019 - Nov 2019",
-          "description": [
-            "Designed apps and web screens on assigned projects. Researched thoroughly on the app and web design and prototyped screens."
-          ]
-        }
-      ],
-      "technologies": ["AWS", "Django", "Heroku", "Adobe XD", "Figma", "UI/UX"]
-    }
-  ],
-  "education": [
-    {
-      "name": "Kalinga Institute of Industrial Technology",
-      "logo": "kiit",
-      "roles": [
-        {
-          "duration": "June 2018 - May 2022",
-          "scope": "Bachelor of Technology",
-          "role": "Information Technology"
-        }
-      ],
-      "score": "8.7 / 10.0",
+	"experience": [
+		{
+			"name": "SAP",
+			"logo": "sap",
+			"url": "https://leanix.net/",
+			"roles": [
+				{
+					"role": "Software Development Engineer",
+					"latest": true,
+					"duration": "<b>Bonn, Germany</b>, January 2024 - Present",
+					"description": ["Under NDA."]
+				}
+			],
+			"technologies": [
+				"Angular",
+				"FastAPI(Python)",
+				"Typescript",
+				"Python",
+				"Java",
+				"Express(Typescript)",
+				"Azure",
+				"Kubernetes",
+				"Dropwizard(Java)",
+				"Elasticsearch"
+			]
+		},
+		{
+			"name": "LeanIX",
+			"logo": "leanix",
+			"url": "https://leanix.net/",
+			"roles": [
+				{
+					"role": "Software Development Engineer",
+					"duration": "<b>Bonn, Germany</b>, May 2023 - December 2023",
+					"description": ["Under NDA."]
+				},
+				{
+					"role": "Software Development Engineer",
+					"duration": "<b>Hyderabad, India</b>, June 2022 - April 2023",
+					"description": ["Under NDA."]
+				},
+				{
+					"role": "Software Engineering Intern",
+					"duration": "<b>Hyderabad, India</b>, December 2021 - April 2022",
+					"description": ["Under NDA."]
+				}
+			],
+			"technologies": [
+				"Angular",
+				"FastAPI(Python)",
+				"Typescript",
+				"Python",
+				"Java",
+				"Express(Typescript)",
+				"Azure",
+				"Kubernetes",
+				"Dropwizard(Java)",
+				"Elasticsearch"
+			]
+		},
+		{
+			"name": "Softway",
+			"logo": "softway",
+			"url": "https://www.softway.com/",
+			"roles": [
+				{
+					"role": "Full-Stack Engineering Intern",
+					"duration": "<b>Bangalore, India</b>, December 2020 - August 2021",
+					"description": [
+						"Pitched and implemented dynamic design system tool Masalabook which helps developers build interfaces easily and efficiently.",
+						"Implemented Mixpanel analytics on products to provide various metrics like user engagement, user commitment.",
+						"Implemented mobile push notifications using OneSignal for Android and IOS.",
+						"Fixed bugs and helped import code from JS to TS on Softway SSO(Softway Single Sign-on) portal."
+					]
+				}
+			],
+			"technologies": [
+				"Node",
+				"React",
+				"Typescript",
+				"AWS",
+				"Azure",
+				"OneSignal",
+				"Django",
+				"SendGrid"
+			]
+		},
+		{
+			"name": "Testmandi",
+			"logo": "testmandi",
+			"url": "https://testmandi.com/",
+			"roles": [
+				{
+					"role": "Full-Stack Engineering Intern",
+					"duration": "<b>Chennai, India</b>, May 2020 - July 2020",
+					"description": [
+						"Designed back-end architecture, databases, developed online compiler, code checking module, practice module, assessment management module, user authentication, and etc.",
+						"Deployed and maintained the codebase on AWS."
+					]
+				}
+			],
+			"technologies": ["AWS", "Django", "SendGrid", "Heroku"]
+		},
+		{
+			"name": "Bharg",
+			"logo": "bharg",
+			"url": "https://www.bharg.com/",
+			"roles": [
+				{
+					"role": "Full Stack Developer Intern",
+					"duration": "<b>Bangalore, India</b>, Nov 2019 - May 2020",
+					"description": [
+						"Developed back-end systems, implemented and managed databases, and deployed Django apps."
+					]
+				},
+				{
+					"role": "UI/UX Designer Intern",
+					"duration": "<b>Bangalore, India</b>, May 2019 - Nov 2019",
+					"description": [
+						"Designed apps and web screens on assigned projects. Researched thoroughly on the app and web design and prototyped screens."
+					]
+				}
+			],
+			"technologies": ["AWS", "Django", "Heroku", "Adobe XD", "Figma", "UI/UX"]
+		}
+	],
+	"education": [
+		{
+			"name": "Kalinga Institute of Industrial Technology",
+			"logo": "kiit",
+			"roles": [
+				{
+					"duration": "June 2018 - May 2022",
+					"scope": "Bachelor of Technology",
+					"role": "Information Technology"
+				}
+			],
+			"score": "8.7 / 10.0",
 
-      "url": "https://kiit.ac.in"
-    },
-    {
-      "name": "Delhi Public School, Ruby Park",
-      "logo": "dps",
-      "roles": [
-        {
-          "role": "Computer Science",
-          "scope": "High School",
-          "duration": "June 2016 - June 2018"
-        }
-      ],
-      "branch": "Computer Science",
-      "url": "https://kiit.ac.in"
-    },
-    {
-      "name": "South Point",
-      "logo": "sphs",
-      "roles": [
-        {
-          "duration": "April 2005 - April 2016",
-          "scope": "School"
-        }
-      ],
-      "url": "https://kiit.ac.in"
-    }
-  ]
+			"url": "https://kiit.ac.in"
+		},
+		{
+			"name": "Delhi Public School, Ruby Park",
+			"logo": "dps",
+			"roles": [
+				{
+					"role": "Computer Science",
+					"scope": "High School",
+					"duration": "June 2016 - June 2018"
+				}
+			],
+			"branch": "Computer Science",
+			"url": "https://kiit.ac.in"
+		},
+		{
+			"name": "South Point",
+			"logo": "sphs",
+			"roles": [
+				{
+					"duration": "April 2005 - April 2016",
+					"scope": "School"
+				}
+			],
+			"url": "https://kiit.ac.in"
+		}
+	]
 }
