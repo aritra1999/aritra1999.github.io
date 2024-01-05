@@ -16,7 +16,7 @@
   </div>
 
   <div
-    class="bg-white py-3 px-4 w-1/3 rounded-xl text-slate-800 text-sm flex justify-between items-center border"
+    class="bg-white py-3 px-4 w-1/3 rounded-lg text-slate-800 text-sm flex justify-between items-center border"
   >
     <input
       type="search"

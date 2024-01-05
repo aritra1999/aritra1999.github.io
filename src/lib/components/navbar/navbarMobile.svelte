@@ -7,7 +7,7 @@
 
 <div class="navbar-container p-2">
   <div
-    class="py-2 px-4 w-full rounded-xl bg-white text-slate-600 text-sm flex justify-between items-center border"
+    class="py-2 px-4 w-full rounded-lg bg-white text-slate-600 text-sm flex justify-between items-center border"
   >
     <div class="flex items-center text-slate-800 font-semibold">
       <Sidebar />

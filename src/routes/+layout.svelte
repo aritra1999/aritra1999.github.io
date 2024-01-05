@@ -17,7 +17,7 @@
 
   $: reactiveClasses = {
     emailListW:
-      $metaStore.screen === "desktop" ? "border-r w-[40rem]" : "w-full",
+      $metaStore.screen === "desktop" ? "border-r w-[40rem]" : "w-fit",
     outerContainerPl:
       $metaStore.showSidebar && $metaStore.screen === "desktop"
         ? "pl-72"
