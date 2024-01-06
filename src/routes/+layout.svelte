@@ -16,7 +16,8 @@
 	});
 
 	$: reactiveClasses = {
-		outerContainerPl: $metaStore.showSidebar && $metaStore.screen === 'desktop' ? 'pl-72' : 'pl-2'
+		outerContainerPl:
+			$metaStore.showSidebar && $metaStore.screen === 'desktop' ? 'pl-[19rem]' : 'pl-4'
 	};
 </script>
 
@@ -26,10 +27,10 @@
 <section
 	class={cn(
 		reactiveClasses.outerContainerPl,
-		'fixed h-[calc(100vh-5rem)] w-full pb-2 pr-3 transition-all duration-300 ease-in-out'
+		'fixed h-[calc(100vh-5rem)] w-full pb-4 pr-4 transition-all duration-300 ease-in-out'
 	)}
 >
-	<div class="flex h-full w-full overflow-y-auto overflow-x-hidden rounded-lg border bg-background">
+	<div class="flex h-full w-full overflow-y-auto overflow-x-hidden border bg-background">
 		<EmailList />
 		<EmailBody>
 			<slot />
