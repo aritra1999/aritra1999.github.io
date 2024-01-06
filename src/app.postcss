@@ -73,19 +73,17 @@
 		@apply border-border;
 	}
 	body {
-		height: 100vh;
-		width: 100vw;
 		font-family: 'Rubik', sans-serif;
-		@apply bg text-foreground;
+		@apply bg h-screen w-screen overflow-hidden text-foreground;
 	}
 }
 
 .bg {
-	--grid-size: 20px;
+	--grid-size: 1rem;
 	--grid-strength: 1px;
 	--grid-dash: 0px;
 	--grid-gap: 10px;
-	--grid-color: #ddd;
+	--grid-color: #dddddd;
 	--paper-color: #fff;
 
 	background-color: var(--paper-color);
