@@ -30,7 +30,7 @@
 		'fixed h-[calc(100vh-5rem)] w-full pb-4 pr-4 transition-all duration-300 ease-in-out'
 	)}
 >
-	<div class="flex h-full w-full overflow-y-auto overflow-x-hidden border bg-background">
+	<div class="flex h-full w-full overflow-hidden border bg-background">
 		<EmailList />
 		<EmailBody>
 			<slot />

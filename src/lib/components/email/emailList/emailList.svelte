@@ -12,7 +12,7 @@
 	let emailListW = $metaStore.screen === 'desktop' ? 'border-r w-[40rem]' : 'w-fit';
 </script>
 
-<div class={cn(emailListW, 'overflow-y-auto border-r bg-background sm:border-r-0')}>
+<div class={cn(emailListW, 'overflow-y-auto border-r-0 bg-background md:border-r')}>
 	{#each Object.entries(items) as [key, item]}
 		<div
 			class="border-b border-zinc-300 px-5 py-4 text-slate-700 hover:bg-zinc-100

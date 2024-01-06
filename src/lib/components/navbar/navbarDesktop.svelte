@@ -5,7 +5,7 @@
 	import { Mailbox, Grip, HelpCircle, Search, Settings } from 'lucide-svelte';
 </script>
 
-<div class="navbar-container px-8 py-2">
+<div class="navbar-container px-8">
 	<div class="flex items-center font-semibold">
 		<Sidebar />
 		<a href="/">

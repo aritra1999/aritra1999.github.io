@@ -24,7 +24,7 @@
 				<Loading />
 			</div>
 		{:else}
-			<img class="h-48 w-full rounded-t-2xl border-b object-cover" src={thumbnail} alt="loading" />
+			<img class="h-48 w-full border-b object-cover" src={thumbnail} alt="loading" />
 		{/if}
 	</div>
 	<div class="px-6 pb-4 pt-6">

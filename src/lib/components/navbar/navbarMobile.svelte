@@ -5,9 +5,9 @@
 	import { Mailbox } from 'lucide-svelte';
 </script>
 
-<div class="navbar-container p-2">
+<div class="navbar-container p-4">
 	<div
-		class="flex w-full items-center justify-between rounded-lg border bg-white px-4 py-2 text-sm text-slate-600"
+		class="flex h-[3rem] w-full items-center justify-between border bg-white px-4 text-sm text-slate-600"
 	>
 		<div class="flex items-center font-semibold text-slate-800">
 			<Sidebar />
