@@ -33,12 +33,12 @@
 		e.target.reset();
 	}
 
-	const menuItemClass = 'flex justify-center items-center p-2 hover:bg-slate-200 rounded-lg';
+	const menuItemClass = 'flex justify-center items-center p-2 hover:bg-neutral-200 rounded-lg';
 </script>
 
 {#if $metaStore.showContactForm}
 	<div class="fixed bottom-0 right-0 z-50 w-[min(600px,100vw)] shadow-lg sm:bottom-8 sm:right-8">
-		<div class="flex w-full items-center justify-between bg-slate-900 px-4 py-3 text-white">
+		<div class="flex w-full items-center justify-between bg-neutral-900 px-4 py-3 text-white">
 			New Message
 			<button
 				on:click={() => {
@@ -84,14 +84,14 @@
 					name="from"
 					type="email"
 					placeholder="From"
-					class="mb-2 w-full border-b border-slate-200 bg-white px-4 py-2"
+					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2"
 					required
 				/>
 				<input
 					name="subject"
 					type="text"
 					placeholder="Subject"
-					class="mb-2 w-full border-b border-slate-200 bg-white px-4 py-2"
+					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2"
 					required
 				/>
 				<textarea
@@ -102,7 +102,7 @@
 				/>
 
 				<div class="flex items-center justify-between">
-					<div class="ml-3 flex w-full items-center justify-between text-slate-600">
+					<div class="ml-3 flex w-full items-center justify-between text-neutral-600">
 						{#if $metaStore.screen !== 'mobile'}
 							<div class="flex items-center justify-center space-x-2">
 								<div class={cn(menuItemClass)}>

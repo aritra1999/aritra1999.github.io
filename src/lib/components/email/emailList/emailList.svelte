@@ -15,7 +15,7 @@
 <div class={cn(emailListW, 'overflow-y-auto border-r-0 bg-background md:border-r')}>
 	{#each Object.entries(items) as [key, item]}
 		<div
-			class="border-b border-zinc-300 px-5 py-4 text-slate-700 hover:bg-zinc-100
+			class="border-b border-neutral-300 px-5 py-4 text-neutral-700 hover:bg-neutral-100
       {$page.url.pathname === `/${key}` ? 'bg-white' : ''}"
 		>
 			<a href={`/${key}`}>
@@ -38,18 +38,18 @@
 						>
 						<span>{item.title}</span>
 					</div>
-					<div class="flex items-center space-x-2 text-xs text-slate-500">
+					<div class="flex items-center space-x-2 text-xs text-neutral-500">
 						{#if item.attachments.length}
 							<Paperclip class="h-5 w-5" />
 						{/if}
 						<span>{today}</span>
 					</div>
 				</div>
-				<div class="text-sm text-slate-400">{item.content}</div>
+				<div class="text-sm text-neutral-400">{item.content}</div>
 				<div class="flex items-center font-medium">
 					{#each item.attachments as attachment}
 						<div
-							class="mr-2 mt-2 flex items-center justify-center rounded-full border-2 border-slate-200 px-4 py-2 text-xs text-slate-500 hover:bg-blue-50"
+							class="mr-2 mt-2 flex items-center justify-center rounded-full border-2 border-neutral-200 px-4 py-2 text-xs text-neutral-500 hover:bg-blue-50"
 						>
 							{#if attachment.type === 'code'}
 								<FileTerminal class="mr-2 h-5 w-5  text-blue-400" />

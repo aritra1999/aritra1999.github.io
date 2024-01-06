@@ -20,7 +20,7 @@
 	<div class="flex justify-between space-x-4 border-t p-4 pb-6 font-medium sm:justify-end">
 		{#each options as option}
 			<button
-				class="flex items-center rounded-lg border bg-gray-200 px-3 py-2 text-sm hover:border-blue-500 hover:bg-blue-500 hover:text-white sm:px-4 sm:py-2"
+				class="flex items-center rounded-lg border bg-neutral-200 px-3 py-2 text-sm hover:border-blue-500 hover:bg-blue-500 hover:text-white sm:px-4 sm:py-2"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

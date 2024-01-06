@@ -12,11 +12,11 @@
 		$metaStore.showSidebar = !$metaStore.showSidebar;
 	};
 
-	$: containerResponsiveClass = $metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full';
+	$: containerResponsiveClass = $metaStore.showSidebar ? 'tranneutral-x-0' : '-tranneutral-x-full';
 </script>
 
 <button on:click={toggleSidebar}>
-	<GanttChart class="mr-4 h-5 w-5 text-slate-500" />
+	<GanttChart class="mr-4 h-5 w-5 text-neutral-500" />
 </button>
 <section
 	class={cn(
@@ -37,7 +37,7 @@
 			</div>
 			<span>6</span>
 		</div>
-		<div class="border-b border-slate-300 py-2">
+		<div class="border-b border-neutral-300 py-2">
 			{#each sidebarItems as sidebarItem}
 				<div class="sidebarItem">
 					<svg
@@ -54,7 +54,7 @@
 				</div>
 			{/each}
 		</div>
-		<div class="border-b border-slate-300 py-2">
+		<div class="border-b border-neutral-300 py-2">
 			{#each sidebarSocialItems as sidebarSocialItem}
 				<a href={sidebarSocialItem.link} target="_blank" rel="noreferrer">
 					<div class="sidebarItem">
@@ -81,6 +81,6 @@
 
 <style lang="postcss">
 	.sidebarItem {
-		@apply flex w-full items-center rounded-full px-6 py-2 text-sm font-medium text-slate-700 hover:bg-slate-200;
+		@apply flex w-full items-center rounded-full px-6 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-200;
 	}
 </style>

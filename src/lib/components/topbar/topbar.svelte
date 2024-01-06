@@ -37,7 +37,7 @@
 		{#each topbarItems as item}
 			<div
 				class={cn(
-					'flex w-40 items-center justify-center space-x-4 border-b-4 border-transparent px-4 py-3 text-sm font-medium text-gray-500',
+					'flex w-40 items-center justify-center space-x-4 border-b-4 border-transparent px-4 py-3 text-sm font-medium text-neutral-500',
 					item.color
 				)}
 			>

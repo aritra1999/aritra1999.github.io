@@ -6,7 +6,7 @@
 	<div class="flex h-1/2 w-full items-center justify-center sm:h-full lg:w-1/2">
 		<div class="px-10">
 			<div class="mb-2">Hi, I'm Aritra Mondal.</div>
-			<div class="flex flex-col space-y-4 text-5xl font-extrabold text-gray-800 sm:text-7xl">
+			<div class="flex flex-col space-y-4 text-5xl font-extrabold text-neutral-800 sm:text-7xl">
 				<span class="magical-underline w-fit">Developer. </span>
 				<span class="magical-underline w-fit">Designer. </span>
 				<span class="magical-underline w-fit">Gamer. </span>

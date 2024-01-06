@@ -11,11 +11,11 @@
 <div class="card border p-8">
 	<div class="mb-6 flex items-center text-lg font-bold">
 		<img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
-		<h3 class="ml-4 border-l-2 border-slate-300 pl-4 text-xl font-bold">
+		<h3 class="ml-4 border-l-2 border-neutral-300 pl-4 text-xl font-bold">
 			{item.name}
 		</h3>
 	</div>
-	<ol class="relative mx-4 border-l border-gray-200">
+	<ol class="relative mx-4 border-l border-neutral-200">
 		{#each item.roles as role}
 			<li class="mb-4 ml-6">
 				<span
@@ -34,7 +34,7 @@
 						/></svg
 					>
 				</span>
-				<h3 class="flex items-center text-lg font-semibold text-gray-900">
+				<h3 class="flex items-center text-lg font-semibold text-neutral-900">
 					{#if role.scope}{role.scope}{/if}
 					{#if role.role}{role.role}{/if}
 					{#if role.latest}<span
@@ -42,9 +42,9 @@
 							>Latest</span
 						>{/if}
 				</h3>
-				<time class="text-sm font-normal leading-none text-slate-500">{@html role.duration}</time>
+				<time class="text-sm font-normal leading-none text-neutral-500">{@html role.duration}</time>
 				{#if role.description}
-					<div class="mt-2 text-sm font-normal text-slate-600">
+					<div class="mt-2 text-sm font-normal text-neutral-600">
 						{#each role.description as des}
 							<ul class="list-outside list-disc pl-6">
 								<li>{des}</li>
@@ -62,7 +62,7 @@
 			{/each}
 		</div>
 	{/if}
-	{#if item.score}<p class="mb-2 font-medium text-slate-800">
+	{#if item.score}<p class="mb-2 font-medium text-neutral-800">
 			CGPA: {item.score}
 		</p>{/if}
 	<div class="card-link-container">

@@ -7,9 +7,9 @@
 
 <div class="navbar-container p-4">
 	<div
-		class="flex h-[3rem] w-full items-center justify-between border bg-white px-4 text-sm text-slate-600"
+		class="flex h-[3rem] w-full items-center justify-between border bg-white px-4 text-sm text-neutral-600"
 	>
-		<div class="flex items-center font-semibold text-slate-800">
+		<div class="flex items-center font-semibold text-neutral-800">
 			<Sidebar />
 			<Mailbox class="mr-2 h-10 w-10 text-red-600" />
 		</div>

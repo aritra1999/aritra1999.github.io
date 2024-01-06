@@ -22,7 +22,7 @@
 			placeholder="Search all conversations"
 			class="mx-2 w-full bg-transparent p-1"
 		/>
-		<Search class="h-5 w-5 text-slate-900" />
+		<Search class="h-5 w-5 text-neutral-900" />
 	</div>
 
 	<div class="flex items-center space-x-4">
@@ -45,6 +45,6 @@
 
 <style lang="postcss">
 	.navbar-pill {
-		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-slate-500 hover:bg-slate-200;
+		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-neutral-500 hover:bg-neutral-200;
 	}
 </style>
