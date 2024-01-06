@@ -5,7 +5,7 @@
 </script>
 
 <div class="relative w-screen">
-	<div class="h-[5rem]">
+	<div class="h-20">
 		{#if $metaStore.screen === 'mobile'}
 			<NavbarMobile />
 		{:else}
