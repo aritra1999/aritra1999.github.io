@@ -4,7 +4,7 @@
 	import NavbarDesktop from '$lib/components/navbar/navbarDesktop.svelte';
 </script>
 
-<div class="relative w-screen">
+<div class="w-screen">
 	<div class="h-20">
 		{#if $metaStore.screen === 'mobile'}
 			<NavbarMobile />

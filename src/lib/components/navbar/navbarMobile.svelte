@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '$lib/components/navbar/navbar.css';
+	import '$lib/components/navbar/navbar.postcss';
 	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
 	import Profile from '$lib/components/navbar/profile.svelte';
 	import { Mailbox } from 'lucide-svelte';
