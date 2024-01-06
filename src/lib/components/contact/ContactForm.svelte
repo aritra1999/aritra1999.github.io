@@ -37,10 +37,8 @@
 </script>
 
 {#if $metaStore.showContactForm}
-	<div class="z-70 fixed bottom-0 right-0 w-[min(600px,100vw)] shadow-lg sm:bottom-4 sm:right-4">
-		<div
-			class="flex w-full items-center justify-between rounded-t-lg bg-slate-900 px-4 py-3 text-white"
-		>
+	<div class="fixed bottom-0 right-0 z-50 w-[min(600px,100vw)] shadow-lg sm:bottom-8 sm:right-8">
+		<div class="flex w-full items-center justify-between bg-slate-900 px-4 py-3 text-white">
 			New Message
 			<button
 				on:click={() => {
@@ -50,7 +48,7 @@
 				<X class="h-5 w-5" />
 			</button>
 		</div>
-		<form on:submit|preventDefault={handelSubmit} class="rounded-b-lg border bg-white">
+		<form on:submit|preventDefault={handelSubmit} class="border bg-white">
 			<div class="rounded-b-lg p-4">
 				{#if status === 'success' || status === 'error'}
 					<div class="my-2">
