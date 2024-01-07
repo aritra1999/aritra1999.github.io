@@ -16,7 +16,7 @@
 		)}
 	>
 		<EmailTop />
-		<div class="pl-1">
+		<div class="pl-[5px]">
 			<slot />
 		</div>
 		<EmailBottom />
