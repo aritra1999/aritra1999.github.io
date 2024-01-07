@@ -12,11 +12,13 @@
 	<div
 		class={cn(
 			emailBodyResponsiveClass,
-			'z-50 mx-2.5 h-[calc(100vh-5.5rem)] w-[calc(100vw-1rem)] overflow-y-auto overflow-x-hidden rounded-lg bg-background sm:h-[calc(100vh-5.6rem)] sm:w-full sm:border-0 sm:border-r-0 md:m-0'
+			'z-50 mx-4 h-[calc(100vh-6.1rem)] w-[calc(100vw-2rem)] overflow-y-auto overflow-x-hidden border-x bg-background md:mx-0 md:border-x-0'
 		)}
 	>
 		<EmailTop />
-		<slot />
+		<div class="pl-1">
+			<slot />
+		</div>
 		<EmailBottom />
 	</div>
 {/if}
