@@ -12,7 +12,7 @@
 		$metaStore.showSidebar = !$metaStore.showSidebar;
 	};
 
-	$: containerResponsiveClass = $metaStore.showSidebar ? 'tranneutral-x-0' : '-tranneutral-x-full';
+	$: containerResponsiveClass = $metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full';
 </script>
 
 <button on:click={toggleSidebar}>
