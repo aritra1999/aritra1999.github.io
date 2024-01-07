@@ -1,7 +1,7 @@
-import { writable } from "svelte/store";
+import { writable } from 'svelte/store';
 
 export const metaStore = writable({
-  screen: "desktop",
-  showSidebar: true,
-  showContactForm: false,
+	screen: 'desktop',
+	showSidebar: true,
+	showContactForm: false
 });
