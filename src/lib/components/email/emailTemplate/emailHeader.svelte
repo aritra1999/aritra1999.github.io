@@ -78,15 +78,3 @@
 		{/if}
 	{/if}
 </div>
-
-<style>
-	.ishtyle {
-		background: repeating-linear-gradient(
-			135deg,
-			transparent,
-			transparent 3px,
-			#c6c6c6 6px,
-			#c6c6c6 4px
-		);
-	}
-</style>
