@@ -10,7 +10,9 @@
 	}).format(date.getMonth())}`;
 </script>
 
-<div class="w-full overflow-y-auto border-r-0 bg-background md:w-[35rem] md:border-r">
+<div
+	class="w-full overflow-y-auto overflow-x-hidden border-r-0 bg-background md:w-[35rem] md:border-r"
+>
 	{#each Object.entries(items) as [key, item]}
 		<div
 			class={cn(
