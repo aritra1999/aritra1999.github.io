@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import EmailTopIcons from './emailTopIcons.svelte';
 	import emails from '$lib/data/emailList.json';
+	import { ArrowLeft, User } from 'lucide-svelte';
 
 	function getPageName(url: string): string {
 		url = url.replaceAll('/', '');
@@ -31,23 +32,9 @@
 				<div class="flex items-center justify-between">
 					<div class="flex items-center">
 						<div
-							class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-300"
+							class="mr-6 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-300"
 						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-								aria-hidden="true"
-								role="img"
-								class="h-5 w-5"
-								width="32"
-								height="32"
-								preserveAspectRatio="xMidYMid meet"
-								viewBox="0 0 256 256"
-								><path
-									fill="currentColor"
-									d="M231.9 212a120.7 120.7 0 0 0-67.1-54.2a72 72 0 1 0-73.6 0A120.7 120.7 0 0 0 24.1 212a8 8 0 1 0 13.8 8a104.1 104.1 0 0 1 180.2 0a8 8 0 1 0 13.8-8ZM72 96a56 56 0 1 1 56 56a56 56 0 0 1-56-56Z"
-								/></svg
-							>
+							<User class="h-5 w-5" />
 						</div>
 						<div class="text-xs">
 							<div>
@@ -64,69 +51,27 @@
 		{:else}
 			<div class="borer-neutral-200 flex justify-between border-b px-2 py-2">
 				<a href="/" class="flex items-center justify-center">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="mr-2 h-5 w-5"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-						/>
-					</svg>
+					<ArrowLeft class="mx-2 h-4 w-4" />
 					Back
 				</a>
 				<EmailTopIcons />
 			</div>
 			<div class="mx-4 px-2 py-4">
-				<div class="flex items-center">
-					<h3 class="text-lg">Welcome to the page.</h3>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						aria-hidden="true"
-						role="img"
-						class="ml-4 h-5 w-5"
-						width="32"
-						height="32"
-						preserveAspectRatio="xMidYMid meet"
-						viewBox="0 0 24 24"
-						><path
-							fill="currentColor"
-							d="M6.5 17H15l3.5-5L15 7H6.5l3.5 5l-3.5 5m8.5 2H3l4.5-7L3 5h12c.69 0 1.23.3 1.64.86L21 12l-4.36 6.14c-.41.56-.95.86-1.64.86Z"
-						/></svg
-					>
-					<div class="ml-4 rounded-md bg-neutral-200 px-2 py-1 text-xs">Inbox</div>
+				<div class="ishtyle flex items-center pb-3">
+					<div class="w-fit bg-background px-3 py-1 text-xl font-semibold">{pageName}</div>
+					<div class="ml-4 mr-2 rounded-md bg-neutral-900 px-2 py-1 text-xs text-neutral-200">
+						Inbox
+					</div>
 				</div>
 				<div class="mt-2 flex items-center">
 					<div
 						class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-300"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							aria-hidden="true"
-							role="img"
-							class="h-5 w-5"
-							width="32"
-							height="32"
-							preserveAspectRatio="xMidYMid meet"
-							viewBox="0 0 256 256"
-							><path
-								fill="currentColor"
-								d="M231.9 212a120.7 120.7 0 0 0-67.1-54.2a72 72 0 1 0-73.6 0A120.7 120.7 0 0 0 24.1 212a8 8 0 1 0 13.8 8a104.1 104.1 0 0 1 180.2 0a8 8 0 1 0 13.8-8ZM72 96a56 56 0 1 1 56 56a56 56 0 0 1-56-56Z"
-							/></svg
-						>
+						<User class="h-5 w-5" />
 					</div>
-					<div class="text-xs">
-						<div>
-							Aritra Mondal - <span class="text-neutral-500"> aritra041999@gmail.com </span>
-						</div>
-						To Me -<span class="text-xs text-neutral-600">Thursday, Nov 19, 3:18 PM</span>
+					<div class="text-xs text-neutral-600">
+						<div><span class="text-neutral-900">Aritra Mondal </span> - aritra041999@gmail.com</div>
+						To Me -<span class="text-xs">Thursday, Nov 19, 3:18 PM</span>
 					</div>
 				</div>
 			</div>
