@@ -2,7 +2,8 @@
 	import '$lib/components/navbar/navbar.postcss';
 	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
 	import Profile from '$lib/components/navbar/profile.svelte';
-	import { Mailbox, Grip, HelpCircle, Search, Settings } from 'lucide-svelte';
+	import { Grip, HelpCircle, Search, Settings } from 'lucide-svelte';
+	import { getRandomEmoji } from './utils';
 </script>
 
 <div class="navbar-container px-8">
@@ -10,7 +11,7 @@
 		<Sidebar />
 		<a href="/">
 			<div class="flex cursor-pointer items-center justify-center">
-				<Mailbox class="mr-2 h-8 w-8 text-red-600" />
+				<h2 class="mr-2 text-3xl">{getRandomEmoji()}</h2>
 			</div>
 		</a>
 	</div>
