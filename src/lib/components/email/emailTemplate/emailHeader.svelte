@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { metaStore } from '$lib/store/metaStore';
 	import { page } from '$app/stores';
-	import EmailTopIcons from './emailTopIcons.svelte';
+	import Icons from './icons.svelte';
 	import emails from '$lib/data/emailList.json';
 	import { ArrowLeft, User } from 'lucide-svelte';
 
@@ -27,7 +27,7 @@
 							Inbox
 						</div>
 					</div>
-					<EmailTopIcons />
+					<Icons />
 				</div>
 				<div class="flex items-center justify-between">
 					<div class="flex items-center">
@@ -54,7 +54,7 @@
 					<ArrowLeft class="mx-2 h-4 w-4" />
 					Back
 				</a>
-				<EmailTopIcons />
+				<Icons />
 			</div>
 			<div class="mx-4 px-2 py-4">
 				<div class="ishtyle flex items-center pb-3">

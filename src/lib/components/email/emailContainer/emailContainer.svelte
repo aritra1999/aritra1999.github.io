@@ -1,8 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import { metaStore } from '$lib/store/metaStore';
-	import EmailTop from '$lib/components/email/emailTemplate/emailTop.svelte';
-	import EmailBottom from '$lib/components/email/emailTemplate/emailBottom.svelte';
+	import EmailTop from '$lib/components/email/emailTemplate/emailHeader.svelte';
+	import EmailBottom from '$lib/components/email/emailTemplate/emailFooter.svelte';
 	import { cn } from '$lib/utils';
 
 	$: emailBodyResponsiveClass = $metaStore.screen !== 'desktop' ? 'absolute left-0' : 'block';

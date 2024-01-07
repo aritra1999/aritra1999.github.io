@@ -6,7 +6,7 @@
 	import Navbar from '$lib/components/navbar/navbarContainer.svelte';
 	import ContactForm from '$lib/components/contact/ContactForm.svelte';
 	import EmailList from '$lib/components/email/emailList/emailList.svelte';
-	import EmailBody from '$lib/components/email/emailBody/emailBody.svelte';
+	import EmailContainer from '$lib/components/email/emailContainer/emailContainer.svelte';
 
 	let innerWidth = 0;
 	$: metaStore.set({
@@ -32,9 +32,9 @@
 >
 	<div class="flex h-full w-full overflow-hidden border bg-background">
 		<EmailList />
-		<EmailBody>
+		<EmailContainer>
 			<slot />
-		</EmailBody>
+		</EmailContainer>
 	</div>
 </section>
 

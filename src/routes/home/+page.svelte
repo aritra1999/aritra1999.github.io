@@ -2,7 +2,7 @@
 	export let data;
 </script>
 
-<div class="-mt-6 flex h-[65vh] flex-col-reverse sm:h-[80vh] xl:flex-row">
+<div class="-mt-6 flex h-[65vh] w-full flex-col-reverse sm:h-[80vh] xl:flex-row">
 	<div class="flex h-1/2 w-full items-center justify-center sm:h-full lg:w-1/2">
 		<div class="px-10">
 			<div class="mb-2">Hi, I'm Aritra Mondal.</div>
@@ -14,12 +14,6 @@
 		</div>
 	</div>
 	<div class="mt-10 w-full px-6 sm:mb-auto sm:mt-auto sm:p-0 md:px-10 xl:w-1/2 xl:px-16">
-		<!-- <img
-      src="https://cdn.dribbble.com/users/464600/screenshots/4907524/glasses.gif"
-      class="w-full sm:w-2/3 md:w-2/3 lg:w-full mx-auto rounded-t-[50px] rounded-bl-[50px]"
-      alt="me"
-    /> -->
-
 		<img class="mx-auto max-h-[300px] rounded-t-[30px] rounded-bl-[30px]" src={data.gif} alt="me" />
 	</div>
 </div>
