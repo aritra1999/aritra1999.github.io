@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import items from '$lib/data/emailList.json';
-	import { metaStore } from '$lib/store/metaStore';
 	import { cn } from '$lib/utils';
 	import { FileSpreadsheet, FileTerminal, FileText, Paperclip } from 'lucide-svelte';
 
@@ -9,14 +8,15 @@
 	const today = `${date.getDate()} / ${new Intl.DateTimeFormat('en-US', {
 		month: 'short'
 	}).format(date.getMonth())}`;
-	let emailListW = $metaStore.screen === 'desktop' ? 'border-r w-[40rem]' : 'w-fit';
 </script>
 
-<div class={cn(emailListW, 'overflow-y-auto border-r-0 bg-background md:border-r')}>
+<div class="w-full overflow-y-auto border-r-0 bg-background md:w-[35rem] md:border-r">
 	{#each Object.entries(items) as [key, item]}
 		<div
-			class="border-b border-neutral-300 px-5 py-4 text-neutral-700 hover:bg-neutral-100
-      {$page.url.pathname === `/${key}` ? 'bg-white' : ''}"
+			class={cn(
+				$page.url.pathname === `/${key}` ? 'bg-blue-50' : '',
+				'border-b border-neutral-300 px-5 py-4 text-neutral-700 hover:bg-neutral-100'
+			)}
 		>
 			<a href={`/${key}`}>
 				<div class="mb-2 flex justify-between">
