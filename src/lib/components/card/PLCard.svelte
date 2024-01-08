@@ -12,7 +12,7 @@
 
 	onMount(async () => {
 		loading = true;
-		thumbnail = (await import(`../../images/${item.thumbnail}.png`)).default;
+		thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.png`)).default;
 		loading = false;
 	});
 </script>
