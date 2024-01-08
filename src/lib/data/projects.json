@@ -1,5 +1,19 @@
 [
 	{
+		"title": "Protal",
+		"description": "Coming Soon 🚀",
+		"ongoing": true,
+		"links": [],
+		"tags": []
+	},
+	{
+		"title": "Petuk",
+		"description": "Coming Soon 🚀",
+		"ongoing": true,
+		"links": [],
+		"tags": []
+	},
+	{
 		"title": "Synergy",
 		"thumbnail": "synergy",
 		"description": "Why? As devs we use technologies like databases, search engines, storages, etc. But most of these technologies are black boxes to us. To fill up these gaps, I'm building these components from scratch using Golang.",
