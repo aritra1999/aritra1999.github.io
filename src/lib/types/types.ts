@@ -1,6 +1,6 @@
 export interface PLItem {
 	title: string;
-	thumbnail: string;
+	thumbnail?: string;
 	description: string;
 	links: {
 		type: string;

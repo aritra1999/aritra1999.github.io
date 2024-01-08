@@ -9,11 +9,9 @@
 </script>
 
 <div class="card border p-8">
-	<div class="mb-6 flex items-center text-lg font-bold">
+	<div class="mb-6 flex items-center justify-between text-lg font-bold">
+		<h3 class="pr-4 text-xl font-bold">{item.name}</h3>
 		<img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
-		<h3 class="ml-4 border-l-2 border-neutral-300 pl-4 text-xl font-bold">
-			{item.name}
-		</h3>
 	</div>
 	<ol class="relative mx-4 border-l border-neutral-200">
 		{#each item.roles as role}

@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div class="px-3 py-5 lg:px-6">
 	<h2 class=" w-fit text-2xl font-semibold">Achievements</h2>
 	<ul class="list-outside list-disc px-6 py-4">
@@ -46,7 +43,7 @@
 		</li>
 		<li>
 			<span class="font-medium">Technologies: </span>Git, CI/CD, AWS, Azure, GCP, UI/UX, Figma,
-			Docker.
+			Docker, Elasticsearch.
 		</li>
 	</ul>
 </div>
