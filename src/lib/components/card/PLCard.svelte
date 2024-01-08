@@ -18,7 +18,7 @@
 </script>
 
 <div class="card border">
-	<div class="h-48 w-full">
+	<div class="flex h-48 w-full items-center justify-center">
 		{#if loading}
 			<div class="flex h-48 w-full items-center justify-center text-neutral-600">
 				<Loading />
@@ -43,7 +43,7 @@
 				>
 			{/if}
 		</div>
-		<p class="mb-2 text-sm font-normal text-neutral-600">{item.description}</p>
+		<p class="mb-2 text-sm font-normal text-neutral-800">{item.description}</p>
 		<div>
 			{#each item.tags as tag}
 				<div class="tag">{tag}</div>
