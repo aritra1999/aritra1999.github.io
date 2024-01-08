@@ -41,14 +41,14 @@
 		"content": "I've been working as a SDE for the last 4 years and this is a list of all my professional experience so far.",
 		"attachments": []
 	},
-	"skills-achievements": {
-		"title": "Skills & Achievements",
-		"content": "A list of all my skills and achievements",
-		"attachments": []
-	},
 	"education": {
 		"title": "Education",
 		"content": "A list of all my educational qualifications",
+		"attachments": []
+	},
+	"skills-achievements": {
+		"title": "Skills & Achievements",
+		"content": "A list of all my skills and achievements",
 		"attachments": []
 	}
 }
