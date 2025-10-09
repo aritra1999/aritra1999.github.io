@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { metaStore } from '$lib/store/metaStore';
-	import supabase from '$lib/supabase/supa';
 	import { cn } from '$lib/utils';
 	import {
 		Link2,
@@ -18,21 +17,6 @@
 	let loading = $state(false);
 	let status = $state('');
 
-	async function handelSubmit(e: any) {
-		loading = true;
-		const formData = new FormData(e.target);
-		let newMessage: Record<string, string> = {};
-		for (let field of formData) {
-			const [key, value] = field;
-			newMessage[key] = value as string;
-		}
-
-		const { data, error } = await supabase.from('MySiteContact').insert([newMessage]);
-		status = error == null ? 'success' : 'error';
-		loading = false;
-		e.target.reset();
-	}
-
 	const menuItemClass = 'flex justify-center items-center p-2 hover:bg-neutral-200 rounded-lg';
 </script>
 
@@ -48,7 +32,7 @@
 				<X class="h-5 w-5" />
 			</button>
 		</div>
-		<form onsubmit={handelSubmit} class="border bg-white">
+		<form class="border bg-white">
 			<div class="rounded-b-lg p-4">
 				{#if status === 'success' || status === 'error'}
 					<div class="my-2">
@@ -133,6 +117,7 @@
 						<button
 							class="flex items-center rounded-lg bg-blue-600 px-6 py-2 font-medium text-white shadow-lg"
 							type="submit"
+							disabled={true}
 						>
 							{#if loading}
 								<Loader class="mr-3 h-4 w-4 animate-spin text-white" />
