@@ -8,17 +8,22 @@
 	import EmailList from '$lib/components/email/emailList/emailList.svelte';
 	import EmailContainer from '$lib/components/email/emailContainer/emailContainer.svelte';
 
-	let innerWidth = 0;
-	$: metaStore.set({
-		screen: innerWidth < 768 ? 'mobile' : 'desktop',
-		showSidebar: innerWidth >= 1280,
-		showContactForm: false
+	const { children } = $props();
+
+	let innerWidth = $state(0);
+
+	$effect(() => {
+		metaStore.set({
+			screen: innerWidth < 768 ? 'mobile' : 'desktop',
+			showSidebar: innerWidth >= 1280,
+			showContactForm: false
+		});
 	});
 
-	$: reactiveClasses = {
+	const reactiveClasses = $derived({
 		outerContainerPl:
 			$metaStore.showSidebar && $metaStore.screen === 'desktop' ? 'pl-[19rem]' : 'pl-4'
-	};
+	});
 </script>
 
 <svelte:window bind:innerWidth />
@@ -33,7 +38,7 @@
 	<div class="flex h-full w-full overflow-hidden border bg-background">
 		<EmailList />
 		<EmailContainer>
-			<slot />
+			{@render children()}
 		</EmailContainer>
 	</div>
 </section>

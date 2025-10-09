@@ -9,13 +9,15 @@
 	const sidebarSocialItems = sideBarContent.sidebarSocialItems;
 
 	export const toggleSidebar = () => {
-		$metaStore.showSidebar = !$metaStore.showSidebar;
+		metaStore.set({ showSidebar: !$metaStore.showSidebar });
 	};
 
-	$: containerResponsiveClass = $metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full';
+	const containerResponsiveClass = $derived(
+		$metaStore.showSidebar ? 'translate-x-0' : '-translate-x-full'
+	);
 </script>
 
-<button on:click={toggleSidebar}>
+<button onclick={toggleSidebar}>
 	<GanttChart class="mr-4 h-5 w-5 text-neutral-500" />
 </button>
 <section

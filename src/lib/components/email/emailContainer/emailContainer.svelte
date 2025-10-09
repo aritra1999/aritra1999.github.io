@@ -5,7 +5,11 @@
 	import EmailBottom from '$lib/components/email/emailTemplate/emailFooter.svelte';
 	import { cn } from '$lib/utils';
 
-	$: emailBodyResponsiveClass = $metaStore.screen !== 'desktop' ? 'absolute left-0' : 'block';
+	const { children } = $props();
+
+	const emailBodyResponsiveClass = $derived(
+		$metaStore.screen !== 'desktop' ? 'absolute left-0' : 'block'
+	);
 </script>
 
 {#if $metaStore.screen === 'desktop' || $page.url.pathname !== '/'}
@@ -17,7 +21,7 @@
 	>
 		<EmailTop />
 		<div class="pl-[5px]">
-			<slot />
+			{@render children()}
 		</div>
 		<EmailBottom />
 	</div>

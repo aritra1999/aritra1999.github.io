@@ -1,7 +1,49 @@
 import { writable } from 'svelte/store';
 
-export const metaStore = writable({
-	screen: 'desktop',
-	showSidebar: true,
-	showContactForm: false
-});
+interface MetaStoreState {
+	screen: 'desktop' | 'mobile';
+	showSidebar: boolean;
+	showContactForm: boolean;
+}
+
+function createMetaStore() {
+	const { subscribe, set, update } = writable<MetaStoreState>({
+		screen: 'desktop',
+		showSidebar: true,
+		showContactForm: false
+	});
+
+	return {
+		subscribe,
+		set: (values: Partial<MetaStoreState>) => {
+			update((state) => ({ ...state, ...values }));
+		},
+		// For compatibility with the new syntax, we'll add getters
+		get screen() {
+			let currentValue: MetaStoreState;
+			subscribe((value) => (currentValue = value))();
+			return currentValue.screen;
+		},
+		get showSidebar() {
+			let currentValue: MetaStoreState;
+			subscribe((value) => (currentValue = value))();
+			return currentValue.showSidebar;
+		},
+		get showContactForm() {
+			let currentValue: MetaStoreState;
+			subscribe((value) => (currentValue = value))();
+			return currentValue.showContactForm;
+		},
+		set screen(value: 'desktop' | 'mobile') {
+			update((state) => ({ ...state, screen: value }));
+		},
+		set showSidebar(value: boolean) {
+			update((state) => ({ ...state, showSidebar: value }));
+		},
+		set showContactForm(value: boolean) {
+			update((state) => ({ ...state, showContactForm: value }));
+		}
+	};
+}
+
+export const metaStore = createMetaStore();

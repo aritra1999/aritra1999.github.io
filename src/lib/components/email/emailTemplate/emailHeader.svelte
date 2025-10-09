@@ -11,7 +11,7 @@
 		return pageName;
 	}
 
-	$: pageName = getPageName($page.url.pathname);
+	const pageName = $derived(getPageName($page.url.pathname));
 </script>
 
 <div>

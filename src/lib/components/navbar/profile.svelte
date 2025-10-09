@@ -3,8 +3,8 @@
 	import profilePicture1 from '$lib/images/me.jpeg';
 	import profilePicture2 from '$lib/images/me2.png';
 
-	let showProfileDropDown = false;
-	let emailList = [
+	let showProfileDropDown = $state(false);
+	const emailList = [
 		{
 			title: 'Aritra Mondal - University Email',
 			email: '1806290@kiit.ac.in',
@@ -23,7 +23,7 @@
 	];
 </script>
 
-<button on:click={() => (showProfileDropDown = !showProfileDropDown)}>
+<button onclick={() => (showProfileDropDown = !showProfileDropDown)}>
 	<img src={profilePicture} class="profile-picture" alt="User" />
 </button>
 {#if showProfileDropDown}

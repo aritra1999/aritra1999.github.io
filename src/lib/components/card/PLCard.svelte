@@ -1,19 +1,21 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import type { PLItem } from '$lib/types/types';
 
 	import Loading from '$lib/components/loading/Loading.svelte';
 	import { Github, MoveRight } from 'lucide-svelte';
 
-	export let item: PLItem;
+	const { item }: { item: PLItem } = $props();
 
-	let loading = false;
-	let thumbnail: any;
+	let loading = $state(false);
+	let thumbnail = $state();
 
-	onMount(async () => {
-		loading = true;
-		thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.png`)).default;
-		loading = false;
+	$effect(() => {
+		const loadThumbnail = async () => {
+			loading = true;
+			thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.png`)).default;
+			loading = false;
+		};
+		loadThumbnail();
 	});
 </script>
 
@@ -24,7 +26,7 @@
 				<Loading />
 			</div>
 		{:else}
-			<img class="h-48 w-full border-b object-cover" src={thumbnail} alt="loading" />
+			<img class="h-48 w-full border-b object-cover" src={thumbnail || ''} alt="loading" />
 		{/if}
 	</div>
 	<div class="px-6 pb-4 pt-6">
@@ -39,7 +41,7 @@
 				>
 			{:else}
 				<span class="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-600"
-					>Finised</span
+					>Finished</span
 				>
 			{/if}
 		</div>

@@ -28,7 +28,7 @@
 
 	<div class="flex items-center space-x-4">
 		<div class="navbar-pill">
-			<div class="mr-3 h-3 w-3 rounded-full bg-green-500" />
+			<div class="mr-3 h-3 w-3 rounded-full bg-green-500"></div>
 			Active
 		</div>
 		<div class="icon-container">
