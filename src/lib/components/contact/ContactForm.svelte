@@ -15,8 +15,8 @@
 		X
 	} from 'lucide-svelte';
 
-	let loading = false;
-	let status = '';
+	let loading = $state(false);
+	let status = $state('');
 
 	async function handelSubmit(e: any) {
 		loading = true;
@@ -41,14 +41,14 @@
 		<div class="flex w-full items-center justify-between bg-neutral-900 px-4 py-3 text-white">
 			New Message
 			<button
-				on:click={() => {
-					$metaStore.showContactForm = false;
+				onclick={() => {
+					metaStore.set({ showContactForm: false });
 				}}
 			>
 				<X class="h-5 w-5" />
 			</button>
 		</div>
-		<form on:submit|preventDefault={handelSubmit} class="border bg-white">
+		<form onsubmit={handelSubmit} class="border bg-white">
 			<div class="rounded-b-lg p-4">
 				{#if status === 'success' || status === 'error'}
 					<div class="my-2">
@@ -69,7 +69,7 @@
 								type="button"
 								class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg p-1.5 focus:ring-2"
 								aria-label="Close"
-								on:click={() => {
+								onclick={() => {
 									status = '';
 								}}
 							>
@@ -99,7 +99,7 @@
 					placeholder="Message"
 					class="mb-2 w-full resize-none border-b border-white bg-white px-4 py-2"
 					rows="6"
-				/>
+				></textarea>
 
 				<div class="flex items-center justify-between">
 					<div class="ml-3 flex w-full items-center justify-between text-neutral-600">

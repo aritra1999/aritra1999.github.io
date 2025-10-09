@@ -1,7 +1,7 @@
 <script>
 	import topbarItems from '$lib/data/topbar.json';
 	import { metaStore } from '$lib/store/metaStore';
-	import { twMerge } from 'tailwind-merge';
+	import { cn } from '$lib/utils';
 </script>
 
 {#if $metaStore.screen == 'desktop'}

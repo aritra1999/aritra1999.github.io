@@ -1,10 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	const { item }: { item: any } = $props();
+	let thumbnail = $state();
 
-	export let item: any;
-	let thumbnail: any;
-	onMount(async () => {
-		thumbnail = (await import(`../../images/${item.logo}.png`)).default;
+	$effect(() => {
+		const loadThumbnail = async () => {
+			thumbnail = (await import(`../../images/${item.logo}.png`)).default;
+		};
+		loadThumbnail();
 	});
 </script>
 

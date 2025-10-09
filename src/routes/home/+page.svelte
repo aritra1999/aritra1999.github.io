@@ -1,7 +1,7 @@
 <script lang="ts">
-	export let data;
+	const { data } = $props();
 
-	let roles = ['Learning', 'Developing', 'Gaming'];
+	const roles = ['Learning', 'Developing', 'Gaming'];
 </script>
 
 <div class="h-[72vh]">

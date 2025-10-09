@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PLCard from '$lib/components/card/PLCard.svelte';
 
-	export let data;
+	const { data } = $props();
 </script>
 
 <div class="px-3 py-10 lg:px-6">
