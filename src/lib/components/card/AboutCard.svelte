@@ -1,6 +1,6 @@
 <script lang="ts">
 	const { item }: { item: any } = $props();
-	let thumbnail = $state();
+	let thumbnail = $state<string>();
 
 	$effect(() => {
 		const loadThumbnail = async () => {
@@ -13,7 +13,9 @@
 <div class="card border p-8">
 	<div class="mb-6 flex items-center justify-between text-lg font-bold">
 		<h3 class="pr-4 text-xl font-bold">{item.name}</h3>
-		<img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
+		{#if thumbnail}
+			<img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
+		{/if}
 	</div>
 	<ol class="relative mx-4 border-l border-neutral-200">
 		{#each item.roles as role}

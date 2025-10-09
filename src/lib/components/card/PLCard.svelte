@@ -7,7 +7,7 @@
 	const { item }: { item: PLItem } = $props();
 
 	let loading = $state(false);
-	let thumbnail = $state();
+	let thumbnail = $state<string>();
 
 	$effect(() => {
 		const loadThumbnail = async () => {

@@ -18,21 +18,20 @@ function createMetaStore() {
 		set: (values: Partial<MetaStoreState>) => {
 			update((state) => ({ ...state, ...values }));
 		},
-		// For compatibility with the new syntax, we'll add getters
 		get screen() {
-			let currentValue: MetaStoreState;
+			let currentValue: MetaStoreState | undefined;
 			subscribe((value) => (currentValue = value))();
-			return currentValue.screen;
+			return currentValue!.screen;
 		},
 		get showSidebar() {
 			let currentValue: MetaStoreState;
 			subscribe((value) => (currentValue = value))();
-			return currentValue.showSidebar;
+			return currentValue!.showSidebar;
 		},
 		get showContactForm() {
 			let currentValue: MetaStoreState;
 			subscribe((value) => (currentValue = value))();
-			return currentValue.showContactForm;
+			return currentValue!.showContactForm;
 		},
 		set screen(value: 'desktop' | 'mobile') {
 			update((state) => ({ ...state, screen: value }));
