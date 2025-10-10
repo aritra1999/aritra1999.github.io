@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import Icons from './icons.svelte';
 	import emails from '$lib/data/emailList.json';
-	import { ArrowLeft, User } from 'lucide-svelte';
+	import { ArrowLeft, User } from '@lucide/svelte';
 
 	function getPageName(url: string): string {
 		url = url.replaceAll('/', '');

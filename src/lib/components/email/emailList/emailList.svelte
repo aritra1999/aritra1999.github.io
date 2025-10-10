@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import items from '$lib/data/emailList.json';
 	import { cn } from '$lib/utils';
-	import { FileSpreadsheet, FileTerminal, FileText, Paperclip } from 'lucide-svelte';
+	import { FileSpreadsheet, FileTerminal, FileText, Paperclip } from '@lucide/svelte';
 
 	const date = new Date();
 	const today = `${date.getDate()} / ${new Intl.DateTimeFormat('en-US', {

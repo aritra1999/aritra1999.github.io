@@ -1,5 +1,5 @@
 <script>
-	import { Printer, Reply, Star } from 'lucide-svelte';
+	import { Printer, Reply, Star } from '@lucide/svelte';
 	const icons = [Printer, Reply, Star];
 </script>
 

@@ -2,7 +2,7 @@
 	import type { PLItem } from '$lib/types/types';
 
 	import Loading from '$lib/components/loading/Loading.svelte';
-	import { Github, MoveRight } from 'lucide-svelte';
+	import { Github, MoveRight } from '@lucide/svelte';
 
 	const { item }: { item: PLItem } = $props();
 
