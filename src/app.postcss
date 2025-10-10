@@ -73,7 +73,8 @@
 		@apply border-border;
 	}
 	body {
-		font-family: 'Rubik', sans-serif;
+		font-family: 'Bricolage Grotesque', sans-serif;
+
 		@apply bg h-screen w-screen overflow-hidden text-foreground;
 	}
 }
@@ -90,11 +91,8 @@
 	background-size:
 		var(--grid-dash) var(--grid-dash),
 		var(--grid-size) var(--grid-size);
-	background-image: linear-gradient(
-			to bottom,
-			transparent var(--grid-gap),
-			var(--paper-color) var(--grid-gap)
-		),
+	background-image:
+		linear-gradient(to bottom, transparent var(--grid-gap), var(--paper-color) var(--grid-gap)),
 		linear-gradient(
 			to right,
 			var(--grid-color) var(--grid-strength),

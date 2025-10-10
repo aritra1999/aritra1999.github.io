@@ -1,12 +1,9 @@
 <script lang="ts">
 	import Contact from '$lib/components/sidebar/contact.svelte';
-	import sideBarContent from '$lib/data/sidebarData.json';
+	import { sidebarAppItems, sidebarSocialItems } from '$lib/data/sidebarData';
 	import { metaStore } from '$lib/store/metaStore';
 	import { cn } from '$lib/utils';
-	import { GanttChart, Mail, Pencil } from 'lucide-svelte';
-
-	const sidebarItems = sideBarContent.sidebarItems;
-	const sidebarSocialItems = sideBarContent.sidebarSocialItems;
+	import { Mail, PanelLeft } from '@lucide/svelte';
 
 	export const toggleSidebar = () => {
 		metaStore.set({ showSidebar: !$metaStore.showSidebar });
@@ -18,7 +15,7 @@
 </script>
 
 <button onclick={toggleSidebar}>
-	<GanttChart class="mr-4 h-5 w-5 text-neutral-500" />
+	<PanelLeft class="mr-4 size-5 text-neutral-500" />
 </button>
 <section
 	class={cn(
@@ -30,51 +27,29 @@
 		<div class="py-4 pl-2">
 			<Contact />
 		</div>
-		<div
+		<a
 			class="flex w-full items-center justify-between rounded-full bg-sky-100 px-6 py-2 text-sm font-semibold text-blue-800"
+			href="/"
 		>
 			<div class="flex">
-				<Mail class="mr-3 h-5 w-5" />
+				<Mail class="mr-3 size-5" />
 				Inbox
 			</div>
 			<span>6</span>
-		</div>
+		</a>
 		<div class="border-b border-neutral-300 py-2">
-			{#each sidebarItems as sidebarItem}
-				<div class="sidebarItem">
-					<svg
-						stroke="currentColor"
-						fill="currentColor"
-						stroke-width="0"
-						viewBox="0 0 24 24"
-						class="mr-3 h-5 w-5"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						{@html sidebarItem.icon}
-					</svg>
-					{sidebarItem.name}
-				</div>
+			{#each sidebarAppItems as sidebarAppItem}
+				<a class="sidebarItem" href={sidebarAppItem.link} target="_blank" rel="noreferrer">
+					<sidebarAppItem.icon class="mr-3 size-5" />
+					{sidebarAppItem.name}
+				</a>
 			{/each}
 		</div>
 		<div class="border-b border-neutral-300 py-2">
 			{#each sidebarSocialItems as sidebarSocialItem}
-				<a href={sidebarSocialItem.link} target="_blank" rel="noreferrer">
-					<div class="sidebarItem">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink"
-							aria-hidden="true"
-							role="img"
-							class="mr-3 h-5 w-5"
-							width="32"
-							height="32"
-							preserveAspectRatio="xMidYMid meet"
-							viewBox="0 0 24 24"
-						>
-							{@html sidebarSocialItem.icon}
-						</svg>
-						{sidebarSocialItem.title}
-					</div>
+				<a class="sidebarItem" href={sidebarSocialItem.link} target="_blank" rel="noreferrer">
+					<sidebarSocialItem.icon class="mr-3 size-5" />
+					{sidebarSocialItem.title}
 				</a>
 			{/each}
 		</div>

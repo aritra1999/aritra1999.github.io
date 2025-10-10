@@ -12,7 +12,7 @@
 		Image,
 		Info,
 		X
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	let loading = $state(false);
 	let status = $state('');

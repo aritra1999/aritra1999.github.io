@@ -2,7 +2,7 @@
 	import '$lib/components/navbar/navbar.postcss';
 	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
 	import Profile from '$lib/components/navbar/profile.svelte';
-	import { Grip, HelpCircle, Search, Settings } from 'lucide-svelte';
+	import { Grip, HelpCircle, Search, Settings } from '@lucide/svelte';
 	import { getRandomEmoji } from './utils';
 </script>
 
