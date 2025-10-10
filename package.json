@@ -33,9 +33,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@lucide/svelte": "^0.545.0",
 		"@sveltejs/adapter-vercel": "^5.4.6",
 		"clsx": "^2.1.1",
-		"lucide-svelte": "^0.456.0",
 		"tailwind-merge": "^2.5.4",
 		"tailwind-variants": "^0.2.1"
 	}
