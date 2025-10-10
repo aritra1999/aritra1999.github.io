@@ -1,6 +1,6 @@
 <script>
 	import { metaStore } from '$lib/store/metaStore';
-	import { Pencil } from 'lucide-svelte';
+	import { Pencil } from '@lucide/svelte';
 
 	const contactButtonClick = () => {
 		metaStore.set({ showContactForm: !$metaStore.showContactForm });
