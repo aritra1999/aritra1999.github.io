@@ -23,10 +23,6 @@
 		"content": "A list of all my blogs and research papers",
 		"attachments": [
 			{
-				"name": "blog.com",
-				"type": "doc"
-			},
-			{
 				"name": "paper1.pdf",
 				"type": "pdf"
 			},
