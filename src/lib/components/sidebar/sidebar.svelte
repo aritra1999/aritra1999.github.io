@@ -5,7 +5,7 @@
 	import { cn } from '$lib/utils';
 	import { Mail, PanelLeft } from '@lucide/svelte';
 
-	export const toggleSidebar = () => {
+	const toggleSidebar = () => {
 		metaStore.set({ showSidebar: !$metaStore.showSidebar });
 	};
 
