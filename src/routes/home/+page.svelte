@@ -12,7 +12,7 @@
 			<div class="flex h-full w-full items-center justify-center">
 				<div class="ishtyle">
 					<div class="mb-2 p-2 font-medium">Hi, I'm Aritra Mondal.</div>
-					<div class="flex flex-col text-4xl font-extrabold text-neutral-800 sm:text-5xl">
+					<div class="flex flex-col text-4xl font-extrabold text-neutral-800 sm:text-5xl dark:text-neutral-200">
 						{#each roles as role}
 							<div class="pb-6 pr-8">
 								<h2 class="bg-background">{role}.</h2>

@@ -12,7 +12,8 @@
 		X
 	} from '@lucide/svelte';
 
-	const menuItemClass = 'flex justify-center items-center p-2 hover:bg-neutral-200 rounded-lg';
+	const menuItemClass =
+		'flex justify-center items-center p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-lg';
 
 	let status = $state<'idle' | 'sending' | 'sent' | 'error'>('idle');
 	let errorMessage = $state('');
@@ -67,13 +68,13 @@
 				<X class="h-5 w-5" />
 			</button>
 		</div>
-		<form class="border bg-white" onsubmit={handleSubmit}>
+		<form class="border bg-white dark:border-neutral-700 dark:bg-neutral-900" onsubmit={handleSubmit}>
 			<div class="rounded-b-lg p-4">
 				<input
 					name="from"
 					type="email"
 					placeholder="From"
-					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2"
+					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
 					required
 				/>
 				<input
@@ -81,14 +82,14 @@
 					type="text"
 					placeholder="Subject"
 					maxlength="120"
-					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2"
+					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
 					required
 				/>
 				<textarea
 					name="message"
 					placeholder="Message"
 					maxlength="1500"
-					class="mb-2 w-full resize-none border-b border-white bg-white px-4 py-2"
+					class="mb-2 w-full resize-none border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
 					rows="6"
 					required
 				></textarea>
@@ -102,7 +103,7 @@
 				/>
 
 				<div class="flex items-center justify-between">
-					<div class="ml-3 flex w-full items-center justify-between text-neutral-600">
+					<div class="ml-3 flex w-full items-center justify-between text-neutral-600 dark:text-neutral-400">
 						{#if $metaStore.screen !== 'mobile'}
 							<div class="flex items-center justify-center space-x-2">
 								<div class={cn(menuItemClass)}>
@@ -140,11 +141,11 @@
 					</div>
 				</div>
 				{#if status === 'sent'}
-					<p class="mt-2 px-4 text-sm font-medium text-green-700">
+					<p class="mt-2 px-4 text-sm font-medium text-green-700 dark:text-green-400">
 						Message sent! I'll get back to you soon.
 					</p>
 				{:else if status === 'error'}
-					<p class="mt-2 px-4 text-sm font-medium text-red-600">{errorMessage}</p>
+					<p class="mt-2 px-4 text-sm font-medium text-red-600 dark:text-red-400">{errorMessage}</p>
 				{/if}
 			</div>
 		</form>

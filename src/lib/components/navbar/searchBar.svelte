@@ -55,7 +55,7 @@
 				oninput={() => (open = true)}
 				onkeydown={onKeydown}
 			/>
-			<Search class="h-5 w-5 shrink-0 text-neutral-900" />
+			<Search class="h-5 w-5 shrink-0 text-neutral-900 dark:text-neutral-100" />
 		</div>
 	{:else}
 		<input
@@ -75,31 +75,31 @@
 
 	{#if open && query.trim()}
 		<div
-			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border bg-white shadow-lg"
+			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border bg-white shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
 		>
 			{#if results.length === 0}
-				<div class="px-4 py-3 text-sm text-neutral-500">
+				<div class="px-4 py-3 text-sm text-neutral-500 dark:text-neutral-400">
 					No results for “{query.trim()}”
 				</div>
 			{:else}
 				{#each results as item}
 					{@const Icon = sectionIcons[item.section] ?? Search}
 					<button
-						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-neutral-100"
+						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-800"
 						onmousedown={(event) => event.preventDefault()}
 						onclick={() => select(item)}
 					>
-						<Icon class="size-4 shrink-0 text-neutral-500" />
+						<Icon class="size-4 shrink-0 text-neutral-500 dark:text-neutral-400" />
 						<span class="min-w-0 flex-1">
-							<span class="block truncate text-sm font-semibold text-neutral-900">
+							<span class="block truncate text-sm font-semibold text-neutral-900 dark:text-neutral-100">
 								{item.title}
 							</span>
 							{#if item.detail}
-								<span class="block truncate text-xs text-neutral-500">{item.detail}</span>
+								<span class="block truncate text-xs text-neutral-500 dark:text-neutral-400">{item.detail}</span>
 							{/if}
 						</span>
 						<span
-							class="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-medium text-blue-600"
+							class="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-medium text-blue-600 dark:bg-blue-950 dark:text-blue-300"
 						>
 							{item.section}
 						</span>

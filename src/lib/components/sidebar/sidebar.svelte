@@ -28,7 +28,7 @@
 			<Contact />
 		</div>
 		<a
-			class="flex w-full items-center justify-between rounded-full bg-sky-100 px-6 py-2 text-sm font-semibold text-blue-800"
+			class="flex w-full items-center justify-between rounded-full bg-sky-100 px-6 py-2 text-sm font-semibold text-blue-800 dark:bg-sky-950 dark:text-sky-200"
 			href="/"
 		>
 			<div class="flex">
@@ -37,7 +37,7 @@
 			</div>
 			<span>7</span>
 		</a>
-		<div class="border-b border-neutral-300 py-2">
+		<div class="border-b border-neutral-300 py-2 dark:border-neutral-700">
 			{#each sidebarAppItems as sidebarAppItem}
 				<a class="sidebarItem" href={sidebarAppItem.link} target="_blank" rel="noreferrer">
 					<sidebarAppItem.icon class="mr-3 size-5" />
@@ -45,7 +45,7 @@
 				</a>
 			{/each}
 		</div>
-		<div class="border-b border-neutral-300 py-2">
+		<div class="border-b border-neutral-300 py-2 dark:border-neutral-700">
 			{#each sidebarSocialItems as sidebarSocialItem}
 				<a class="sidebarItem" href={sidebarSocialItem.link} target="_blank" rel="noreferrer">
 					<sidebarSocialItem.icon class="mr-3 size-5" />
@@ -58,6 +58,6 @@
 
 <style lang="postcss">
 	.sidebarItem {
-		@apply flex w-full items-center rounded-full px-6 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-200;
+		@apply flex w-full items-center rounded-full px-6 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-200 dark:text-neutral-300 dark:hover:bg-neutral-800;
 	}
 </style>
