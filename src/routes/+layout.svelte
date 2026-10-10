@@ -2,6 +2,7 @@
 	import '../app.postcss';
 
 	import { onMount } from 'svelte';
+	import { page } from '$app/state';
 	import { metaStore } from '#lib/store/metaStore.js';
 	import { themeStore } from '#lib/store/themeStore.js';
 	import { cn } from '#lib/utils.js';
@@ -9,6 +10,7 @@
 	import ContactForm from '#lib/components/contact/ContactForm.svelte';
 	import EmailList from '#lib/components/email/emailList/emailList.svelte';
 	import EmailContainer from '#lib/components/email/emailContainer/emailContainer.svelte';
+	import sectionTitles from '#lib/data/emailList.json';
 
 	const { children } = $props();
 
@@ -30,9 +32,20 @@
 		outerContainerPl:
 			$metaStore.showSidebar && $metaStore.screen === 'desktop' ? 'pl-[19rem]' : 'pl-4'
 	});
+
+	const sectionKey = $derived(page.url.pathname.replaceAll('/', '') || 'home');
+	const sectionTitle = $derived(
+		page.error
+			? `Error ${page.status}`
+			: ((sectionTitles as Record<string, { title: string }>)[sectionKey]?.title ?? 'Home')
+	);
 </script>
 
 <svelte:window bind:innerWidth />
+
+<svelte:head>
+	<title>{sectionTitle} · Aritra Mondal</title>
+</svelte:head>
 
 <Navbar />
 <section
