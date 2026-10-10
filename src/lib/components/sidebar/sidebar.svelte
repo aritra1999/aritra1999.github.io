@@ -35,7 +35,7 @@
 				<Mail class="mr-3 size-5" />
 				Inbox
 			</div>
-			<span>6</span>
+			<span>7</span>
 		</a>
 		<div class="border-b border-neutral-300 py-2">
 			{#each sidebarAppItems as sidebarAppItem}

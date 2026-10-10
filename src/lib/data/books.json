@@ -1,0 +1,26 @@
+[
+	{
+		"title": "The Staff Engineer's Path",
+		"author": "Tanya Reilly",
+		"description": "A practical guide to the staff-plus IC track: technical strategy, execution, and leading without authority.",
+		"link": "https://www.oreilly.com/library/view/the-staff-engineers/9781098118723"
+	},
+	{
+		"title": "Staff Engineer",
+		"author": "Will Larson",
+		"description": "Interviews and field notes on what staff engineering actually looks like across different companies.",
+		"link": "https://staffeng.com/book"
+	},
+	{
+		"title": "PostgreSQL 14 Internals",
+		"author": "Egor Rogov",
+		"description": "A deep dive into MVCC, WAL, locking, and query execution inside Postgres. Available as a free PDF.",
+		"link": "https://postgrespro.com/community/books/internals"
+	},
+	{
+		"title": "Designing Data-Intensive Applications",
+		"author": "Martin Kleppmann",
+		"description": "The canonical tour of storage engines, replication, partitioning, and stream processing.",
+		"link": "https://dataintensive.net"
+	}
+]
