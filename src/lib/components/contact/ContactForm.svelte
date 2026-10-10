@@ -3,19 +3,14 @@
 	import { cn } from '$lib/utils';
 	import {
 		Link2,
-		Loader,
 		MoreVertical,
 		Paperclip,
 		Smile,
 		SpellCheck,
 		Trash,
 		Image,
-		Info,
 		X
 	} from '@lucide/svelte';
-
-	let loading = $state(false);
-	let status = $state('');
 
 	const menuItemClass = 'flex justify-center items-center p-2 hover:bg-neutral-200 rounded-lg';
 </script>
@@ -34,36 +29,6 @@
 		</div>
 		<form class="border bg-white">
 			<div class="rounded-b-lg p-4">
-				{#if status === 'success' || status === 'error'}
-					<div class="my-2">
-						<div
-							class="flex items-center border p-4 {status === 'success'
-								? 'bg-green-50 text-green-800'
-								: 'bg-red-50 text-red-800'} rounded-lg"
-						>
-							<Info class="h-5 w-5" />
-							<div class="mx-2">
-								{#if status === 'success'}
-									Successfully sent message :)
-								{:else if status === 'error'}
-									Something went wrong :(
-								{/if}
-							</div>
-							<button
-								type="button"
-								class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg p-1.5 focus:ring-2"
-								aria-label="Close"
-								onclick={() => {
-									status = '';
-								}}
-							>
-								<span class="sr-only">Close</span>
-								<X class="h-5 w-5" />
-							</button>
-						</div>
-					</div>
-				{/if}
-
 				<input
 					name="from"
 					type="email"
@@ -119,11 +84,7 @@
 							type="submit"
 							disabled={true}
 						>
-							{#if loading}
-								<Loader class="mr-3 h-4 w-4 animate-spin text-white" />
-							{:else}
-								Send
-							{/if}
+							Send
 						</button>
 					</div>
 				</div>

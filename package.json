@@ -4,7 +4,6 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"deploy": "npm run build && npx gh-pages -d build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -12,14 +11,8 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@fontsource/fira-mono": "^4.5.10",
-		"@neoconfetti/svelte": "^2.2.0",
-		"@sveltejs/adapter-auto": "^3.2.5",
-		"@sveltejs/adapter-static": "^3.0.5",
 		"@sveltejs/kit": "^2.8.0",
-		"@types/cookie": "^0.6.0",
 		"autoprefixer": "^10.4.20",
-		"gh-pages": "^6.2.0",
 		"postcss": "^8.4.49",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.8",
@@ -36,7 +29,6 @@
 		"@lucide/svelte": "^0.545.0",
 		"@sveltejs/adapter-vercel": "^5.4.6",
 		"clsx": "^2.1.1",
-		"tailwind-merge": "^2.5.4",
-		"tailwind-variants": "^0.2.1"
+		"tailwind-merge": "^2.5.4"
 	}
 }
