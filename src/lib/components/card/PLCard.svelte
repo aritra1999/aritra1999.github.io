@@ -12,7 +12,7 @@
 	$effect(() => {
 		const loadThumbnail = async () => {
 			loading = true;
-			thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.png`)).default;
+			thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.jpg`)).default;
 			loading = false;
 		};
 		loadThumbnail();
@@ -26,7 +26,13 @@
 				<Loading />
 			</div>
 		{:else}
-			<img class="h-48 w-full border-b object-cover" src={thumbnail || ''} alt="loading" />
+			<img
+				class="h-48 w-full border-b object-cover"
+				src={thumbnail || ''}
+				alt="loading"
+				loading="lazy"
+				decoding="async"
+			/>
 		{/if}
 	</div>
 	<div class="px-6 pb-4 pt-6">

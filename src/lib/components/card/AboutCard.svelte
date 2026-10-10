@@ -16,7 +16,7 @@
 	<div class="mb-6 flex items-center justify-between text-lg font-bold">
 		<h3 class="pr-4 text-xl font-bold">{item.name}</h3>
 		{#if thumbnail}
-			<img class="h-8 rounded-md" src={thumbnail} alt={item.name} />
+			<img class="h-8 rounded-md" src={thumbnail} alt={item.name} loading="lazy" decoding="async" />
 		{/if}
 	</div>
 	<ol class="relative mx-4 border-l border-neutral-200">

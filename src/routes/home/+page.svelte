@@ -22,7 +22,13 @@
 				</div>
 			</div>
 			<div class="flex h-full w-full items-center justify-center p-4 md:w-4/6">
-				<img class="w-full rounded-t-[20px] rounded-bl-[20px]" src={data.gif} alt="me" />
+				<img
+					class="w-full rounded-t-[20px] rounded-bl-[20px]"
+					src={data.gif}
+					alt="me"
+					fetchpriority="high"
+					decoding="async"
+				/>
 			</div>
 		</div>
 	</div>

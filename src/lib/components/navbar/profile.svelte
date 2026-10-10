@@ -1,7 +1,7 @@
 <script lang="ts">
 	import profilePicture from '#lib/images/navbar-user.jpg';
 	import profilePicture1 from '#lib/images/me.jpeg';
-	import profilePicture2 from '#lib/images/me2.png';
+	import profilePicture2 from '#lib/images/me2.jpg';
 
 	let showProfileDropDown = $state(false);
 	const emailList = [
