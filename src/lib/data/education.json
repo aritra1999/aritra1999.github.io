@@ -1,0 +1,40 @@
+[
+	{
+		"name": "Kalinga Institute of Industrial Technology",
+		"logo": "kiit",
+		"roles": [
+			{
+				"duration": "June 2018 - May 2022",
+				"scope": "Bachelor of Technology",
+				"role": "Information Technology"
+			}
+		],
+		"score": "8.7 / 10.0",
+
+		"url": "https://kiit.ac.in"
+	},
+	{
+		"name": "Delhi Public School, Ruby Park",
+		"logo": "dps",
+		"roles": [
+			{
+				"role": "Computer Science",
+				"scope": "High School",
+				"duration": "June 2016 - June 2018"
+			}
+		],
+		"branch": "Computer Science",
+		"url": "https://www.dpskolkata.com/"
+	},
+	{
+		"name": "South Point",
+		"logo": "sphs",
+		"roles": [
+			{
+				"duration": "April 2005 - April 2016",
+				"scope": "Elementary School"
+			}
+		],
+		"url": "https://www.southpoint.edu.in/"
+	}
+]
