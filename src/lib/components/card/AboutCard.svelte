@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Calendar, MoveRight } from '@lucide/svelte';
+	import { Calendar } from '@lucide/svelte';
 
 	const { item }: { item: any } = $props();
 	let thumbnail = $state<string>();
@@ -14,7 +14,14 @@
 
 <div class="card border p-8">
 	<div class="mb-6 flex items-center justify-between text-lg font-bold">
-		<h3 class="pr-4 text-xl font-bold">{item.name}</h3>
+		<a
+			href={item.url}
+			target="_blank"
+			rel="noreferrer"
+			class="pr-4 text-xl font-bold hover:text-blue-600 hover:underline"
+		>
+			{item.name}
+		</a>
 		{#if thumbnail}
 			<img class="h-8 rounded-md" src={thumbnail} alt={item.name} loading="lazy" decoding="async" />
 		{/if}
@@ -61,10 +68,4 @@
 	{#if item.score}<p class="mb-2 font-medium text-neutral-800">
 			CGPA: {item.score}
 		</p>{/if}
-	<div class="card-link-container">
-		<div class="flex items-center space-x-1 text-sm font-medium text-blue-600">
-			<a href={item.url} target="_blank" rel="noreferrer">Show more</a>
-			<MoveRight class="size-4" />
-		</div>
-	</div>
 </div>
