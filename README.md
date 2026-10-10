@@ -5,14 +5,15 @@ SvelteKit 3 + Svelte 5 app deployed to **Cloudflare Workers** via
 
 ## Developing
 
-Requires Node `>=22.17`. Install dependencies and start a development server:
+Requires Node `>=22.17` and [Bun](https://bun.sh) 1.4+. Install dependencies
+and start a development server:
 
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun run dev -- --open
 ```
 
 ## Building
@@ -20,21 +21,21 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+bun run build
 ```
 
 Preview the production build locally with Wrangler (uses
 `.svelte-kit/cloudflare/_worker.js`):
 
 ```bash
-npm run preview
+bun run preview
 ```
 
 ## Deploying to Cloudflare
 
 1. Install Wrangler and log in (already a devDependency here):
    ```bash
-   npx wrangler login
+   bunx wrangler login
    ```
 2. Configure `wrangler.jsonc` (worker name, account details as needed).
 3. Set the `PUBLIC_GIPHY_KEY` variable in the Cloudflare dashboard
@@ -42,9 +43,9 @@ npm run preview
    The home page falls back to a static GIF if the key is missing.
 4. Build and deploy:
    ```bash
-   npm run deploy
+   bun run deploy
    ```
 
 Alternatively, connect the repo via the Cloudflare dashboard
 (Workers → Create → Import a repository) with build command
-`npm run build` and deploy command `npx wrangler deploy`.
+`bun run build` and deploy command `bunx wrangler deploy`.
