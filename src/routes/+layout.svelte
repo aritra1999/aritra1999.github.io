@@ -1,12 +1,12 @@
 <script lang="ts">
 	import '../app.postcss';
 
-	import { metaStore } from '$lib/store/metaStore';
-	import { cn } from '$lib/utils';
-	import Navbar from '$lib/components/navbar/navbarContainer.svelte';
-	import ContactForm from '$lib/components/contact/ContactForm.svelte';
-	import EmailList from '$lib/components/email/emailList/emailList.svelte';
-	import EmailContainer from '$lib/components/email/emailContainer/emailContainer.svelte';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import { cn } from '#lib/utils.js';
+	import Navbar from '#lib/components/navbar/navbarContainer.svelte';
+	import ContactForm from '#lib/components/contact/ContactForm.svelte';
+	import EmailList from '#lib/components/email/emailList/emailList.svelte';
+	import EmailContainer from '#lib/components/email/emailContainer/emailContainer.svelte';
 
 	const { children } = $props();
 

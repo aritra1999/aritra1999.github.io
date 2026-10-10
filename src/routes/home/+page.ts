@@ -1,8 +1,8 @@
-import { PUBLIC_GIPHY_KEY } from '$env/static/public';
-import type { Load } from '@sveltejs/kit';
+import { PUBLIC_GIPHY_KEY } from '$app/env/public';
 
 export async function load({ fetch }) {
 	try {
+		if (!PUBLIC_GIPHY_KEY) throw new Error('missing Giphy key');
 		const res = await fetch(
 			`https://api.giphy.com/v1/gifs/random?api_key=${PUBLIC_GIPHY_KEY}&tag=funny&rating=pg-13`
 		);

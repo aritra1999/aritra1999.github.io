@@ -1,5 +1,5 @@
 <script>
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { Forward, Reply, Flag } from '@lucide/svelte';
 
 	const options = [
@@ -18,7 +18,7 @@
 	];
 </script>
 
-{#if $page.url.pathname !== '/'}
+{#if page.url.pathname !== '/'}
 	<div class="flex justify-between space-x-4 border-t p-4 pb-5 font-medium sm:justify-end">
 		{#each options as option}
 			<button
