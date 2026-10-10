@@ -2,7 +2,8 @@
 	import '#lib/components/navbar/navbar.postcss';
 	import Sidebar from '#lib/components/sidebar/sidebar.svelte';
 	import Profile from '#lib/components/navbar/profile.svelte';
-	import { Grip, HelpCircle, Search, Settings } from '@lucide/svelte';
+	import SearchBar from '#lib/components/navbar/searchBar.svelte';
+	import { Grip, HelpCircle, Settings } from '@lucide/svelte';
 	import { getRandomEmoji } from './utils.js';
 </script>
 
@@ -16,14 +17,8 @@
 		</a>
 	</div>
 
-	<div class="navbar-search-container">
-		<input
-			type="search"
-			name="name"
-			placeholder="Search all conversations"
-			class="mx-2 w-full bg-transparent p-1"
-		/>
-		<Search class="h-5 w-5 text-neutral-900" />
+	<div class="w-1/3">
+		<SearchBar />
 	</div>
 
 	<div class="flex items-center space-x-4">
