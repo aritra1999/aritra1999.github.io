@@ -3,7 +3,8 @@
 	import Sidebar from '#lib/components/sidebar/sidebar.svelte';
 	import Profile from '#lib/components/navbar/profile.svelte';
 	import SearchBar from '#lib/components/navbar/searchBar.svelte';
-	import { Grip, HelpCircle, Settings } from '@lucide/svelte';
+	import ThemeToggle from '#lib/components/navbar/themeToggle.svelte';
+	import { Grip, HelpCircle } from '@lucide/svelte';
 	import { getRandomEmoji } from './utils.js';
 </script>
 
@@ -29,9 +30,7 @@
 		<div class="icon-container">
 			<HelpCircle class="h-5 w-5" />
 		</div>
-		<div class="icon-container">
-			<Settings class="h-5 w-5" />
-		</div>
+		<ThemeToggle />
 		<div class="icon-container">
 			<Grip class="h-5 w-5" />
 		</div>
@@ -41,6 +40,6 @@
 
 <style lang="postcss">
 	.navbar-pill {
-		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-neutral-500 hover:bg-neutral-200;
+		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-neutral-500 hover:bg-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-800;
 	}
 </style>

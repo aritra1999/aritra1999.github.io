@@ -1,7 +1,9 @@
 <script lang="ts">
 	import '../app.postcss';
 
+	import { onMount } from 'svelte';
 	import { metaStore } from '#lib/store/metaStore.js';
+	import { themeStore } from '#lib/store/themeStore.js';
 	import { cn } from '#lib/utils.js';
 	import Navbar from '#lib/components/navbar/navbarContainer.svelte';
 	import ContactForm from '#lib/components/contact/ContactForm.svelte';
@@ -11,6 +13,10 @@
 	const { children } = $props();
 
 	let innerWidth = $state(0);
+
+	onMount(() => {
+		themeStore.sync();
+	});
 
 	$effect(() => {
 		metaStore.set({
