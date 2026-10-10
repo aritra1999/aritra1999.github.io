@@ -2,7 +2,31 @@
 	import { page } from '$app/state';
 	import items from '#lib/data/emailList.json';
 	import { cn } from '#lib/utils.js';
-	import { FileSpreadsheet, FileTerminal, FileText, Paperclip, Tag } from '@lucide/svelte';
+	import type { Component } from 'svelte';
+	import {
+		BookOpen,
+		Briefcase,
+		FileSpreadsheet,
+		FileTerminal,
+		FileText,
+		FolderKanban,
+		GraduationCap,
+		House,
+		Mail,
+		Newspaper,
+		Paperclip,
+		Trophy
+	} from '@lucide/svelte';
+
+	const itemIcons: Record<string, Component> = {
+		home: House,
+		projects: FolderKanban,
+		papers: Newspaper,
+		experience: Briefcase,
+		education: GraduationCap,
+		'skills-achievements': Trophy,
+		bookshelf: BookOpen
+	};
 
 	const date = new Date();
 	const today = `${date.getDate()} / ${new Intl.DateTimeFormat('en-US', {
@@ -14,6 +38,7 @@
 	class="w-full overflow-y-auto overflow-x-hidden border-r-0 bg-background md:w-[35rem] md:border-r"
 >
 	{#each Object.entries(items) as [key, item]}
+		{@const Icon = itemIcons[key] ?? Mail}
 		<div
 			class={cn(
 				page.url.pathname === `/${key}` ? 'bg-blue-50' : '',
@@ -23,7 +48,7 @@
 			<a href={`/${key}`}>
 				<div class="mb-2 flex justify-between">
 					<div class="flex items-center">
-						<Tag class="mr-2 size-4" />
+						<Icon class="mr-2 size-4" />
 						<span>{item.title}</span>
 					</div>
 					<div class="flex items-center space-x-2 text-xs text-neutral-500">

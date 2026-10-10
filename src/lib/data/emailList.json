@@ -50,6 +50,15 @@
 	"bookshelf": {
 		"title": "Bookshelf",
 		"content": "Engineering books I recommend and technical blogs I follow",
-		"attachments": []
+		"attachments": [
+			{
+				"name": "reading-list.pdf",
+				"type": "pdf"
+			},
+			{
+				"name": "+8",
+				"type": "pdf"
+			}
+		]
 	}
 }
