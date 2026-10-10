@@ -75,7 +75,7 @@
 
 	{#if open && query.trim()}
 		<div
-			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-xl"
+			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border bg-white shadow-lg"
 		>
 			{#if results.length === 0}
 				<div class="px-4 py-3 text-sm text-neutral-500">
@@ -85,7 +85,7 @@
 				{#each results as item}
 					{@const Icon = sectionIcons[item.section] ?? Search}
 					<button
-						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-[#f2f6fc]"
+						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-neutral-100"
 						onmousedown={(event) => event.preventDefault()}
 						onclick={() => select(item)}
 					>
@@ -99,7 +99,7 @@
 							{/if}
 						</span>
 						<span
-							class="shrink-0 rounded-full bg-neutral-100 px-2 py-0.5 text-[11px] font-medium text-neutral-500"
+							class="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-medium text-blue-600"
 						>
 							{item.section}
 						</span>
