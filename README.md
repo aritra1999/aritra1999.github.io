@@ -38,9 +38,11 @@ bun run preview
    bunx wrangler login
    ```
 2. Configure `wrangler.jsonc` (worker name, account details as needed).
-3. Set the `PUBLIC_GIPHY_KEY` variable in the Cloudflare dashboard
+3. Set the `GIPHY_KEY` variable in the Cloudflare dashboard
    (Worker → Settings → Variables) or in `wrangler.jsonc` under `vars`.
-   The home page falls back to a static GIF if the key is missing.
+   It is server-only (used in `+page.server.ts`), so it never reaches
+   the browser. The home page falls back to a static GIF if the key
+   is missing.
 4. Build and deploy:
    ```bash
    bun run deploy
