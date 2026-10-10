@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '$lib/components/navbar/navbar.postcss';
-	import Sidebar from '$lib/components/sidebar/sidebar.svelte';
-	import Profile from '$lib/components/navbar/profile.svelte';
-	import { getRandomEmoji } from './utils';
+	import '#lib/components/navbar/navbar.postcss';
+	import Sidebar from '#lib/components/sidebar/sidebar.svelte';
+	import Profile from '#lib/components/navbar/profile.svelte';
+	import { getRandomEmoji } from './utils.js';
 </script>
 
 <div class="navbar-container p-4">

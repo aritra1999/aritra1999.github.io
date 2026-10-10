@@ -1,5 +1,5 @@
 <script>
-	import { metaStore } from '$lib/store/metaStore';
+	import { metaStore } from '#lib/store/metaStore.js';
 	import { Pencil } from '@lucide/svelte';
 
 	const contactButtonClick = () => {

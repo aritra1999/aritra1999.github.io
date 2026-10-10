@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import items from '$lib/data/emailList.json';
-	import { cn } from '$lib/utils';
+	import { page } from '$app/state';
+	import items from '#lib/data/emailList.json';
+	import { cn } from '#lib/utils.js';
 	import { FileSpreadsheet, FileTerminal, FileText, Paperclip, Tag } from '@lucide/svelte';
 
 	const date = new Date();
@@ -16,7 +16,7 @@
 	{#each Object.entries(items) as [key, item]}
 		<div
 			class={cn(
-				$page.url.pathname === `/${key}` ? 'bg-blue-50' : '',
+				page.url.pathname === `/${key}` ? 'bg-blue-50' : '',
 				'border-b border-neutral-300 px-5 py-4 text-neutral-700 hover:bg-neutral-100'
 			)}
 		>

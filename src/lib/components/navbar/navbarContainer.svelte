@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { metaStore } from '$lib/store/metaStore';
-	import NavbarMobile from '$lib/components/navbar/navbarMobile.svelte';
-	import NavbarDesktop from '$lib/components/navbar/navbarDesktop.svelte';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import NavbarMobile from '#lib/components/navbar/navbarMobile.svelte';
+	import NavbarDesktop from '#lib/components/navbar/navbarDesktop.svelte';
 </script>
 
 <div class="w-screen">

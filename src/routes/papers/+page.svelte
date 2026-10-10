@@ -1,5 +1,5 @@
 <script lang="ts">
-	import PLCard from '$lib/components/card/PLCard.svelte';
+	import PLCard from '#lib/components/card/PLCard.svelte';
 
 	const { data } = $props();
 </script>

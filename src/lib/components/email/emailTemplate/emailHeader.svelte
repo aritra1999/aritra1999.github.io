@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { metaStore } from '$lib/store/metaStore';
-	import { page } from '$app/stores';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import { page } from '$app/state';
 	import Icons from './icons.svelte';
-	import emails from '$lib/data/emailList.json';
+	import emails from '#lib/data/emailList.json';
 	import { ArrowLeft, User } from '@lucide/svelte';
 
 	function getPageName(url: string): string {
@@ -11,11 +11,11 @@
 		return pageName;
 	}
 
-	const pageName = $derived(getPageName($page.url.pathname));
+	const pageName = $derived(getPageName(page.url.pathname));
 </script>
 
 <div>
-	{#if $page.url.pathname !== '/'}
+	{#if page.url.pathname !== '/'}
 		{#if $metaStore.screen === 'desktop'}
 			<div class="px-6 py-4">
 				<div class="ishtyle mb-2 flex items-center justify-between pb-3">

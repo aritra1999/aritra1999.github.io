@@ -1,9 +1,9 @@
 <script>
-	import { page } from '$app/stores';
-	import { metaStore } from '$lib/store/metaStore';
-	import EmailTop from '$lib/components/email/emailTemplate/emailHeader.svelte';
-	import EmailBottom from '$lib/components/email/emailTemplate/emailFooter.svelte';
-	import { cn } from '$lib/utils';
+	import { page } from '$app/state';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import EmailTop from '#lib/components/email/emailTemplate/emailHeader.svelte';
+	import EmailBottom from '#lib/components/email/emailTemplate/emailFooter.svelte';
+	import { cn } from '#lib/utils.js';
 
 	const { children } = $props();
 
@@ -12,7 +12,7 @@
 	);
 </script>
 
-{#if $metaStore.screen === 'desktop' || $page.url.pathname !== '/'}
+{#if $metaStore.screen === 'desktop' || page.url.pathname !== '/'}
 	<div
 		class={cn(
 			emailBodyResponsiveClass,

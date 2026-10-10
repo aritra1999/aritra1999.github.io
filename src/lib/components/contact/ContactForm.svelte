@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { metaStore } from '$lib/store/metaStore';
-	import { cn } from '$lib/utils';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import { cn } from '#lib/utils.js';
 	import {
 		Link2,
 		MoreVertical,

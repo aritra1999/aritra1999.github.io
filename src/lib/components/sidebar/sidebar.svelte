@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Contact from '$lib/components/sidebar/contact.svelte';
-	import { sidebarAppItems, sidebarSocialItems } from '$lib/data/sidebarData';
-	import { metaStore } from '$lib/store/metaStore';
-	import { cn } from '$lib/utils';
+	import Contact from '#lib/components/sidebar/contact.svelte';
+	import { sidebarAppItems, sidebarSocialItems } from '#lib/data/sidebarData.js';
+	import { metaStore } from '#lib/store/metaStore.js';
+	import { cn } from '#lib/utils.js';
 	import { Mail, PanelLeft } from '@lucide/svelte';
 
 	const toggleSidebar = () => {
