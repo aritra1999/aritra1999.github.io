@@ -6,13 +6,13 @@
 	let showProfileDropDown = $state(false);
 	const emailList = [
 		{
-			title: 'Aritra Mondal - University Email',
-			email: '1806290@kiit.ac.in',
+			title: 'Aritra Mondal - Personal Email',
+			email: 'aritra041999@gmail.com',
 			displayPicture: profilePicture
 		},
 		{
-			title: 'Aritra Mondal - Office Email',
-			email: 'aritra.mondal@lenaix.net',
+			title: 'Aritra Mondal - Work Email',
+			email: 'aritra.mondal@sap.com',
 			displayPicture: profilePicture1
 		},
 		{
