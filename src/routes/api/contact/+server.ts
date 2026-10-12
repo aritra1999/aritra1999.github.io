@@ -29,7 +29,9 @@ function checkRateLimit(ip: string): { limited: boolean; retryAfter: number } {
 
 function sanitize(text: string): string {
 	// Neutralize @everyone / @here so senders can't ping the whole server.
-	return text.replace(/@(everyone|here)/gi, '@\u200b$1');
+	// Only the '@' is matched (via lookahead) and the replacement is a
+	// constant containing no match text, so a single pass is complete.
+	return text.replace(/@(?=everyone|here)/gi, '@\u200b');
 }
 
 const ContactPayload = v.object({
