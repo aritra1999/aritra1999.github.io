@@ -42,16 +42,16 @@
 			</h3>
 			{#if item.ongoing}
 				<span
-					class="ml-2 rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-600 dark:bg-yellow-950 dark:text-yellow-300"
+					class="ml-2 rounded-full border border-transparent bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-700 dark:border-yellow-400/25 dark:bg-yellow-500/15 dark:text-yellow-200"
 					>Ongoing</span
 				>
 			{:else}
-				<span class="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-600 dark:bg-green-950 dark:text-green-300"
+				<span class="ml-2 rounded-full border border-transparent bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700 dark:border-green-400/25 dark:bg-green-500/15 dark:text-green-200"
 					>Finished</span
 				>
 			{/if}
 		</div>
-		<p class="mb-2 text-sm font-normal text-neutral-800 dark:text-neutral-300">{item.description}</p>
+		<p class="mb-2 text-sm font-normal text-neutral-700 dark:text-neutral-300">{item.description}</p>
 		<div>
 			{#each item.tags as tag}
 				<div class="tag">{tag}</div>

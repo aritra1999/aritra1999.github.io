@@ -9,7 +9,7 @@
 
 <div class="navbar-container p-4">
 	<div
-		class="flex h-[3rem] w-full items-center justify-between border bg-white px-4 text-sm text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-400"
+		class="flex h-[3rem] w-full items-center justify-between border bg-white px-4 text-sm text-neutral-600 dark:border-border dark:bg-card dark:text-neutral-300"
 	>
 		<div class="flex items-center font-semibold text-neutral-800">
 			<Sidebar />

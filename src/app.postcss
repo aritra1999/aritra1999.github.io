@@ -39,39 +39,39 @@
 	.dark {
 		color-scheme: dark;
 
-		--background: 222 14% 12%;
-		--foreground: 210 40% 96%;
+		--background: 222 18% 7%;
+		--foreground: 210 40% 98%;
 
-		--muted: 217 19% 20%;
-		--muted-foreground: 215 16% 65%;
+		--muted: 222 14% 15%;
+		--muted-foreground: 215 20% 72%;
 
-		--popover: 222 14% 14%;
-		--popover-foreground: 210 40% 96%;
+		--popover: 222 16% 15%;
+		--popover-foreground: 210 40% 98%;
 
-		--card: 222 14% 14%;
-		--card-foreground: 210 40% 96%;
+		--card: 222 16% 12%;
+		--card-foreground: 210 40% 98%;
 
-		--border: 217 19% 26%;
-		--input: 217 19% 26%;
+		--border: 222 14% 24%;
+		--input: 222 14% 24%;
 
-		--primary: 210 40% 96%;
+		--primary: 210 40% 98%;
 		--primary-foreground: 222.2 47.4% 11.2%;
 
-		--secondary: 217 19% 20%;
-		--secondary-foreground: 210 40% 96%;
+		--secondary: 222 14% 16%;
+		--secondary-foreground: 210 40% 98%;
 
-		--accent: 217 19% 20%;
-		--accent-foreground: 210 40% 96%;
+		--accent: 222 16% 18%;
+		--accent-foreground: 210 40% 98%;
 
 		--destructive: 0 62.8% 50.6%;
 		--destructive-foreground: 210 40% 98%;
 
-		--ring: 212.7 26.8% 75%;
+		--ring: 217 91% 60%;
 	}
 
 	.dark body {
-		--grid-color: #2e2f33;
-		--paper-color: #1a1b1e;
+		--grid-color: #2b3240;
+		--paper-color: #0f1115;
 	}
 }
 
@@ -118,11 +118,11 @@
 }
 
 .tag {
-	@apply mb-1 mr-2 inline-block rounded-full bg-blue-100 px-2 pb-0.5 pt-1 text-xs font-medium text-blue-600 dark:bg-blue-950 dark:text-blue-300;
+	@apply mb-1 mr-2 inline-block rounded-full border border-transparent bg-blue-100 px-2 pb-0.5 pt-1 text-xs font-medium text-blue-700 dark:border-blue-400/25 dark:bg-blue-500/15 dark:text-blue-200;
 }
 
 .card {
-	@apply mb-4 inline-block w-full bg-white shadow-sm transition duration-300 ease-in hover:shadow-lg dark:bg-neutral-900;
+	@apply mb-4 inline-block w-full rounded-lg bg-white shadow-sm transition duration-300 ease-in hover:shadow-lg dark:border-border dark:bg-card dark:shadow-[0_8px_30px_rgb(0,0,0,0.45)] dark:hover:border-blue-400/30 dark:hover:shadow-[0_8px_40px_rgb(0,0,0,0.6)];
 }
 
 .card-link-container {
@@ -130,7 +130,7 @@
 }
 
 .card-link {
-	@apply flex items-center space-x-1 text-sm font-medium text-blue-600 dark:text-blue-400;
+	@apply flex items-center space-x-1 text-sm font-medium text-blue-600 dark:text-blue-300;
 }
 
 ::-webkit-scrollbar {
@@ -159,5 +159,15 @@
 		transparent 3px,
 		#c6c6c6 6px,
 		#c6c6c6 4px
+	);
+}
+
+.dark .ishtyle {
+	background: repeating-linear-gradient(
+		135deg,
+		transparent,
+		transparent 3px,
+		#353a46 6px,
+		#353a46 4px
 	);
 }

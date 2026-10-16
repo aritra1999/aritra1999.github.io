@@ -75,7 +75,7 @@
 
 	{#if open && query.trim()}
 		<div
-			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border bg-white shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
+			class="absolute left-0 right-0 top-full z-50 mt-2 overflow-hidden rounded-lg border bg-white shadow-lg dark:border-border dark:bg-popover dark:shadow-[0_8px_30px_rgb(0,0,0,0.5)]"
 		>
 			{#if results.length === 0}
 				<div class="px-4 py-3 text-sm text-neutral-500 dark:text-neutral-400">
@@ -85,7 +85,7 @@
 				{#each results as item}
 					{@const Icon = sectionIcons[item.section] ?? Search}
 					<button
-						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-neutral-100 dark:hover:bg-neutral-800"
+						class="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-neutral-100 dark:hover:bg-accent"
 						onmousedown={(event) => event.preventDefault()}
 						onclick={() => select(item)}
 					>
@@ -99,7 +99,7 @@
 							{/if}
 						</span>
 						<span
-							class="shrink-0 rounded-full bg-blue-100 px-2 py-0.5 text-[11px] font-medium text-blue-600 dark:bg-blue-950 dark:text-blue-300"
+							class="shrink-0 rounded-full border border-transparent bg-blue-100 px-2 py-0.5 text-[11px] font-medium text-blue-700 dark:border-blue-400/25 dark:bg-blue-500/15 dark:text-blue-200"
 						>
 							{item.section}
 						</span>

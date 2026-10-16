@@ -26,11 +26,11 @@
 			<img class="h-8 rounded-md" src={thumbnail} alt={item.name} loading="lazy" decoding="async" />
 		{/if}
 	</div>
-	<ol class="relative mx-4 border-l border-neutral-200 dark:border-neutral-700">
+	<ol class="relative mx-4 border-l border-neutral-200 dark:border-border">
 		{#each item.roles as role}
 			<li class="mb-4 ml-6">
 				<span
-					class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-neutral-900"
+					class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:border dark:border-blue-400/25 dark:bg-blue-500/20 dark:ring-card"
 				>
 					<Calendar class="size-3 text-blue-500 dark:text-blue-300" />
 				</span>
@@ -39,7 +39,7 @@
 					{#if role.role}{role.role}{/if}
 					{#if role.latest}
 						<span
-							class="ml-3 mr-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-950 dark:text-blue-300"
+							class="ml-3 mr-2 rounded border border-transparent bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:border-blue-400/25 dark:bg-blue-500/15 dark:text-blue-200"
 						>
 							Latest
 						</span>

@@ -27,13 +27,13 @@
 	<img src={profilePicture} class="profile-picture" alt="User" />
 </button>
 {#if showProfileDropDown}
-	<div class="fixed right-8 top-[70px] z-50 w-80 rounded-xl border bg-white p-2 shadow-sm dark:border-neutral-700 dark:bg-neutral-900">
+	<div class="fixed right-8 top-[70px] z-50 w-80 rounded-xl border bg-white p-2 shadow-sm dark:border-border dark:bg-popover dark:shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
 		<div class="mb-4 flex flex-col items-center">
 			<img src={profilePicture} class="mb-3 mt-3 h-24 w-24 rounded-full object-cover" alt="User" />
 			<div class="mb text-sm">Aritra Mondal</div>
 			<div class="mb-3 border-neutral-600 text-xs">aritra041999@gmail.com</div>
 			<button
-				class="rounded-full border border-neutral-300 px-4 pb-1 pt-1.5 text-xs font-semibold text-neutral-500 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+				class="rounded-full border border-neutral-300 px-4 pb-1 pt-1.5 text-xs font-semibold text-neutral-500 hover:bg-neutral-100 dark:border-border dark:text-neutral-200 dark:hover:bg-accent"
 			>
 				Manage your account
 			</button>
@@ -41,7 +41,7 @@
 		<div class="space-y-2">
 			{#each emailList as email}
 				<div
-					class="flex w-full items-center rounded-xl border bg-neutral-50 px-4 py-2 hover:bg-blue-50 hover:text-blue-700 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-blue-950 dark:hover:text-blue-300"
+					class="flex w-full items-center rounded-xl border bg-neutral-50 px-4 py-2 hover:bg-blue-50 hover:text-blue-700 dark:border-border dark:bg-secondary dark:hover:bg-blue-500/15 dark:hover:text-blue-200"
 				>
 					<img src={email.displayPicture} class="mr-4 h-7 w-7 rounded-full object-cover" alt="" />
 					<div class="text-xs">
