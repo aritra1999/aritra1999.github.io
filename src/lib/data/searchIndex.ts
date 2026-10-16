@@ -42,7 +42,7 @@ function strArray(value: unknown): string[] {
 }
 
 function stripHtml(value: string): string {
-	return value.replace(/<[^>]*>/g, '');
+	return value.replace(/[<>]/g, '');
 }
 
 function makeItem(
