@@ -13,7 +13,7 @@
 	} from '@lucide/svelte';
 
 	const menuItemClass =
-		'flex justify-center items-center p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-lg';
+		'flex justify-center items-center p-2 hover:bg-neutral-200 dark:hover:bg-accent rounded-lg';
 
 	let status = $state<'idle' | 'sending' | 'sent' | 'error'>('idle');
 	let errorMessage = $state('');
@@ -59,8 +59,8 @@
 </script>
 
 {#if $metaStore.showContactForm}
-	<div class="fixed bottom-0 right-0 z-50 w-[min(600px,100vw)] shadow-lg sm:bottom-8 sm:right-8">
-		<div class="flex w-full items-center justify-between bg-neutral-900 px-4 py-3 text-white">
+	<div class="fixed bottom-0 right-0 z-50 w-[min(600px,100vw)] overflow-hidden rounded-lg border border-neutral-900 shadow-xl dark:border-border sm:bottom-8 sm:right-8">
+		<div class="flex w-full items-center justify-between border-b border-neutral-800 bg-neutral-900 px-4 py-3 text-white dark:border-border dark:bg-secondary">
 			New Message
 			<button
 				onclick={close}
@@ -68,13 +68,13 @@
 				<X class="h-5 w-5" />
 			</button>
 		</div>
-		<form class="border bg-white dark:border-neutral-700 dark:bg-neutral-900" onsubmit={handleSubmit}>
+		<form class="bg-white dark:bg-card dark:shadow-[0_8px_30px_rgb(0,0,0,0.5)]" onsubmit={handleSubmit}>
 			<div class="rounded-b-lg p-4">
 				<input
 					name="from"
 					type="email"
 					placeholder="From"
-					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
+					class="mb-2 w-full border-b border-neutral-300 bg-white px-4 py-2 dark:border-border dark:bg-card dark:text-neutral-100 dark:placeholder-neutral-400"
 					required
 				/>
 				<input
@@ -82,14 +82,14 @@
 					type="text"
 					placeholder="Subject"
 					maxlength="120"
-					class="mb-2 w-full border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
+					class="mb-2 w-full border-b border-neutral-300 bg-white px-4 py-2 dark:border-border dark:bg-card dark:text-neutral-100 dark:placeholder-neutral-400"
 					required
 				/>
 				<textarea
 					name="message"
 					placeholder="Message"
 					maxlength="1500"
-					class="mb-2 w-full resize-none border-b border-neutral-200 bg-white px-4 py-2 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:placeholder-neutral-500"
+					class="mb-2 w-full resize-none border-b border-neutral-300 bg-white px-4 py-2 dark:border-border dark:bg-card dark:text-neutral-100 dark:placeholder-neutral-400"
 					rows="6"
 					required
 				></textarea>
