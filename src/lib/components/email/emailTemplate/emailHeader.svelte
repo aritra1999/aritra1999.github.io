@@ -32,7 +32,7 @@
 				<div class="flex items-center justify-between">
 					<div class="flex items-center">
 						<div
-							class="mr-6 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-300 dark:bg-neutral-700"
+							class="mr-6 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-200 dark:border dark:border-border dark:bg-secondary"
 						>
 							<User class="h-5 w-5" />
 						</div>
@@ -65,7 +65,7 @@
 				</div>
 				<div class="mt-2 flex items-center">
 					<div
-						class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-300 dark:bg-neutral-700"
+						class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-200 dark:border dark:border-border dark:bg-secondary"
 					>
 						<User class="h-5 w-5" />
 					</div>
