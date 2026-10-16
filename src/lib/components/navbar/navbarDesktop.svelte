@@ -40,6 +40,6 @@
 
 <style lang="postcss">
 	.navbar-pill {
-		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-neutral-500 hover:bg-neutral-200 dark:text-neutral-400 dark:hover:bg-neutral-800;
+		@apply flex items-center justify-center border bg-background px-5 py-3 text-sm font-medium text-neutral-500 hover:bg-neutral-200 dark:border-border dark:text-neutral-300 dark:hover:bg-accent dark:hover:text-neutral-100;
 	}
 </style>
