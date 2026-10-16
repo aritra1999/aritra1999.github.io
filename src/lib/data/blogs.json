@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Martin Fowler",
+		"author": "martinfowler.com",
+		"description": "Refactoring, software architecture, and agile — written carefully and built to last.",
+		"link": "https://martinfowler.com"
+	},
+	{
+		"title": "Dan Luu",
+		"author": "danluu.com",
+		"description": "Deep, data-driven essays on hardware, performance, and engineering culture.",
+		"link": "https://danluu.com"
+	},
+	{
+		"title": "Brandur",
+		"author": "brandur.org",
+		"description": "Databases, Postgres internals, and API design notes.",
+		"link": "https://brandur.org"
+	},
+	{
+		"title": "Marc Brooker",
+		"author": "brooker.co.za",
+		"description": "Distributed systems, correctness, and performance from an AWS veteran.",
+		"link": "https://brooker.co.za/blog/"
+	},
+	{
+		"title": "The Pragmatic Engineer",
+		"author": "Gergely Orosz",
+		"description": "Software engineering, the business of tech, and career growth — weekly and to the point.",
+		"link": "https://blog.pragmaticengineer.com"
+	}
+]

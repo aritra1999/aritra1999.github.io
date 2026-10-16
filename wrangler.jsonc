@@ -1,6 +1,7 @@
 {
 	"$schema": "./node_modules/wrangler/config-schema.json",
-	"name": "aritra-bio",
+	"name": "aritra-fyi",
+	"account_id": "7ee72e8b371e41f571e32e5004ad4c1e",
 	"main": ".svelte-kit/cloudflare/_worker.js",
 	"compatibility_date": "2026-10-01",
 	"compatibility_flags": ["nodejs_compat"],

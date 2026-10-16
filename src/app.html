@@ -2,7 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" sizes="64x64" type="image/png" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest" />
+		<meta name="description" content="Aritra Mondal — Software Development Engineer. Projects, experience, blogs and more, in an inbox." />
+		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1a1b1e" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,6 +16,19 @@
 			href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
 			rel="stylesheet"
 		/>
+		<script>
+			try {
+				var storedTheme = localStorage.getItem('theme');
+				if (
+					storedTheme === 'dark' ||
+					(!storedTheme && matchMedia('(prefers-color-scheme: dark)').matches)
+				) {
+					document.documentElement.classList.add('dark');
+				}
+			} catch (e) {
+				/* theme just won't persist */
+			}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

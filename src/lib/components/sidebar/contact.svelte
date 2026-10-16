@@ -10,7 +10,7 @@
 
 <button
 	onclick={contactButtonClick}
-	class="flex items-center rounded-xl border bg-cyan-100 py-4 pl-4 pr-6 font-medium text-blue-900 hover:bg-cyan-200 hover:shadow-md"
+	class="flex items-center rounded-xl border bg-cyan-100 py-4 pl-4 pr-6 font-medium text-blue-900 hover:bg-cyan-200 hover:shadow-md dark:border-cyan-900 dark:bg-cyan-950 dark:text-cyan-200 dark:hover:bg-cyan-900"
 >
 	<Pencil class="mr-4 h-6 w-6 font-bold" />
 	Contact Me

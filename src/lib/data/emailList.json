@@ -46,5 +46,19 @@
 		"title": "Skills & Achievements",
 		"content": "A list of all my skills and achievements",
 		"attachments": []
+	},
+	"bookshelf": {
+		"title": "Bookshelf",
+		"content": "Engineering books I recommend and technical blogs I follow",
+		"attachments": [
+			{
+				"name": "reading-list.pdf",
+				"type": "pdf"
+			},
+			{
+				"name": "+8",
+				"type": "pdf"
+			}
+		]
 	}
 }

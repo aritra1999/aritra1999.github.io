@@ -23,7 +23,7 @@
 						<h2 class="w-fit bg-background px-3 py-1 text-3xl font-semibold">
 							{pageName}
 						</h2>
-						<div class="ml-4 rounded-md bg-neutral-900 px-2 py-1 text-xs text-neutral-200">
+						<div class="ml-4 rounded-md bg-neutral-900 px-2 py-1 text-xs text-neutral-200 dark:bg-neutral-100 dark:text-neutral-900">
 							Inbox
 						</div>
 					</div>
@@ -32,19 +32,19 @@
 				<div class="flex items-center justify-between">
 					<div class="flex items-center">
 						<div
-							class="mr-6 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-300"
+							class="mr-6 flex h-10 w-10 items-center justify-center rounded-full bg-neutral-300 dark:bg-neutral-700"
 						>
 							<User class="h-5 w-5" />
 						</div>
 						<div class="text-xs">
 							<div>
-								Aritra Mondal - <span class="text-neutral-500"> aritra041999@gmail.com </span>
+								Aritra Mondal - <span class="text-neutral-500 dark:text-neutral-400"> aritra041999@gmail.com </span>
 							</div>
 							To Me
 						</div>
 					</div>
-					<div class="flex items-center justify-around space-x-1 text-neutral-700">
-						<div class="text-xs text-neutral-600">Thursday, November 4, 3:18 PM</div>
+					<div class="flex items-center justify-around space-x-1 text-neutral-700 dark:text-neutral-300">
+						<div class="text-xs text-neutral-600 dark:text-neutral-400">Thursday, November 4, 3:18 PM</div>
 					</div>
 				</div>
 			</div>
@@ -58,19 +58,19 @@
 			</div>
 			<div class="mx-4 px-2 py-4">
 				<div class="ishtyle flex items-center pb-3">
-					<div class="w-fit bg-background px-3 py-1 text-xl font-semibold">{pageName}</div>
-					<div class="ml-4 mr-2 rounded-md bg-neutral-900 px-2 py-1 text-xs text-neutral-200">
+					<div class="w-fit bg-background px-3 py-1 text-xl font-semibold dark:text-neutral-100">{pageName}</div>
+					<div class="ml-4 mr-2 rounded-md bg-neutral-900 px-2 py-1 text-xs text-neutral-200 dark:bg-neutral-100 dark:text-neutral-900">
 						Inbox
 					</div>
 				</div>
 				<div class="mt-2 flex items-center">
 					<div
-						class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-300"
+						class="mr-6 flex h-[40px] w-[40px] items-center justify-center rounded-full bg-neutral-300 dark:bg-neutral-700"
 					>
 						<User class="h-5 w-5" />
 					</div>
-					<div class="text-xs text-neutral-600">
-						<div><span class="text-neutral-900">Aritra Mondal </span> - aritra041999@gmail.com</div>
+					<div class="text-xs text-neutral-600 dark:text-neutral-400">
+						<div><span class="text-neutral-900 dark:text-neutral-100">Aritra Mondal </span> - aritra041999@gmail.com</div>
 						To Me -<span class="text-xs">Thursday, Nov 19, 3:18 PM</span>
 					</div>
 				</div>

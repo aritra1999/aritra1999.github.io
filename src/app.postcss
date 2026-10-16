@@ -36,7 +36,43 @@
 		--radius: 0.5rem;
 	}
 
+	.dark {
+		color-scheme: dark;
 
+		--background: 222 14% 12%;
+		--foreground: 210 40% 96%;
+
+		--muted: 217 19% 20%;
+		--muted-foreground: 215 16% 65%;
+
+		--popover: 222 14% 14%;
+		--popover-foreground: 210 40% 96%;
+
+		--card: 222 14% 14%;
+		--card-foreground: 210 40% 96%;
+
+		--border: 217 19% 26%;
+		--input: 217 19% 26%;
+
+		--primary: 210 40% 96%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+
+		--secondary: 217 19% 20%;
+		--secondary-foreground: 210 40% 96%;
+
+		--accent: 217 19% 20%;
+		--accent-foreground: 210 40% 96%;
+
+		--destructive: 0 62.8% 50.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		--ring: 212.7 26.8% 75%;
+	}
+
+	.dark body {
+		--grid-color: #2e2f33;
+		--paper-color: #1a1b1e;
+	}
 }
 
 @layer base {
@@ -82,11 +118,11 @@
 }
 
 .tag {
-	@apply mb-1 mr-2 inline-block rounded-full bg-blue-100 px-2 pb-0.5 pt-1 text-xs font-medium text-blue-600;
+	@apply mb-1 mr-2 inline-block rounded-full bg-blue-100 px-2 pb-0.5 pt-1 text-xs font-medium text-blue-600 dark:bg-blue-950 dark:text-blue-300;
 }
 
 .card {
-	@apply mb-4 inline-block w-full  bg-white shadow-sm transition  duration-300 ease-in hover:shadow-lg;
+	@apply mb-4 inline-block w-full bg-white shadow-sm transition duration-300 ease-in hover:shadow-lg dark:bg-neutral-900;
 }
 
 .card-link-container {
@@ -94,7 +130,7 @@
 }
 
 .card-link {
-	@apply flex items-center space-x-1 text-sm font-medium text-blue-600;
+	@apply flex items-center space-x-1 text-sm font-medium text-blue-600 dark:text-blue-400;
 }
 
 ::-webkit-scrollbar {

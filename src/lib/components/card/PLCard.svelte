@@ -12,7 +12,7 @@
 	$effect(() => {
 		const loadThumbnail = async () => {
 			loading = true;
-			thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.png`)).default;
+			thumbnail = (await import(`../../images/${item.thumbnail ?? 'cs'}.jpg`)).default;
 			loading = false;
 		};
 		loadThumbnail();
@@ -22,11 +22,17 @@
 <div class="card border">
 	<div class="flex h-48 w-full items-center justify-center">
 		{#if loading}
-			<div class="flex h-48 w-full items-center justify-center text-neutral-600">
+			<div class="flex h-48 w-full items-center justify-center text-neutral-600 dark:text-neutral-400">
 				<Loading />
 			</div>
 		{:else}
-			<img class="h-48 w-full border-b object-cover" src={thumbnail || ''} alt="loading" />
+			<img
+				class="h-48 w-full border-b object-cover"
+				src={thumbnail || ''}
+				alt="loading"
+				loading="lazy"
+				decoding="async"
+			/>
 		{/if}
 	</div>
 	<div class="px-6 pb-4 pt-6">
@@ -36,16 +42,16 @@
 			</h3>
 			{#if item.ongoing}
 				<span
-					class="ml-2 rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-600"
+					class="ml-2 rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-medium text-yellow-600 dark:bg-yellow-950 dark:text-yellow-300"
 					>Ongoing</span
 				>
 			{:else}
-				<span class="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-600"
+				<span class="ml-2 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-600 dark:bg-green-950 dark:text-green-300"
 					>Finished</span
 				>
 			{/if}
 		</div>
-		<p class="mb-2 text-sm font-normal text-neutral-800">{item.description}</p>
+		<p class="mb-2 text-sm font-normal text-neutral-800 dark:text-neutral-300">{item.description}</p>
 		<div>
 			{#each item.tags as tag}
 				<div class="tag">{tag}</div>
