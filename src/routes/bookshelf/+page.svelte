@@ -38,23 +38,23 @@
 		<h2 class="text-2xl font-semibold">Blogs I follow</h2>
 	</div>
 	<p class="mb-4 text-sm text-neutral-500 dark:text-neutral-400">Technical blogs worth your RSS reader.</p>
-	<div class="overflow-hidden border bg-white dark:border-neutral-700 dark:bg-neutral-900">
+	<div class="overflow-hidden rounded-lg border bg-white dark:border-border dark:bg-card dark:shadow-[0_8px_30px_rgb(0,0,0,0.35)]">
 		{#each data.blogs as blog}
 			<a
 				href={blog.link}
 				target="_blank"
 				rel="noreferrer"
-				class="group flex items-center justify-between border-b border-neutral-200 px-5 py-4 last:border-b-0 hover:bg-neutral-100 dark:border-neutral-700 dark:hover:bg-neutral-800"
+				class="group flex items-center justify-between border-b border-neutral-200 px-5 py-4 last:border-b-0 hover:bg-neutral-100 dark:border-border dark:hover:bg-accent"
 			>
 				<div class="min-w-0">
 					<div class="flex items-center">
 						<span class="truncate font-semibold text-neutral-900 dark:text-neutral-100">{blog.title}</span>
-						<span class="ml-2 shrink-0 text-xs text-neutral-400 dark:text-neutral-500">{blog.author}</span>
+						<span class="ml-2 shrink-0 text-xs text-neutral-400 dark:text-neutral-400">{blog.author}</span>
 					</div>
 					<div class="truncate text-sm text-neutral-500 dark:text-neutral-400">{blog.description}</div>
 				</div>
 				<MoveRight
-					class="ml-4 size-4 shrink-0 text-neutral-400 group-hover:text-blue-600 dark:text-neutral-500 dark:group-hover:text-blue-400"
+					class="ml-4 size-4 shrink-0 text-neutral-400 group-hover:text-blue-600 dark:text-neutral-400 dark:group-hover:text-blue-300"
 				/>
 			</a>
 		{/each}
